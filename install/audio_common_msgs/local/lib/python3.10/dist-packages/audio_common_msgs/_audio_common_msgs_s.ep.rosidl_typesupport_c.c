@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/audio_common_msgs/rosidl_generator_py/audio_common_msgs/_audio_common_msgs_s.ep.rosidl_typesupport_c.c

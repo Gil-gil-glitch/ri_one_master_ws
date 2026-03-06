@@ -1,0 +1,15 @@
+[0.056s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_config -- -j4 -l4
+[0.269s] [ 12%] Built target ecl_detect_endian
+[0.311s] [ 25%] Built target gtest
+[0.313s] [ 37%] Built target ecl_detect_posix
+[0.324s] [ 50%] Built target gtest_main
+[0.406s] gmake[2]: *** [src/test/CMakeFiles/ecl_test_endianness.dir/build.make:110: src/test/CMakeFiles/ecl_test_endianness.dir/depend] Interrupt
+[0.406s] gmake[1]: *** [CMakeFiles/Makefile2:286: src/test/CMakeFiles/ecl_test_endianness.dir/all] Interrupt
+[0.407s] gmake[2]: *** [src/test/CMakeFiles/ecl_test_portable_types.dir/build.make:110: src/test/CMakeFiles/ecl_test_portable_types.dir/depend] Interrupt
+[0.408s] gmake[1]: *** [CMakeFiles/Makefile2:340: src/test/CMakeFiles/ecl_test_portable_types.dir/all] Interrupt
+[0.408s] gmake[2]: *** [src/test/CMakeFiles/ecl_test_macros.dir/build.make:110: src/test/CMakeFiles/ecl_test_macros.dir/depend] Interrupt
+[0.408s] gmake[1]: *** [CMakeFiles/Makefile2:313: src/test/CMakeFiles/ecl_test_macros.dir/all] Interrupt
+[0.409s] gmake[1]: *** wait: No child processes.  Stop.
+[0.409s] gmake[1]: *** Waiting for unfinished jobs....
+[0.409s] gmake[1]: *** wait: No child processes.  Stop.
+[0.410s] gmake: *** [Makefile:146: all] Error 2

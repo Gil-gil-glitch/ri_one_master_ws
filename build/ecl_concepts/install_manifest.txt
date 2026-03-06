@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/install/ecl_concepts/share/ecl_concepts/cmake/ecl_conceptsExport.cmake

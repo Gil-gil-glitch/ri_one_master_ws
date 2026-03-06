@@ -1,0 +1,44 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/linear_algebra/eigen/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/linear_algebra/eigen",
+			"paths" : 
+			[
+				"include/ecl/linear_algebra/eigen/formatters.hpp",
+				"include/ecl/linear_algebra/eigen/plugin.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/linear_algebra/eigen",
+		"source" : "include/ecl/linear_algebra/eigen"
+	}
+}

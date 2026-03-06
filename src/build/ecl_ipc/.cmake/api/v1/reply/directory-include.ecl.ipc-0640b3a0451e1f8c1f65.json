@@ -1,0 +1,46 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/ipc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/ipc",
+			"paths" : 
+			[
+				"include/ecl/ipc/semaphore.hpp",
+				"include/ecl/ipc/semaphore_pos.hpp",
+				"include/ecl/ipc/shared_memory.hpp",
+				"include/ecl/ipc/shared_memory_pos.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/ipc",
+		"source" : "include/ecl/ipc"
+	}
+}

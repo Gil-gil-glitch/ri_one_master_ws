@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating ros2_tests.egg-info
+writing ros2_tests.egg-info/PKG-INFO
+writing dependency_links to ros2_tests.egg-info/dependency_links.txt
+writing entry points to ros2_tests.egg-info/entry_points.txt
+writing requirements to ros2_tests.egg-info/requires.txt
+writing top-level names to ros2_tests.egg-info/top_level.txt
+writing manifest file 'ros2_tests.egg-info/SOURCES.txt'
+reading manifest file 'ros2_tests.egg-info/SOURCES.txt'
+writing manifest file 'ros2_tests.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ri-one/ri_one_master_ws/install/ros2_tests/lib/python3.10/site-packages/ros2-tests.egg-link (link to .)
+Installing depth_viewer script to /home/ri-one/ri_one_master_ws/install/ros2_tests/lib/ros2_tests
+Installing led_test script to /home/ri-one/ri_one_master_ws/install/ros2_tests/lib/ros2_tests
+Installing mic_listener script to /home/ri-one/ri_one_master_ws/install/ros2_tests/lib/ros2_tests
+Installing rgb_viewer script to /home/ri-one/ri_one_master_ws/install/ros2_tests/lib/ros2_tests
+Installing tilt_test script to /home/ri-one/ri_one_master_ws/install/ros2_tests/lib/ros2_tests
+
+Installed /home/ri-one/ri_one_master_ws/build/ros2_tests
+running symlink_data
+creating /home/ri-one/ri_one_master_ws/install/ros2_tests/share/ament_index
+creating /home/ri-one/ri_one_master_ws/install/ros2_tests/share/ament_index/resource_index
+creating /home/ri-one/ri_one_master_ws/install/ros2_tests/share/ament_index/resource_index/packages
+symbolically linking /home/ri-one/ri_one_master_ws/build/ros2_tests/resource/ros2_tests -> /home/ri-one/ri_one_master_ws/install/ros2_tests/share/ament_index/resource_index/packages
+symbolically linking /home/ri-one/ri_one_master_ws/build/ros2_tests/package.xml -> /home/ri-one/ri_one_master_ws/install/ros2_tests/share/ros2_tests

@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/cmake/ecl_mplExport.cmake

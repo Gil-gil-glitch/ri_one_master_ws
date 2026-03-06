@@ -1,0 +1,16 @@
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/lib/ros2_kinect_depth/depth_node
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ament_index/resource_index/package_run_dependencies/ros2_kinect_depth
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ament_index/resource_index/parent_prefix_path/ros2_kinect_depth
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/environment/ament_prefix_path.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/environment/ament_prefix_path.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/environment/path.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/environment/path.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/local_setup.bash
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/local_setup.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/local_setup.zsh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/local_setup.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/package.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ament_index/resource_index/packages/ros2_kinect_depth
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/cmake/ros2_kinect_depthConfig.cmake
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/cmake/ros2_kinect_depthConfig-version.cmake
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/package.xml

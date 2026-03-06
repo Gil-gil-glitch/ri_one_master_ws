@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/manipulators/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/manipulators",
+			"paths" : 
+			[
+				"include/ecl/manipulators/trajectory.hpp",
+				"include/ecl/manipulators/types.hpp",
+				"include/ecl/manipulators/waypoint.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/manipulators",
+		"source" : "include/ecl/manipulators"
+	}
+}

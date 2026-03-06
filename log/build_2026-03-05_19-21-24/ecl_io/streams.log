@@ -1,0 +1,43 @@
+[0.086s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_io': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_io -- -j4 -l4
+[0.197s] [ 40%] Built target ecl_io
+[0.247s] [ 60%] Built target ecl_io_example_socketpair
+[0.258s] [ 80%] Built target ecl_io_example_poll
+[0.259s] [100%] Built target ecl_io_example_sockets
+[0.282s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_io' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_io -- -j4 -l4
+[0.286s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_io': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_io
+[0.304s] -- Install configuration: ""
+[0.305s] -- Execute custom install script
+[0.306s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/include/ecl/sockets/macros.hpp
+[0.306s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/include/ecl/sockets/poll.hpp
+[0.306s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/include/ecl/sockets/socketpair.hpp
+[0.306s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/include/ecl/sockets/sockets.hpp
+[0.306s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/include/ecl/io.hpp
+[0.306s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/lib/ecl_io/demo_sockets
+[0.307s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/lib/ecl_io/demo_socketpair
+[0.307s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/lib/ecl_io/demo_poll
+[0.309s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/environment/library_path.sh
+[0.310s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/environment/library_path.dsv
+[0.310s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ament_index/resource_index/package_run_dependencies/ecl_io
+[0.310s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ament_index/resource_index/parent_prefix_path/ecl_io
+[0.310s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/environment/ament_prefix_path.sh
+[0.310s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/environment/ament_prefix_path.dsv
+[0.311s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/environment/path.sh
+[0.311s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/environment/path.dsv
+[0.313s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/local_setup.bash
+[0.313s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/local_setup.sh
+[0.314s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/local_setup.zsh
+[0.314s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/local_setup.dsv
+[0.314s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/package.dsv
+[0.333s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ament_index/resource_index/packages/ecl_io
+[0.335s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/cmake/ament_cmake_export_targets-extras.cmake
+[0.335s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.336s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/cmake/ament_cmake_export_libraries-extras.cmake
+[0.337s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.337s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/cmake/ecl_ioConfig.cmake
+[0.338s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/cmake/ecl_ioConfig-version.cmake
+[0.339s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/package.xml
+[0.339s] -- Up-to-date: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/cmake/ecl_ioExport.cmake
+[0.340s] -- Up-to-date: /home/ri-one/ri_one_master_ws/install/ecl_io/share/ecl_io/cmake/ecl_ioExport-noconfig.cmake
+[0.342s] -- Up-to-date: /home/ri-one/ri_one_master_ws/install/ecl_io/lib/libecl_io.so.1.2.0
+[0.343s] -- Up-to-date: /home/ri-one/ri_one_master_ws/install/ecl_io/lib/libecl_io.so
+[0.347s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_io' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_io

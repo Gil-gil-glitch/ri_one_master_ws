@@ -1,0 +1,48 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/containers/array/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/containers/array",
+			"paths" : 
+			[
+				"include/ecl/containers/array/array_dynamic_mem_check.hpp",
+				"include/ecl/containers/array/array_dynamic_no_mem_check.hpp",
+				"include/ecl/containers/array/array_mem_check.hpp",
+				"include/ecl/containers/array/array_no_mem_check.hpp",
+				"include/ecl/containers/array/converters.hpp",
+				"include/ecl/containers/array/formatters.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/containers/array",
+		"source" : "include/ecl/containers/array"
+	}
+}

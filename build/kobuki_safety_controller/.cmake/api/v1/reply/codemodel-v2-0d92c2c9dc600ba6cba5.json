@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e6cc28dcfb150f7d7074.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "kobuki_safety_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_safety_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_safety_controller-fd36d0a2450633cc4dd7.json",
+					"name" : "kobuki_safety_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_safety_controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_safety_controller_node-a6c392cd36919906a677.json",
+					"name" : "kobuki_safety_controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_safety_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_safety_controller_uninstall-58abbe3d702536c5a209.json",
+					"name" : "kobuki_safety_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-6d18f0edefc6c39990a2.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ri-one/ri_one_master_ws/build/kobuki_safety_controller",
+		"source" : "/home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/kobuki_ros/kobuki_safety_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

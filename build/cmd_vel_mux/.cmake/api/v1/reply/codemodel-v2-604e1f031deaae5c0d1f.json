@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-49b06f293e56457b0c36.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cmd_vel_mux",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cmd_vel_mux::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cmd_vel_mux-c259e166f932b0a29048.json",
+					"name" : "cmd_vel_mux",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cmd_vel_mux_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cmd_vel_mux_node-f586685863072307ef0e.json",
+					"name" : "cmd_vel_mux_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cmd_vel_mux_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cmd_vel_mux_uninstall-4fcb15f765c3f6556cde.json",
+					"name" : "cmd_vel_mux_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-12a65a6c884df59087bf.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ri-one/ri_one_master_ws/build/cmd_vel_mux",
+		"source" : "/home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/cmd_vel_mux"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

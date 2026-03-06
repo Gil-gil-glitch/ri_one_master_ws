@@ -1,0 +1,4 @@
+/home/ri-one/ri_one_master_ws/install/ecl_streams/share/ecl_streams/cmake/ecl_streamsExport.cmake
+/home/ri-one/ri_one_master_ws/install/ecl_streams/share/ecl_streams/cmake/ecl_streamsExport-noconfig.cmake
+/home/ri-one/ri_one_master_ws/install/ecl_streams/lib/libecl_streams.so.1.2.1
+/home/ri-one/ri_one_master_ws/install/ecl_streams/lib/libecl_streams.so

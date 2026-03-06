@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/audio_common_msgs/rosidl_typesupport_fastrtps_cpp/audio_common_msgs/msg/detail/audio_data__rosidl_typesupport_fastrtps_cpp.hpp

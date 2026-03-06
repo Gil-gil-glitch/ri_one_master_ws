@@ -1,0 +1,16 @@
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/lib/ros2_kinect_led/ros2_kinect_led_node
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ament_index/resource_index/package_run_dependencies/ros2_kinect_led
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ament_index/resource_index/parent_prefix_path/ros2_kinect_led
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/environment/ament_prefix_path.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/environment/ament_prefix_path.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/environment/path.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/environment/path.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/local_setup.bash
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/local_setup.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/local_setup.zsh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/local_setup.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/package.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ament_index/resource_index/packages/ros2_kinect_led
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/cmake/ros2_kinect_ledConfig.cmake
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/cmake/ros2_kinect_ledConfig-version.cmake
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/package.xml

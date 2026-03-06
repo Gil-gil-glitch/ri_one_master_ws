@@ -1,0 +1,44 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/linear_algebra/eigen/unsupported/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/linear_algebra/eigen/unsupported",
+			"paths" : 
+			[
+				"include/ecl/linear_algebra/eigen/unsupported/nonlinear_optimization.hpp",
+				"include/ecl/linear_algebra/eigen/unsupported/numerical_diff.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/linear_algebra/eigen/unsupported",
+		"source" : "include/ecl/linear_algebra/eigen/unsupported"
+	}
+}

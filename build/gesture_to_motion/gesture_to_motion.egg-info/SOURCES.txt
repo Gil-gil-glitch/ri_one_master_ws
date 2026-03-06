@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+gesture_to_motion/__init__.py
+gesture_to_motion/gesture_to_motion.py
+gesture_to_motion.egg-info/PKG-INFO
+gesture_to_motion.egg-info/SOURCES.txt
+gesture_to_motion.egg-info/dependency_links.txt
+gesture_to_motion.egg-info/entry_points.txt
+gesture_to_motion.egg-info/requires.txt
+gesture_to_motion.egg-info/top_level.txt
+gesture_to_motion.egg-info/zip-safe
+resource/gesture_to_motion

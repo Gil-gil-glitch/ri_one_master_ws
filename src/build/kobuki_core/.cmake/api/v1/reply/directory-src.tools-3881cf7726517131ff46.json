@@ -1,0 +1,76 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"kobuki_core_add_tool"
+		],
+		"files" : 
+		[
+			"src/tools/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 3
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/tools/kobuki-version-info"
+			],
+			"targetId" : "kobuki_core_tool_version_info::@de05559f4338c8534979",
+			"targetIndex" : 10,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/tools/kobuki-simple-keyop"
+			],
+			"targetId" : "kobuki_core_tool_simple_keyop::@de05559f4338c8534979",
+			"targetIndex" : 9,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/tools",
+		"source" : "src/tools"
+	}
+}

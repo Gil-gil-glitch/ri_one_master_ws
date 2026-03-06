@@ -1,0 +1,10 @@
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/CMakeFiles/uninstall.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/CMakeFiles/ros2_kinect_rgb_uninstall.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/CMakeFiles/rgb_node.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/CMakeFiles/test.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/CMakeFiles/edit_cache.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/CMakeFiles/rebuild_cache.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/CMakeFiles/list_install_components.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/CMakeFiles/install.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/CMakeFiles/install/local.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/CMakeFiles/install/strip.dir

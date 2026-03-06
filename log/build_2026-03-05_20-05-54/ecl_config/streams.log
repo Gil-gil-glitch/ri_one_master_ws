@@ -1,0 +1,42 @@
+[0.110s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_config -- -j4 -l4
+[0.487s] [ 12%] Built target gtest
+[0.508s] [ 25%] Built target gtest_main
+[0.528s] [ 37%] Built target ecl_detect_posix
+[0.557s] [ 50%] Built target ecl_detect_endian
+[0.834s] [ 62%] Built target ecl_test_char_sign
+[0.854s] [ 75%] Built target ecl_test_endianness
+[0.871s] [ 87%] Built target ecl_test_portable_types
+[0.908s] [100%] Built target ecl_test_macros
+[1.068s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_config -- -j4 -l4
+[1.069s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_config
+[1.171s] -- Install configuration: ""
+[1.182s] -- Execute custom install script
+[1.183s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/include/ecl/config/ecl.hpp
+[1.184s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/include/ecl/config/char_sign.hpp
+[1.184s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/include/ecl/config/ecl_unknown.hpp
+[1.184s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/include/ecl/config/endianness.hpp
+[1.186s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/include/ecl/config/macros.hpp
+[1.186s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/include/ecl/config/portable_types.hpp
+[1.188s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/include/ecl/config/windows.hpp
+[1.188s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/include/ecl/config.hpp
+[1.188s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/bin/ecl_detect_endian
+[1.194s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/bin/ecl_detect_posix
+[1.201s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ament_index/resource_index/package_run_dependencies/ecl_config
+[1.202s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ament_index/resource_index/parent_prefix_path/ecl_config
+[1.202s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/environment/ament_prefix_path.sh
+[1.202s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/environment/ament_prefix_path.dsv
+[1.202s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/environment/path.sh
+[1.202s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/environment/path.dsv
+[1.202s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/local_setup.bash
+[1.214s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/local_setup.sh
+[1.216s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/local_setup.zsh
+[1.216s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/local_setup.dsv
+[1.217s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/package.dsv
+[1.322s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ament_index/resource_index/packages/ecl_config
+[1.337s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake/ament_cmake_export_targets-extras.cmake
+[1.338s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.338s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake/ecl_configConfig.cmake
+[1.338s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake/ecl_configConfig-version.cmake
+[1.338s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/package.xml
+[1.338s] -- Up-to-date: /home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake/ecl_configExport.cmake
+[1.421s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_config

@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/audio_common_msgs/rosidl_generator_c/audio_common_msgs/msg/detail/audio_info__functions.h

@@ -1,0 +1,16 @@
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/lib/kinect2_calibration/kinect2_calibration_node
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/ament_index/resource_index/package_run_dependencies/kinect2_calibration
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/ament_index/resource_index/parent_prefix_path/kinect2_calibration
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/environment/ament_prefix_path.sh
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/environment/ament_prefix_path.dsv
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/environment/path.sh
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/environment/path.dsv
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/local_setup.bash
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/local_setup.sh
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/local_setup.zsh
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/local_setup.dsv
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/package.dsv
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/ament_index/resource_index/packages/kinect2_calibration
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/cmake/kinect2_calibrationConfig.cmake
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/cmake/kinect2_calibrationConfig-version.cmake
+/home/ri-one/ri_one_master_ws/install/kinect2_calibration/share/kinect2_calibration/package.xml

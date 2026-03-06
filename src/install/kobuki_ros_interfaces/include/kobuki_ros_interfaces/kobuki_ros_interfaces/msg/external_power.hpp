@@ -1,0 +1,12 @@
+// generated from rosidl_generator_cpp/resource/idl.hpp.em
+// generated code does not contain a copyright notice
+
+#ifndef KOBUKI_ROS_INTERFACES__MSG__EXTERNAL_POWER_HPP_
+#define KOBUKI_ROS_INTERFACES__MSG__EXTERNAL_POWER_HPP_
+
+#include "kobuki_ros_interfaces/msg/detail/external_power__struct.hpp"
+#include "kobuki_ros_interfaces/msg/detail/external_power__builder.hpp"
+#include "kobuki_ros_interfaces/msg/detail/external_power__traits.hpp"
+#include "kobuki_ros_interfaces/msg/detail/external_power__type_support.hpp"
+
+#endif  // KOBUKI_ROS_INTERFACES__MSG__EXTERNAL_POWER_HPP_

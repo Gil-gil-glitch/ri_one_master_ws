@@ -1,0 +1,47 @@
+[0.042s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_eigen -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_eigen
+[0.263s] -- The C compiler identification is GNU 11.4.0
+[0.425s] -- The CXX compiler identification is GNU 11.4.0
+[0.444s] -- Detecting C compiler ABI info
+[0.654s] -- Detecting C compiler ABI info - done
+[0.681s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.681s] -- Detecting C compile features
+[0.681s] -- Detecting C compile features - done
+[0.686s] -- Detecting CXX compiler ABI info
+[0.926s] -- Detecting CXX compiler ABI info - done
+[0.953s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.953s] -- Detecting CXX compile features
+[0.954s] -- Detecting CXX compile features - done
+[0.976s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.431s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.585s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.066s] -- Configuring done
+[2.077s] -- Generating done
+[2.081s] -- Build files have been written to: /home/ri-one/ri_one_master_ws/build/ecl_eigen
+[2.091s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_eigen -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_eigen
+[2.097s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_eigen -- -j4 -l4
+[2.205s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_eigen -- -j4 -l4
+[2.230s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_eigen': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_eigen
+[2.258s] -- Install configuration: ""
+[2.258s] -- Execute custom install script
+[2.258s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/include/ecl/eigen.hpp
+[2.290s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/licenses/eigen/COPYING.LESSER
+[2.323s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ament_index/resource_index/package_run_dependencies/ecl_eigen
+[2.350s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ament_index/resource_index/parent_prefix_path/ecl_eigen
+[2.374s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/environment/ament_prefix_path.sh
+[2.402s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/environment/ament_prefix_path.dsv
+[2.429s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/environment/path.sh
+[2.455s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/environment/path.dsv
+[2.481s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/local_setup.bash
+[2.506s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/local_setup.sh
+[2.539s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/local_setup.zsh
+[2.561s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/local_setup.dsv
+[2.587s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/package.dsv
+[2.611s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ament_index/resource_index/packages/ecl_eigen
+[2.642s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/cmake/ament_cmake_export_targets-extras.cmake
+[2.667s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.692s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.720s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/cmake/ecl_eigenConfig.cmake
+[2.745s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/cmake/ecl_eigenConfig-version.cmake
+[2.774s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/package.xml
+[2.804s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_eigen/share/ecl_eigen/cmake/ecl_eigenExport.cmake
+[2.806s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_eigen' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_eigen

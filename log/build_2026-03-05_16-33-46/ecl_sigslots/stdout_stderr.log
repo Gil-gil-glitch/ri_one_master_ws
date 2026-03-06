@@ -1,0 +1,86 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+-- Found ecl_config: 1.2.0 (/home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake)
+-- Found ecl_threads: 1.2.1 (/home/ri-one/ri_one_master_ws/install/ecl_threads/share/ecl_threads/cmake)
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (Threads)
+  does not match the name of the calling package (ecl_threads).  This can
+  lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindThreads.cmake:238 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  /opt/ros/humble/share/ecl_build/cmake/ecl_platform_detection.cmake:225 (include)
+  /home/ri-one/ri_one_master_ws/install/ecl_threads/share/ecl_threads/cmake/ecl_threads-extras.cmake:4 (ecl_detect_threads)
+  /home/ri-one/ri_one_master_ws/install/ecl_threads/share/ecl_threads/cmake/ecl_threadsConfig.cmake:41 (include)
+  CMakeLists.txt:19 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found Threads: TRUE  
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ri-one/ri_one_master_ws/build/ecl_sigslots
+[ 10%] [32mBuilding CXX object src/examples/CMakeFiles/ecl_demo_sigslots.dir/sigslots.cpp.o[0m
+[ 20%] [32m[1mLinking CXX executable demo_sigslots[0m
+[ 20%] Built target ecl_demo_sigslots
+[ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 40%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 40%] Built target gtest
+[ 50%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 60%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 60%] Built target gtest_main
+[ 70%] [32mBuilding CXX object src/examples/CMakeFiles/ecl_demo_sigslots_manager.dir/sigslots_manager.cpp.o[0m
+[ 80%] [32m[1mLinking CXX executable demo_sigslots_manager[0m
+[ 80%] Built target ecl_demo_sigslots_manager
+[ 90%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_sigslots.dir/sigslots.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ecl_test_sigslots[0m
+[100%] Built target ecl_test_sigslots
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/include/ecl/sigslots/macros.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/include/ecl/sigslots/manager.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/include/ecl/sigslots/signal.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/include/ecl/sigslots/sigslot.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/include/ecl/sigslots/slot.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/include/ecl/sigslots/topic.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/include/ecl/sigslots.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/lib/ecl_sigslots/demo_sigslots
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/lib/ecl_sigslots/demo_sigslots_manager
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ament_index/resource_index/package_run_dependencies/ecl_sigslots
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ament_index/resource_index/parent_prefix_path/ecl_sigslots
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/environment/ament_prefix_path.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/environment/path.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/environment/path.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/local_setup.bash
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/local_setup.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/local_setup.zsh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/local_setup.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/package.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ament_index/resource_index/packages/ecl_sigslots
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/cmake/ecl_sigslotsConfig.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/cmake/ecl_sigslotsConfig-version.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/package.xml
+-- Installing: /home/ri-one/ri_one_master_ws/install/ecl_sigslots/share/ecl_sigslots/cmake/ecl_sigslotsExport.cmake

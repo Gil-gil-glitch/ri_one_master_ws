@@ -1,0 +1,58 @@
+[0.037s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_sigslots_lite': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_lite/ecl_sigslots_lite -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/ecl_sigslots_lite
+[0.165s] -- The C compiler identification is GNU 11.4.0
+[0.287s] -- The CXX compiler identification is GNU 11.4.0
+[0.303s] -- Detecting C compiler ABI info
+[0.446s] -- Detecting C compiler ABI info - done
+[0.468s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.468s] -- Detecting C compile features
+[0.469s] -- Detecting C compile features - done
+[0.476s] -- Detecting CXX compiler ABI info
+[0.653s] -- Detecting CXX compiler ABI info - done
+[0.673s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.674s] -- Detecting CXX compile features
+[0.676s] -- Detecting CXX compile features - done
+[0.683s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.048s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.255s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[1.268s] -- Found ecl_config: 1.2.0 (/home/ri-one/ros2_ws/src/install/ecl_config/share/ecl_config/cmake)
+[1.273s] -- Found ecl_errors: 1.2.0 (/home/ri-one/ros2_ws/src/install/ecl_errors/share/ecl_errors/cmake)
+[1.449s] -- Configuring done
+[1.467s] -- Generating done
+[1.474s] -- Build files have been written to: /home/ri-one/ros2_ws/src/build/ecl_sigslots_lite
+[1.487s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_sigslots_lite' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_lite/ecl_sigslots_lite -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/ecl_sigslots_lite
+[1.495s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_sigslots_lite': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_sigslots_lite -- -j4 -l4
+[1.613s] [ 50%] [32mBuilding CXX object src/examples/CMakeFiles/demo_sigslots_lite.dir/sigslots.cpp.o[0m
+[2.260s] [100%] [32m[1mLinking CXX executable demo_sigslots_lite[0m
+[2.449s] [100%] Built target demo_sigslots_lite
+[2.470s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_sigslots_lite' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_sigslots_lite -- -j4 -l4
+[2.472s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_sigslots_lite': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_sigslots_lite
+[2.489s] -- Install configuration: ""
+[2.489s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ament_index/resource_index/package_run_dependencies/ecl_sigslots_lite
+[2.490s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ament_index/resource_index/parent_prefix_path/ecl_sigslots_lite
+[2.492s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/environment/ament_prefix_path.sh
+[2.492s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/environment/ament_prefix_path.dsv
+[2.492s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/environment/path.sh
+[2.493s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/environment/path.dsv
+[2.494s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/local_setup.bash
+[2.494s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/local_setup.sh
+[2.495s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/local_setup.zsh
+[2.496s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/local_setup.dsv
+[2.497s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/package.dsv
+[2.498s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ament_index/resource_index/packages/ecl_sigslots_lite
+[2.498s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ecl_sigslots_liteExport.cmake
+[2.499s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ament_cmake_export_targets-extras.cmake
+[2.500s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.501s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.501s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ecl_sigslots_liteConfig.cmake
+[2.502s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ecl_sigslots_liteConfig-version.cmake
+[2.503s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/share/ecl_sigslots_lite/package.xml
+[2.505s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/include/ecl/sigslots_lite.hpp
+[2.505s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/include/ecl/sigslots_lite/connect.hpp
+[2.508s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/include/ecl/sigslots_lite/errors.hpp
+[2.508s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/include/ecl/sigslots_lite/managers.hpp
+[2.508s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/include/ecl/sigslots_lite/signal.hpp
+[2.508s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/include/ecl/sigslots_lite/slot.hpp
+[2.508s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/include/ecl/sigslots_lite/utilities.hpp
+[2.509s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/lib/ecl_sigslots_lite/demo_sigslots_lite
+[2.515s] -- Set runtime path of "/home/ri-one/ros2_ws/src/install/ecl_sigslots_lite/lib/ecl_sigslots_lite/demo_sigslots_lite" to ""
+[2.515s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_sigslots_lite' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_sigslots_lite

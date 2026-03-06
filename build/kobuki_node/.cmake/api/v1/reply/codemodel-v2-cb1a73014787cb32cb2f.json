@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4e3eb7134f25443d51f9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "kobuki_node",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_node_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_node_uninstall-615719bd5d28e374f505.json",
+					"name" : "kobuki_node_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_ros::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_ros-cfdbbc948681b25d325a.json",
+					"name" : "kobuki_ros",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_ros_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_ros_node-bf3a2bb703841c9a18e7.json",
+					"name" : "kobuki_ros_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-148d67a13835988318d8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ri-one/ri_one_master_ws/build/kobuki_node",
+		"source" : "/home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/kobuki_ros/kobuki_node"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

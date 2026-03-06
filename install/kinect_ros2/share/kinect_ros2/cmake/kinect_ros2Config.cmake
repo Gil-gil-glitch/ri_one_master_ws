@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/kinect_ros2/ament_cmake_core/kinect_ros2Config.cmake

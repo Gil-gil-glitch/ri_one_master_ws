@@ -1,0 +1,4 @@
+Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_command_line': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_command_line -- -j4 -l4
+Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_command_line' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_command_line -- -j4 -l4
+Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_command_line': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_command_line
+Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_command_line' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_command_line

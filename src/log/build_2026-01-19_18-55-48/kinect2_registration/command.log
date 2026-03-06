@@ -1,0 +1,6 @@
+Invoking command in '/home/ri-one/ros2_ws/src/build/kinect2_registration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ri-one/ros2_ws/src/kinect2_ros2/kinect2_registration -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/kinect2_registration
+Invoked command in '/home/ri-one/ros2_ws/src/build/kinect2_registration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ri-one/ros2_ws/src/kinect2_ros2/kinect2_registration -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/kinect2_registration
+Invoking command in '/home/ri-one/ros2_ws/src/build/kinect2_registration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/kinect2_registration -- -j4 -l4
+Invoked command in '/home/ri-one/ros2_ws/src/build/kinect2_registration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/kinect2_registration -- -j4 -l4
+Invoking command in '/home/ri-one/ros2_ws/src/build/kinect2_registration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/kinect2_registration
+Invoked command in '/home/ri-one/ros2_ws/src/build/kinect2_registration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/kinect2_registration

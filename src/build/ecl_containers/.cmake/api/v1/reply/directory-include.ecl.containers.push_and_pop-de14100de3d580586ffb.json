@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/containers/push_and_pop/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/containers/push_and_pop",
+			"paths" : 
+			[
+				"include/ecl/containers/push_and_pop/formatters.hpp",
+				"include/ecl/containers/push_and_pop/push_and_pop_dynamic.hpp",
+				"include/ecl/containers/push_and_pop/push_and_pop_fixed.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/containers/push_and_pop",
+		"source" : "include/ecl/containers/push_and_pop"
+	}
+}

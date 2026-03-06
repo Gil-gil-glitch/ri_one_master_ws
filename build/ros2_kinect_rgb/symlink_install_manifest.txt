@@ -1,0 +1,16 @@
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/lib/ros2_kinect_rgb/rgb_node
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ament_index/resource_index/package_run_dependencies/ros2_kinect_rgb
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ament_index/resource_index/parent_prefix_path/ros2_kinect_rgb
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/environment/ament_prefix_path.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/environment/ament_prefix_path.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/environment/path.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/environment/path.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/local_setup.bash
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/local_setup.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/local_setup.zsh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/local_setup.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/package.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ament_index/resource_index/packages/ros2_kinect_rgb
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/cmake/ros2_kinect_rgbConfig.cmake
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/cmake/ros2_kinect_rgbConfig-version.cmake
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb/share/ros2_kinect_rgb/package.xml

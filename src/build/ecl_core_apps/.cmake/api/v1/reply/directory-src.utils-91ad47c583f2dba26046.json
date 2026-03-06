@@ -1,0 +1,197 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ecl_add_utility",
+			"ecl_add_global_utility"
+		],
+		"files" : 
+		[
+			"src/utils/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 11
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 13
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/ecl_core_apps",
+			"paths" : 
+			[
+				"src/utils/ecl_hex"
+			],
+			"targetId" : "ecl_hex::@f1b38b22aeb65474a6c5",
+			"targetIndex" : 11,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/ecl_core_apps",
+			"paths" : 
+			[
+				"src/utils/ecl_serial"
+			],
+			"targetId" : "ecl_serial::@f1b38b22aeb65474a6c5",
+			"targetIndex" : 14,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/ecl_core_apps",
+			"paths" : 
+			[
+				"src/utils/ecl_socket_client"
+			],
+			"targetId" : "ecl_socket_client::@f1b38b22aeb65474a6c5",
+			"targetIndex" : 15,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib/ecl_core_apps",
+			"paths" : 
+			[
+				"src/utils/ecl_socket_server"
+			],
+			"targetId" : "ecl_socket_server::@f1b38b22aeb65474a6c5",
+			"targetIndex" : 16,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/utils/bin/ecl_process_statistics"
+			],
+			"targetId" : "ecl_process_statistics::@f1b38b22aeb65474a6c5",
+			"targetIndex" : 12,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/utils/bin/ecl_quaternion2yaw"
+			],
+			"targetId" : "ecl_quaternion2yaw::@f1b38b22aeb65474a6c5",
+			"targetIndex" : 13,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/utils/bin/ecl_yaw2quaternion"
+			],
+			"targetId" : "ecl_yaw2quaternion::@f1b38b22aeb65474a6c5",
+			"targetIndex" : 17,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/utils",
+		"source" : "src/utils"
+	}
+}

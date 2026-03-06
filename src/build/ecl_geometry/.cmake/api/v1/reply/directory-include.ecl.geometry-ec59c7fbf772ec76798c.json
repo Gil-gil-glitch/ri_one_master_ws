@@ -1,0 +1,61 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/geometry/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/geometry",
+			"paths" : 
+			[
+				"include/ecl/geometry/angle.hpp",
+				"include/ecl/geometry/cartesian_point.hpp",
+				"include/ecl/geometry/cubic_spline.hpp",
+				"include/ecl/geometry/function_math.hpp",
+				"include/ecl/geometry/homogeneous_point.hpp",
+				"include/ecl/geometry/legacy_pose2d.hpp",
+				"include/ecl/geometry/legacy_pose3d.hpp",
+				"include/ecl/geometry/linear_segment.hpp",
+				"include/ecl/geometry/macros.hpp",
+				"include/ecl/geometry/odometry.hpp",
+				"include/ecl/geometry/odometry_helper.hpp",
+				"include/ecl/geometry/odometry_typedefs.hpp",
+				"include/ecl/geometry/pascals_triangle.hpp",
+				"include/ecl/geometry/polynomial.hpp",
+				"include/ecl/geometry/pose2d.hpp",
+				"include/ecl/geometry/smooth_linear_spline.hpp",
+				"include/ecl/geometry/spline_function.hpp",
+				"include/ecl/geometry/tension_function.hpp",
+				"include/ecl/geometry/tension_spline.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/geometry",
+		"source" : "include/ecl/geometry"
+	}
+}

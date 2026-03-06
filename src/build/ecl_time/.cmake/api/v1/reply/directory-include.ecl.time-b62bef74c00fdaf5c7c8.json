@@ -1,0 +1,60 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/time/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/time",
+			"paths" : 
+			[
+				"include/ecl/time/cpuwatch.hpp",
+				"include/ecl/time/cpuwatch_rt.hpp",
+				"include/ecl/time/duration.hpp",
+				"include/ecl/time/frequency.hpp",
+				"include/ecl/time/macros.hpp",
+				"include/ecl/time/random_number_generator.hpp",
+				"include/ecl/time/sleep.hpp",
+				"include/ecl/time/sleep_pos.hpp",
+				"include/ecl/time/sleep_win.hpp",
+				"include/ecl/time/snooze.hpp",
+				"include/ecl/time/snooze_pos.hpp",
+				"include/ecl/time/snooze_win.hpp",
+				"include/ecl/time/stopwatch.hpp",
+				"include/ecl/time/time_data.hpp",
+				"include/ecl/time/timestamp.hpp",
+				"include/ecl/time/timestamp_base.hpp",
+				"include/ecl/time/timestamp_pos.hpp",
+				"include/ecl/time/timestamp_win.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/time",
+		"source" : "include/ecl/time"
+	}
+}

@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/audio_common_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

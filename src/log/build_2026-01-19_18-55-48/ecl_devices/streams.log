@@ -1,0 +1,129 @@
+[0.064s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_devices': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_threads/lib:/home/ri-one/ros2_ws/src/install/ecl_formatters/lib:/home/ri-one/ros2_ws/src/install/ecl_time/lib:/home/ri-one/ros2_ws/src/install/ecl_time_lite/lib:/home/ri-one/ros2_ws/src/install/ecl_exceptions/lib:/home/ri-one/ros2_ws/src/install/ecl_type_traits/lib:/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_type_traits/bin:/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_core/ecl_devices -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/ecl_devices
+[0.195s] -- The C compiler identification is GNU 11.4.0
+[0.325s] -- The CXX compiler identification is GNU 11.4.0
+[0.342s] -- Detecting C compiler ABI info
+[0.496s] -- Detecting C compiler ABI info - done
+[0.515s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.517s] -- Detecting C compile features
+[0.517s] -- Detecting C compile features - done
+[0.524s] -- Detecting CXX compiler ABI info
+[0.704s] -- Detecting CXX compiler ABI info - done
+[0.724s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.725s] -- Detecting CXX compile features
+[0.727s] -- Detecting CXX compile features - done
+[0.734s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.105s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.362s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[1.376s] -- Found ecl_config: 1.2.0 (/home/ri-one/ros2_ws/src/install/ecl_config/share/ecl_config/cmake)
+[1.379s] -- Found ecl_containers: 1.2.1 (/home/ri-one/ros2_ws/src/install/ecl_containers/share/ecl_containers/cmake)
+[1.443s] -- Found ecl_threads: 1.2.1 (/home/ri-one/ros2_ws/src/install/ecl_threads/share/ecl_threads/cmake)
+[1.446s] -- Looking for pthread.h
+[1.604s] -- Looking for pthread.h - found
+[1.604s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.763s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.765s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[1.765s]   The package name passed to `find_package_handle_standard_args` (Threads)
+[1.765s]   does not match the name of the calling package (ecl_threads).  This can
+[1.766s]   lead to problems in calling code that expects `find_package` result
+[1.766s]   variables (e.g., `_FOUND`) to follow a certain pattern.
+[1.766s] Call Stack (most recent call first):
+[1.767s]   /usr/share/cmake-3.22/Modules/FindThreads.cmake:238 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+[1.767s]   /opt/ros/humble/share/ecl_build/cmake/ecl_platform_detection.cmake:225 (include)
+[1.767s]   /home/ri-one/ros2_ws/src/install/ecl_threads/share/ecl_threads/cmake/ecl_threads-extras.cmake:4 (ecl_detect_threads)
+[1.767s]   /home/ri-one/ros2_ws/src/install/ecl_threads/share/ecl_threads/cmake/ecl_threadsConfig.cmake:41 (include)
+[1.767s]   CMakeLists.txt:22 (find_package)
+[1.767s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.768s] [0m
+[1.770s] -- Found Threads: TRUE  
+[1.965s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.043s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.071s] -- Configuring done
+[2.115s] -- Generating done
+[2.128s] -- Build files have been written to: /home/ri-one/ros2_ws/src/build/ecl_devices
+[2.144s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_devices' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_threads/lib:/home/ri-one/ros2_ws/src/install/ecl_formatters/lib:/home/ri-one/ros2_ws/src/install/ecl_time/lib:/home/ri-one/ros2_ws/src/install/ecl_time_lite/lib:/home/ri-one/ros2_ws/src/install/ecl_exceptions/lib:/home/ri-one/ros2_ws/src/install/ecl_type_traits/lib:/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_type_traits/bin:/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_core/ecl_devices -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/ecl_devices
+[2.145s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_devices': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_threads/lib:/home/ri-one/ros2_ws/src/install/ecl_formatters/lib:/home/ri-one/ros2_ws/src/install/ecl_time/lib:/home/ri-one/ros2_ws/src/install/ecl_time_lite/lib:/home/ri-one/ros2_ws/src/install/ecl_exceptions/lib:/home/ri-one/ros2_ws/src/install/ecl_type_traits/lib:/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_type_traits/bin:/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_devices -- -j4 -l4
+[2.262s] [  4%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/detail/character_buffer.cpp.o[0m
+[2.349s] [  8%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/detail/error_handler.cpp.o[0m
+[2.764s] [ 12%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/detail/exception_handler_pos.cpp.o[0m
+[3.401s] [ 16%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/detail/socket_exception_handler_pos.cpp.o[0m
+[4.069s] [ 20%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/console.cpp.o[0m
+[4.443s] [ 25%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/ofile_pos.cpp.o[0m
+[5.058s] [ 29%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/ofile_w32.cpp.o[0m
+[5.100s] [ 33%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/serial_pos.cpp.o[0m
+[5.613s] [ 37%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/serial_w32.cpp.o[0m
+[5.692s] [ 41%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/shared_file.cpp.o[0m
+[6.614s] [ 45%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/socket_client_pos.cpp.o[0m
+[7.244s] [ 50%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/socket_server_pos.cpp.o[0m
+[7.743s] [ 54%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_devices.dir/string.cpp.o[0m
+[8.275s] [ 58%] [32m[1mLinking CXX shared library libecl_devices.so[0m
+[8.538s] [ 58%] Built target ecl_devices
+[8.584s] [ 62%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[15.249s] [ 66%] [32m[1mLinking CXX static library libgtest.a[0m
+[15.384s] [ 66%] Built target gtest
+[15.433s] [ 70%] [32mBuilding CXX object src/examples/CMakeFiles/ecl_demo_serial_timeouts.dir/serial_timeouts.cpp.o[0m
+[16.110s] [ 75%] [32m[1mLinking CXX executable demo_serial_timeouts[0m
+[16.314s] [ 75%] Built target ecl_demo_serial_timeouts
+[16.358s] [ 79%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[17.705s] [ 83%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[17.779s] [ 83%] Built target gtest_main
+[17.823s] [ 87%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_shared_files.dir/shared_files.cpp.o[0m
+[19.569s] [ 91%] [32m[1mLinking CXX executable ecl_test_shared_files[0m
+[19.908s] [ 91%] Built target ecl_test_shared_files
+[19.952s] [ 95%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_files.dir/files.cpp.o[0m
+[21.855s] [100%] [32m[1mLinking CXX executable ecl_test_files[0m
+[22.207s] [100%] Built target ecl_test_files
+[22.234s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_devices' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_threads/lib:/home/ri-one/ros2_ws/src/install/ecl_formatters/lib:/home/ri-one/ros2_ws/src/install/ecl_time/lib:/home/ri-one/ros2_ws/src/install/ecl_time_lite/lib:/home/ri-one/ros2_ws/src/install/ecl_exceptions/lib:/home/ri-one/ros2_ws/src/install/ecl_type_traits/lib:/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_type_traits/bin:/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_devices -- -j4 -l4
+[22.239s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_devices': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_threads/lib:/home/ri-one/ros2_ws/src/install/ecl_formatters/lib:/home/ri-one/ros2_ws/src/install/ecl_time/lib:/home/ri-one/ros2_ws/src/install/ecl_time_lite/lib:/home/ri-one/ros2_ws/src/install/ecl_exceptions/lib:/home/ri-one/ros2_ws/src/install/ecl_type_traits/lib:/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_type_traits/bin:/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_devices
+[22.256s] -- Install configuration: ""
+[22.257s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/environment/library_path.sh
+[22.257s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/environment/library_path.dsv
+[22.259s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ament_index/resource_index/package_run_dependencies/ecl_devices
+[22.259s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ament_index/resource_index/parent_prefix_path/ecl_devices
+[22.259s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/environment/ament_prefix_path.sh
+[22.260s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/environment/ament_prefix_path.dsv
+[22.261s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/environment/path.sh
+[22.261s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/environment/path.dsv
+[22.261s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/local_setup.bash
+[22.262s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/local_setup.sh
+[22.262s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/local_setup.zsh
+[22.263s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/local_setup.dsv
+[22.265s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/package.dsv
+[22.265s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ament_index/resource_index/packages/ecl_devices
+[22.265s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake/ecl_devicesExport.cmake
+[22.265s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake/ecl_devicesExport-noconfig.cmake
+[22.265s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake/ament_cmake_export_targets-extras.cmake
+[22.265s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake/ament_cmake_export_include_directories-extras.cmake
+[22.265s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake/ament_cmake_export_libraries-extras.cmake
+[22.266s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.266s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake/ecl_devicesConfig.cmake
+[22.266s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake/ecl_devicesConfig-version.cmake
+[22.266s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/package.xml
+[22.266s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices.hpp
+[22.269s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/console.hpp
+[22.270s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/macros.hpp
+[22.270s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/modes.hpp
+[22.270s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/ofile.hpp
+[22.270s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/ofile_pos.hpp
+[22.270s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/ofile_w32.hpp
+[22.271s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/serial.hpp
+[22.271s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/serial_parameters.hpp
+[22.272s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/serial_pos.hpp
+[22.272s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/serial_w32.hpp
+[22.273s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/shared_file.hpp
+[22.274s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/socket.hpp
+[22.275s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/socket_client_pos.hpp
+[22.276s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/socket_connection_status.hpp
+[22.276s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/socket_server_pos.hpp
+[22.277s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/string.hpp
+[22.278s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/traits.hpp
+[22.279s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/detail/character_buffer.hpp
+[22.279s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/detail/error_handler.hpp
+[22.280s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/detail/exception_handler_pos.hpp
+[22.281s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/detail/socket_error_handler_pos.hpp
+[22.282s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/include/ecl/devices/detail/socket_exception_handler_pos.hpp
+[22.283s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/lib/libecl_devices.so.1.2.1
+[22.285s] -- Set runtime path of "/home/ri-one/ros2_ws/src/install/ecl_devices/lib/libecl_devices.so.1.2.1" to ""
+[22.286s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/lib/libecl_devices.so
+[22.287s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_devices/lib/ecl_devices/demo_serial_timeouts
+[22.289s] -- Set runtime path of "/home/ri-one/ros2_ws/src/install/ecl_devices/lib/ecl_devices/demo_serial_timeouts" to ""
+[22.296s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_devices' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_containers:/home/ri-one/ros2_ws/src/install/ecl_threads:/home/ri-one/ros2_ws/src/install/ecl_formatters:/home/ri-one/ros2_ws/src/install/ecl_utilities:/home/ri-one/ros2_ws/src/install/ecl_time:/home/ri-one/ros2_ws/src/install/ecl_converters:/home/ri-one/ros2_ws/src/install/ecl_time_lite:/home/ri-one/ros2_ws/src/install/ecl_exceptions:/home/ri-one/ros2_ws/src/install/ecl_concepts:/home/ri-one/ros2_ws/src/install/ecl_type_traits:/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_mpl:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_threads/lib:/home/ri-one/ros2_ws/src/install/ecl_formatters/lib:/home/ri-one/ros2_ws/src/install/ecl_time/lib:/home/ri-one/ros2_ws/src/install/ecl_time_lite/lib:/home/ri-one/ros2_ws/src/install/ecl_exceptions/lib:/home/ri-one/ros2_ws/src/install/ecl_type_traits/lib:/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_type_traits/bin:/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_devices

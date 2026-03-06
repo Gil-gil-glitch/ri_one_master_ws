@@ -1,0 +1,6 @@
+[0.052s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_mpl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_mpl -- -j4 -l4
+[0.264s] [ 33%] Built target gtest_main
+[0.316s] [ 66%] Built target gtest
+[0.396s] gmake[2]: *** [src/test/CMakeFiles/test_enable_if.dir/build.make:110: src/test/CMakeFiles/test_enable_if.dir/depend] Interrupt
+[0.397s] gmake[1]: *** [CMakeFiles/Makefile2:233: src/test/CMakeFiles/test_enable_if.dir/all] Interrupt
+[0.397s] gmake: *** [Makefile:146: all] Interrupt

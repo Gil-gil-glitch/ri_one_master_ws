@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces/ament_cmake_core/kobuki_ros_interfacesConfig.cmake

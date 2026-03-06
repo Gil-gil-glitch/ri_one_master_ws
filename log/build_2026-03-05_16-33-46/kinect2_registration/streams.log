@@ -1,0 +1,93 @@
+[0.051s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kinect2_registration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/kinect2_ros2/kinect2_registration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/kinect2_registration
+[0.366s] -- The C compiler identification is GNU 11.4.0
+[0.667s] -- The CXX compiler identification is GNU 11.4.0
+[0.711s] -- Detecting C compiler ABI info
+[1.092s] -- Detecting C compiler ABI info - done
+[1.142s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.142s] -- Detecting C compile features
+[1.142s] -- Detecting C compile features - done
+[1.159s] -- Detecting CXX compiler ABI info
+[1.498s] -- Detecting CXX compiler ABI info - done
+[1.527s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.528s] -- Detecting CXX compile features
+[1.529s] -- Detecting CXX compile features - done
+[1.552s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.984s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.139s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.422s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[2.709s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.746s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.787s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.860s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.936s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.183s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.205s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.551s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.668s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.887s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.985s] -- Looking for pthread.h
+[4.349s] -- Looking for pthread.h - found
+[4.350s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.780s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.789s] -- Found Threads: TRUE  
+[5.179s] -- Found OpenCV: /usr (found version "4.5.4") 
+[5.217s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[5.273s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[6.977s] -- Found OpenMP_C: -fopenmp (found version "4.5") 
+[7.675s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[7.675s] -- Found OpenMP: TRUE (found version "4.5")  
+[7.676s] -- CPU based depth registration enabled
+[7.734s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.762s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.762s] -- Configured cppcheck include dirs: /home/ri-one/ri_one_master_ws/src/kinect2_ros2/kinect2_registration/src/;/home/ri-one/ri_one_master_ws/src/kinect2_ros2/kinect2_registration/include/internal;/home/ri-one/ri_one_master_ws/src/kinect2_ros2/kinect2_registration/include/
+[8.762s] -- Configured cppcheck exclude dirs and/or files: 
+[8.780s] -- Added test 'lint_cmake' to check CMake code style
+[8.796s] -- Added test 'uncrustify' to check C / C++ code style
+[8.797s] -- Configured uncrustify additional arguments: 
+[8.813s] -- Added test 'xmllint' to check XML markup files
+[8.849s] -- Configuring done
+[8.958s] -- Generating done
+[8.992s] -- Build files have been written to: /home/ri-one/ri_one_master_ws/build/kinect2_registration
+[9.081s] Invoked command in '/home/ri-one/ri_one_master_ws/build/kinect2_registration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/kinect2_ros2/kinect2_registration -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/kinect2_registration
+[9.082s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kinect2_registration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/kinect2_registration -- -j4 -l4
+[9.490s] [ 33%] [32mBuilding CXX object CMakeFiles/kinect2_registration.dir/src/kinect2_registration.cpp.o[0m
+[9.503s] [ 66%] [32mBuilding CXX object CMakeFiles/kinect2_registration.dir/src/depth_registration_cpu.cpp.o[0m
+[11.018s] [01m[K/home/ri-one/ri_one_master_ws/src/kinect2_ros2/kinect2_registration/src/depth_registration_cpu.cpp:119:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+[11.018s]   119 | #pragma omp parallel for
+[11.018s]       | 
+[11.018s] [01m[K/home/ri-one/ri_one_master_ws/src/kinect2_ros2/kinect2_registration/src/depth_registration_cpu.cpp:136:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma omp parallel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+[11.018s]   136 | #pragma omp parallel for
+[11.018s]       | 
+[24.398s] [01m[K/home/ri-one/ri_one_master_ws/src/kinect2_ros2/kinect2_registration/src/depth_registration_cpu.cpp:[m[K In member function ‘[01m[Kvirtual bool DepthRegistrationCPU::init(int)[m[K’:
+[24.398s] [01m[K/home/ri-one/ri_one_master_ws/src/kinect2_ros2/kinect2_registration/src/depth_registration_cpu.cpp:29:43:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KdeviceId[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[24.398s]    29 | bool DepthRegistrationCPU::init([01;35m[Kconst int deviceId[m[K)
+[24.398s]       |                                 [01;35m[K~~~~~~~~~~^~~~~~~~[m[K
+[31.405s] [100%] [32m[1mLinking CXX static library libkinect2_registration.a[0m
+[31.743s] [100%] Built target kinect2_registration
+[31.805s] Invoked command in '/home/ri-one/ri_one_master_ws/build/kinect2_registration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/kinect2_registration -- -j4 -l4
+[31.813s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kinect2_registration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/kinect2_registration
+[31.857s] -- Install configuration: ""
+[31.861s] -- Execute custom install script
+[31.864s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/include/kinect2_registration/kinect2_console.h
+[31.917s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/include/kinect2_registration/kinect2_registration.h
+[31.972s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/library_path.sh
+[32.025s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/library_path.dsv
+[32.080s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/ament_index/resource_index/package_run_dependencies/kinect2_registration
+[32.122s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/ament_index/resource_index/parent_prefix_path/kinect2_registration
+[32.170s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/ament_prefix_path.sh
+[32.202s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/ament_prefix_path.dsv
+[32.231s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/path.sh
+[32.255s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/path.dsv
+[32.283s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/local_setup.bash
+[32.310s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/local_setup.sh
+[32.335s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/local_setup.zsh
+[32.363s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/local_setup.dsv
+[32.389s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/package.dsv
+[32.414s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/ament_index/resource_index/packages/kinect2_registration
+[32.446s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/cmake/ament_cmake_export_include_directories-extras.cmake
+[32.474s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/cmake/ament_cmake_export_libraries-extras.cmake
+[32.503s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/cmake/kinect2_registrationConfig.cmake
+[32.552s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/cmake/kinect2_registrationConfig-version.cmake
+[32.607s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/package.xml
+[32.653s] -- Installing: /home/ri-one/ri_one_master_ws/install/kinect2_registration/lib/libkinect2_registration.a
+[32.660s] Invoked command in '/home/ri-one/ri_one_master_ws/build/kinect2_registration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/kinect2_registration

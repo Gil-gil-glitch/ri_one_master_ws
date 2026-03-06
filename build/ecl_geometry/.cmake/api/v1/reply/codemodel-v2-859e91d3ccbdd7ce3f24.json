@@ -1,0 +1,345 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-8ff0eacf7eae243eeed0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						17
+					]
+				},
+				{
+					"build" : "include",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-include-7ead17b99bffc88b66bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "include"
+				},
+				{
+					"build" : "include/ecl",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-include.ecl-acb1bd6ed8caa689eca4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "include/ecl"
+				},
+				{
+					"build" : "include/ecl/geometry",
+					"jsonFile" : "directory-include.ecl.geometry-a8acc0797967ff709d9b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "include/ecl/geometry"
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/lib",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.lib-653235016b2986f42af4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/lib",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/test",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-src.test-3607701395add829ebf1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/test",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-a2408fe1a73b92c5e636.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/humble/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						15,
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"name" : "ecl_geometry",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						17
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						15,
+						16
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "ecl_geometry::@dc1a1c76835bc3d8b019",
+					"jsonFile" : "target-ecl_geometry-631326bd12474a672725.json",
+					"name" : "ecl_geometry",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ecl_geometry_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ecl_geometry_uninstall-91990857f457bd44f2b0.json",
+					"name" : "ecl_geometry_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_angles::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_angles-3a71e92b4b594188039a.json",
+					"name" : "ecl_test_angles",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_cartesian_points::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_cartesian_points-36ff218ae2e1700179ce.json",
+					"name" : "ecl_test_cartesian_points",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_cubic_splines::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_cubic_splines-596b684dbb9cac685fd5.json",
+					"name" : "ecl_test_cubic_splines",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_homogeneous_points::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_homogeneous_points-c4cfb26db95c7da7deb2.json",
+					"name" : "ecl_test_homogeneous_points",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_legacy_pose2d::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_legacy_pose2d-e8ea16faad077c0bbf5b.json",
+					"name" : "ecl_test_legacy_pose2d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_legacy_pose3d::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_legacy_pose3d-e54b2361647da2495ef2.json",
+					"name" : "ecl_test_legacy_pose3d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_linear_segment::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_linear_segment-50847337dc728edf7508.json",
+					"name" : "ecl_test_linear_segment",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_odometry_helper::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_odometry_helper-15aca166261c9acad82d.json",
+					"name" : "ecl_test_odometry_helper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_polynomials::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_polynomials-26f244daaf96065c9e56.json",
+					"name" : "ecl_test_polynomials",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_pose2d::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_pose2d-cbe023f8757de9bbf9d0.json",
+					"name" : "ecl_test_pose2d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_smooth_linear_splines::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_smooth_linear_splines-1d9117a0dfc0a23c1560.json",
+					"name" : "ecl_test_smooth_linear_splines",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_tension_function::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_tension_function-bd12ade6ea33897dad38.json",
+					"name" : "ecl_test_tension_function",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_tension_splines::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_tension_splines-b280077a4793a443d679.json",
+					"name" : "ecl_test_tension_splines",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-cc0a6a65d789f03463cd.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-cfbcc2e9ec618db882d3.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-64d2801872c6f8ec0846.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ri-one/ri_one_master_ws/build/ecl_geometry",
+		"source" : "/home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_geometry"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

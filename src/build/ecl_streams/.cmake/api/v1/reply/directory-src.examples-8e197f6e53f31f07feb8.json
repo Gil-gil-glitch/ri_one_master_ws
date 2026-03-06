@@ -1,0 +1,76 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ecl_streams_add_example"
+		],
+		"files" : 
+		[
+			"src/examples/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 3
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/ecl_streams",
+			"paths" : 
+			[
+				"src/examples/demo_console_streams"
+			],
+			"targetId" : "ecl_time_example_console_streams::@9091d420513b4ac1bd05",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/ecl_streams",
+			"paths" : 
+			[
+				"src/examples/demo_log_streams"
+			],
+			"targetId" : "ecl_time_example_log_streams::@9091d420513b4ac1bd05",
+			"targetIndex" : 5,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/examples",
+		"source" : "src/examples"
+	}
+}

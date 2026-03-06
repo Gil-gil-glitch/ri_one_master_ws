@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+gesture_detection/__init__.py
+gesture_detection/open_palm_detector.py
+gesture_detection.egg-info/PKG-INFO
+gesture_detection.egg-info/SOURCES.txt
+gesture_detection.egg-info/dependency_links.txt
+gesture_detection.egg-info/entry_points.txt
+gesture_detection.egg-info/requires.txt
+gesture_detection.egg-info/top_level.txt
+gesture_detection.egg-info/zip-safe
+resource/gesture_detection

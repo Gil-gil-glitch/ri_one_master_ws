@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/audio_common/ament_cmake_core/audio_commonConfig.cmake

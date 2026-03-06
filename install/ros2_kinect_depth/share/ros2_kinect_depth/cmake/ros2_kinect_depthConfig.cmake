@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_depth/ament_cmake_core/ros2_kinect_depthConfig.cmake

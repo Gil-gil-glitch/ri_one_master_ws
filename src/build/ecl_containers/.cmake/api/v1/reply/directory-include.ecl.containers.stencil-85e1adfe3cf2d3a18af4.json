@@ -1,0 +1,46 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/containers/stencil/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/containers/stencil",
+			"paths" : 
+			[
+				"include/ecl/containers/stencil/converters.hpp",
+				"include/ecl/containers/stencil/formatters.hpp",
+				"include/ecl/containers/stencil/specialisations.hpp",
+				"include/ecl/containers/stencil/stencil.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/containers/stencil",
+		"source" : "include/ecl/containers/stencil"
+	}
+}

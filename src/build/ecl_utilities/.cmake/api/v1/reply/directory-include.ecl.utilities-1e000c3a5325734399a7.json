@@ -1,0 +1,49 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/utilities/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/utilities",
+			"paths" : 
+			[
+				"include/ecl/utilities/blueprints.hpp",
+				"include/ecl/utilities/flags.hpp",
+				"include/ecl/utilities/function_objects.hpp",
+				"include/ecl/utilities/parameter.hpp",
+				"include/ecl/utilities/references.hpp",
+				"include/ecl/utilities/singleton.hpp",
+				"include/ecl/utilities/void.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/utilities",
+		"source" : "include/ecl/utilities"
+	}
+}

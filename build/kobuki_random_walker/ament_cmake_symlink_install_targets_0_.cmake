@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ri-one/ri_one_master_ws/build/kobuki_random_walker/kobuki_random_walker_node" "TARGETS" "kobuki_random_walker_node" "DESTINATION" "lib/kobuki_random_walker")

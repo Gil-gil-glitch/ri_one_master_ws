@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4681522fa3f1786773b8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "audio_common_msgs__py",
+					"jsonFile" : "directory-audio_common_msgs__py-84b0e80d3af4401e242c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ri-one/ri_one_master_ws/build/audio_common_msgs/audio_common_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "audio_common_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_audio_common_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_audio_common_msgs_egg-81ba1397a2a1d1430008.json",
+					"name" : "ament_cmake_python_build_audio_common_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_audio_common_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_audio_common_msgs-07700195d66eb664f9f6.json",
+					"name" : "ament_cmake_python_symlink_audio_common_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs-d0dbf8281f34b87bd7d8.json",
+					"name" : "audio_common_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__cpp-60079267c460e17fd956.json",
+					"name" : "audio_common_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "audio_common_msgs__py::@6a191eeb3c27c297554a",
+					"jsonFile" : "target-audio_common_msgs__py-9ce628fbe8964d7f1ab0.json",
+					"name" : "audio_common_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_generator_c-e2fa9e6d28710d259b08.json",
+					"name" : "audio_common_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_generator_py-fb59dbb127321ff946cb.json",
+					"name" : "audio_common_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_c-4262f0d5e6ce9ee93d66.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_c__pyext-fe0f8c3ea6c9165e2ccb.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_cpp-48aa8789b21abf1e216b.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_fastrtps_c-04e57cf13aca4e13ec36.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_fastrtps_c__pyext-313bb7efae86aca57dbe.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_fastrtps_cpp-37d30c8224a417b0f9c8.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_introspection_c-3055c3abea551f073b12.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_introspection_c__pyext-49755d6e2a9c8527faed.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs__rosidl_typesupport_introspection_cpp-8ee55c261ec897d19406.json",
+					"name" : "audio_common_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "audio_common_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-audio_common_msgs_uninstall-fa3c9533194622af98a3.json",
+					"name" : "audio_common_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9ebaba6911bdee8f3084.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ri-one/ri_one_master_ws/build/audio_common_msgs",
+		"source" : "/home/ri-one/ri_one_master_ws/src/audio_common/audio_common_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

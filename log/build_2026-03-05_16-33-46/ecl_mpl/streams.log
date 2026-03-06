@@ -1,0 +1,67 @@
+[0.050s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_mpl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_mpl -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_mpl
+[0.276s] -- The C compiler identification is GNU 11.4.0
+[0.425s] -- The CXX compiler identification is GNU 11.4.0
+[0.452s] -- Detecting C compiler ABI info
+[0.661s] -- Detecting C compiler ABI info - done
+[0.683s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.683s] -- Detecting C compile features
+[0.683s] -- Detecting C compile features - done
+[0.690s] -- Detecting CXX compiler ABI info
+[0.916s] -- Detecting CXX compiler ABI info - done
+[0.952s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.952s] -- Detecting CXX compile features
+[0.953s] -- Detecting CXX compile features - done
+[0.975s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.440s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.596s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.872s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[1.916s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.272s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.277s] -- Looking for pthread.h
+[2.504s] -- Looking for pthread.h - found
+[2.504s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.713s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.715s] -- Found Threads: TRUE  
+[2.899s] -- Configuring done
+[2.934s] -- Generating done
+[2.949s] -- Build files have been written to: /home/ri-one/ri_one_master_ws/build/ecl_mpl
+[2.960s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_mpl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_mpl -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_mpl
+[2.962s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_mpl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_mpl -- -j4 -l4
+[3.140s] [ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[3.156s] [ 33%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[5.018s] [ 50%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[5.231s] [ 50%] Built target gtest_main
+[12.071s] [ 66%] [32m[1mLinking CXX static library libgtest.a[0m
+[12.451s] [ 66%] Built target gtest
+[12.565s] [ 83%] [32mBuilding CXX object src/test/CMakeFiles/test_enable_if.dir/enable_if.cpp.o[0m
+[14.592s] [100%] [32m[1mLinking CXX executable test_enable_if[0m
+[15.241s] [100%] Built target test_enable_if
+[15.312s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_mpl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_mpl -- -j4 -l4
+[15.313s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_mpl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_mpl
+[15.380s] -- Install configuration: ""
+[15.381s] -- Execute custom install script
+[15.384s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/include/ecl/mpl/bool.hpp
+[15.430s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/include/ecl/mpl/converters.hpp
+[15.465s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/include/ecl/mpl/enable_if.hpp
+[15.530s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/include/ecl/mpl/failed_object.hpp
+[15.592s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/include/ecl/mpl/if.hpp
+[15.657s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/include/ecl/mpl.hpp
+[15.703s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ament_index/resource_index/package_run_dependencies/ecl_mpl
+[15.731s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ament_index/resource_index/parent_prefix_path/ecl_mpl
+[15.778s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/environment/ament_prefix_path.sh
+[15.827s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/environment/ament_prefix_path.dsv
+[15.869s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/environment/path.sh
+[15.925s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/environment/path.dsv
+[15.976s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/local_setup.bash
+[16.028s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/local_setup.sh
+[16.084s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/local_setup.zsh
+[16.140s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/local_setup.dsv
+[16.192s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/package.dsv
+[16.240s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ament_index/resource_index/packages/ecl_mpl
+[16.287s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/cmake/ament_cmake_export_targets-extras.cmake
+[16.338s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.389s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/cmake/ecl_mplConfig.cmake
+[16.434s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/cmake/ecl_mplConfig-version.cmake
+[16.483s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/package.xml
+[16.534s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_mpl/share/ecl_mpl/cmake/ecl_mplExport.cmake
+[16.541s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_mpl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_mpl

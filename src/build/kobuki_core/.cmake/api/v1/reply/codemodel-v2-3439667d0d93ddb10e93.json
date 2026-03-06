@@ -1,0 +1,254 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b6600e39524104735436.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						11,
+						12
+					]
+				},
+				{
+					"build" : "include",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include-d1e53bca031664103cbf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "include"
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/driver",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.driver-7d9ca59b5f2efe24934a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/driver",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/demos",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.demos-506dc1c55ce932938e26.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/demos",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"build" : "src/tools",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.tools-3881cf7726517131ff46.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/tools",
+					"targetIndexes" : 
+					[
+						9,
+						10
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "kobuki_core",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "kobuki_core::@49e83f50c4c71b496537",
+					"jsonFile" : "target-kobuki_core-4b0229103f8d88bffc6b.json",
+					"name" : "kobuki_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "kobuki_core_demo_buttons::@46e0403ce4e0bd9aa1c8",
+					"jsonFile" : "target-kobuki_core_demo_buttons-c743c05fc2dc858b884b.json",
+					"name" : "kobuki_core_demo_buttons",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "kobuki_core_demo_chirp::@46e0403ce4e0bd9aa1c8",
+					"jsonFile" : "target-kobuki_core_demo_chirp-5882ab23b61104c75244.json",
+					"name" : "kobuki_core_demo_chirp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "kobuki_core_demo_custom_logging::@46e0403ce4e0bd9aa1c8",
+					"jsonFile" : "target-kobuki_core_demo_custom_logging-409aac29aeae3c00172b.json",
+					"name" : "kobuki_core_demo_custom_logging",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "kobuki_core_demo_data_stream::@46e0403ce4e0bd9aa1c8",
+					"jsonFile" : "target-kobuki_core_demo_data_stream-ade6f6bc98037d9b62ed.json",
+					"name" : "kobuki_core_demo_data_stream",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "kobuki_core_demo_log_levels::@46e0403ce4e0bd9aa1c8",
+					"jsonFile" : "target-kobuki_core_demo_log_levels-b83cca3b6b63bf2f55df.json",
+					"name" : "kobuki_core_demo_log_levels",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "kobuki_core_demo_raw_data_stream::@46e0403ce4e0bd9aa1c8",
+					"jsonFile" : "target-kobuki_core_demo_raw_data_stream-7b2792cc7819c58bf165.json",
+					"name" : "kobuki_core_demo_raw_data_stream",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "kobuki_core_demo_simple_loop::@46e0403ce4e0bd9aa1c8",
+					"jsonFile" : "target-kobuki_core_demo_simple_loop-e6918aefd7c92800ce84.json",
+					"name" : "kobuki_core_demo_simple_loop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "kobuki_core_demo_velocity_commands::@46e0403ce4e0bd9aa1c8",
+					"jsonFile" : "target-kobuki_core_demo_velocity_commands-8e514a1a9ce8efdd891b.json",
+					"name" : "kobuki_core_demo_velocity_commands",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "kobuki_core_tool_simple_keyop::@de05559f4338c8534979",
+					"jsonFile" : "target-kobuki_core_tool_simple_keyop-57f12e344c14ae232034.json",
+					"name" : "kobuki_core_tool_simple_keyop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "kobuki_core_tool_version_info::@de05559f4338c8534979",
+					"jsonFile" : "target-kobuki_core_tool_version_info-d104599610e160ce5e96.json",
+					"name" : "kobuki_core_tool_version_info",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_core_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_core_uninstall-d035845782e6c5b1eead.json",
+					"name" : "kobuki_core_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3211bfa8f3b758f66fbf.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ri-one/ros2_ws/src/build/kobuki_core",
+		"source" : "/home/ri-one/ros2_ws/src/turtlebot2_ros2/kobuki_core"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

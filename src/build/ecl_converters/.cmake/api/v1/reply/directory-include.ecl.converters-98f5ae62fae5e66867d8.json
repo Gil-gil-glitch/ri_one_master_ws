@@ -1,0 +1,49 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/converters/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/converters",
+			"paths" : 
+			[
+				"include/ecl/converters/char.hpp",
+				"include/ecl/converters/char_strings.hpp",
+				"include/ecl/converters/converter.hpp",
+				"include/ecl/converters/from_byte_array.hpp",
+				"include/ecl/converters/integers.hpp",
+				"include/ecl/converters/string.hpp",
+				"include/ecl/converters/to_byte_array.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/converters",
+		"source" : "include/ecl/converters"
+	}
+}

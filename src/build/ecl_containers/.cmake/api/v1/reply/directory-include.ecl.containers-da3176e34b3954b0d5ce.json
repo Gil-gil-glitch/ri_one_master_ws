@@ -1,0 +1,49 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/containers/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/containers",
+			"paths" : 
+			[
+				"include/ecl/containers/array.hpp",
+				"include/ecl/containers/converters.hpp",
+				"include/ecl/containers/definitions.hpp",
+				"include/ecl/containers/fifo.hpp",
+				"include/ecl/containers/initialiser.hpp",
+				"include/ecl/containers/push_and_pop.hpp",
+				"include/ecl/containers/stencil.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/containers",
+		"source" : "include/ecl/containers"
+	}
+}

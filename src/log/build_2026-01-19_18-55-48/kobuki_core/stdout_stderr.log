@@ -1,0 +1,210 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+-- Found ecl_command_line: 1.2.1 (/home/ri-one/ros2_ws/src/install/ecl_command_line/share/ecl_command_line/cmake)
+-- Found ecl_config: 1.2.0 (/home/ri-one/ros2_ws/src/install/ecl_config/share/ecl_config/cmake)
+-- Found ecl_console: 1.2.0 (/home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/cmake)
+-- Found ecl_converters: 1.2.1 (/home/ri-one/ros2_ws/src/install/ecl_converters/share/ecl_converters/cmake)
+-- Found ecl_devices: 1.2.1 (/home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake)
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (Threads)
+  does not match the name of the calling package (ecl_threads).  This can
+  lead to problems in calling code that expects `find_package` result
+  variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FindThreads.cmake:238 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  /opt/ros/humble/share/ecl_build/cmake/ecl_platform_detection.cmake:225 (include)
+  /home/ri-one/ros2_ws/src/install/ecl_threads/share/ecl_threads/cmake/ecl_threads-extras.cmake:4 (ecl_detect_threads)
+  /home/ri-one/ros2_ws/src/install/ecl_threads/share/ecl_threads/cmake/ecl_threadsConfig.cmake:41 (include)
+  /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /home/ri-one/ros2_ws/src/install/ecl_devices/share/ecl_devices/cmake/ecl_devicesConfig.cmake:41 (include)
+  CMakeLists.txt:23 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found Threads: TRUE  
+-- Found ecl_geometry: 1.2.1 (/home/ri-one/ros2_ws/src/install/ecl_geometry/share/ecl_geometry/cmake)
+-- Found ecl_mobile_robot: 1.2.1 (/home/ri-one/ros2_ws/src/install/ecl_mobile_robot/share/ecl_mobile_robot/cmake)
+-- Found ecl_sigslots: 1.2.1 (/home/ri-one/ros2_ws/src/install/ecl_sigslots/share/ecl_sigslots/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ri-one/ros2_ws/src/build/kobuki_core
+[  2%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/battery.cpp.o[0m
+[  5%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/diff_drive.cpp.o[0m
+[  8%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/dock_drive.cpp.o[0m
+[ 11%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/dock_drive_debug.cpp.o[0m
+[ 14%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/dock_drive_states.cpp.o[0m
+[ 17%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/event_manager.cpp.o[0m
+[ 20%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/firmware.cpp.o[0m
+[ 23%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/kobuki.cpp.o[0m
+[ 26%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/logging.cpp.o[0m
+[ 29%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/core_sensors.cpp.o[0m
+[ 32%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/packet_finder.cpp.o[0m
+[ 35%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/__/__/version_info.cpp.o[0m
+[ 38%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/command.cpp.o[0m
+[ 41%] [32m[1mLinking CXX shared library libkobuki_core.so[0m
+[ 41%] Built target kobuki_core
+[ 44%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_chirp.dir/chirp.cpp.o[0m
+[ 47%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_buttons.dir/buttons.cpp.o[0m
+[ 50%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_data_stream.dir/data_stream.cpp.o[0m
+[ 52%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_custom_logging.dir/custom_logging.cpp.o[0m
+[ 55%] [32m[1mLinking CXX executable demo_chirp[0m
+[ 58%] [32m[1mLinking CXX executable demo_buttons[0m
+[ 58%] Built target kobuki_core_demo_chirp
+[ 61%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_log_levels.dir/log_levels.cpp.o[0m
+[ 61%] Built target kobuki_core_demo_buttons
+[ 64%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_raw_data_stream.dir/raw_data_stream.cpp.o[0m
+[ 67%] [32m[1mLinking CXX executable demo_data_stream[0m
+[ 67%] Built target kobuki_core_demo_data_stream
+[ 70%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_simple_loop.dir/simple_loop.cpp.o[0m
+[ 73%] [32m[1mLinking CXX executable demo_custom_logging[0m
+[ 73%] Built target kobuki_core_demo_custom_logging
+[ 76%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_velocity_commands.dir/velocity_commands.cpp.o[0m
+[ 79%] [32m[1mLinking CXX executable demo_velocity_commands[0m
+[ 79%] Built target kobuki_core_demo_velocity_commands
+[ 82%] [32mBuilding CXX object src/tools/CMakeFiles/kobuki_core_tool_version_info.dir/version_info.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable demo_log_levels[0m
+[ 85%] Built target kobuki_core_demo_log_levels
+[ 88%] [32mBuilding CXX object src/tools/CMakeFiles/kobuki_core_tool_simple_keyop.dir/simple_keyop.cpp.o[0m
+[ 91%] [32m[1mLinking CXX executable demo_raw_data_stream[0m
+[ 91%] Built target kobuki_core_demo_raw_data_stream
+[ 94%] [32m[1mLinking CXX executable demo_simple_loop[0m
+[ 94%] Built target kobuki_core_demo_simple_loop
+[ 97%] [32m[1mLinking CXX executable kobuki-version-info[0m
+[ 97%] Built target kobuki_core_tool_version_info
+[100%] [32m[1mLinking CXX executable kobuki-simple-keyop[0m
+[100%] Built target kobuki_core_tool_simple_keyop
+-- Install configuration: ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/CMakeLists.txt
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/dock_drive.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/hardware.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/unique_device_id.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/core_sensors.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/gp_input.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/eeprom.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/dock_ir.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/controller_info.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/firmware.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/cliff.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/three_axis_gyro.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/current.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/inertia.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/logging.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/battery.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/digital_output.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/led_array.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/diff_drive.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/sound.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/acceleration_limiter.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/macros.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packet_handler
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packet_handler/payload_headers.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packet_handler/payload_base.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packet_handler/packet_finder.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/kobuki.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/command.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/event_manager.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/parameters.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/version_info.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/environment/library_path.sh
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/environment/library_path.dsv
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/ament_index/resource_index/package_run_dependencies/kobuki_core
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/ament_index/resource_index/parent_prefix_path/kobuki_core
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/environment/ament_prefix_path.sh
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/environment/ament_prefix_path.dsv
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/environment/path.sh
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/environment/path.dsv
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/local_setup.bash
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/local_setup.sh
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/local_setup.zsh
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/local_setup.dsv
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/package.dsv
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/ament_index/resource_index/packages/kobuki_core
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreExport.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreExport-noconfig.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreConfig.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreConfig-version.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/share/kobuki_core/package.xml
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/dock_drive.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/hardware.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/unique_device_id.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/core_sensors.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/gp_input.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/eeprom.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/dock_ir.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/controller_info.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/firmware.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/cliff.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/three_axis_gyro.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/current.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets/inertia.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/logging.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/battery.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/digital_output.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/led_array.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/diff_drive.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/sound.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules/acceleration_limiter.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/macros.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packet_handler
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packet_handler/payload_headers.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packet_handler/payload_base.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packet_handler/packet_finder.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/packets.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/kobuki.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/command.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/event_manager.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/parameters.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/modules.hpp
+-- Up-to-date: /home/ri-one/ros2_ws/src/install/kobuki_core/include/kobuki_core/version_info.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/lib/libkobuki_core.so.1.4.0
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/lib/libkobuki_core.so.1.4.0" to ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/lib/libkobuki_core.so
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_buttons
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_buttons" to ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_chirp
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_chirp" to ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_custom_logging
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_custom_logging" to ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_data_stream
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_data_stream" to ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_log_levels
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_log_levels" to ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_raw_data_stream
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_raw_data_stream" to ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_simple_loop
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_simple_loop" to ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_velocity_commands
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/lib/kobuki_core/demo_velocity_commands" to ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/bin/kobuki-version-info
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/bin/kobuki-version-info" to ""
+-- Installing: /home/ri-one/ros2_ws/src/install/kobuki_core/bin/kobuki-simple-keyop
+-- Set runtime path of "/home/ri-one/ros2_ws/src/install/kobuki_core/bin/kobuki-simple-keyop" to ""

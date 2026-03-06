@@ -1,0 +1,246 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-548db2e0061194ba13d4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						6
+					]
+				},
+				{
+					"build" : "include",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-include-7ead17b99bffc88b66bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "include"
+				},
+				{
+					"build" : "include/ecl",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-include.ecl-acb1bd6ed8caa689eca4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "include/ecl"
+				},
+				{
+					"build" : "include/ecl/statistics",
+					"jsonFile" : "directory-include.ecl.statistics-1c126ac59694d1967c58.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "include/ecl/statistics"
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/lib",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.lib-364ad9760e78bd752228.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/lib",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "src/test",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-src.test-3607701395add829ebf1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/test",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-a2408fe1a73b92c5e636.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/humble/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"name" : "ecl_statistics",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "ecl_statistics::@dc1a1c76835bc3d8b019",
+					"jsonFile" : "target-ecl_statistics-4ce7dfa77ec4fe105631.json",
+					"name" : "ecl_statistics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ecl_statistics_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ecl_statistics_uninstall-ab2b52d45906a8616e4a.json",
+					"name" : "ecl_statistics_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_covariance_ellipsoids::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_covariance_ellipsoids-3ca01dc9f5209ac6833f.json",
+					"name" : "ecl_test_covariance_ellipsoids",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_cumulative_statistics::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_cumulative_statistics-a3ec2408490d565467af.json",
+					"name" : "ecl_test_cumulative_statistics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-072a36ff7df3297e7adc.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-3994c05770f39aada57a.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c60230d375d901b2ee32.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ri-one/ri_one_master_ws/build/ecl_statistics",
+		"source" : "/home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_statistics"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL"
+		],
+		"files" : 
+		[
+			"include/ecl/threads/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/threads",
+			"paths" : 
+			[
+				"include/ecl/threads/macros.hpp",
+				"include/ecl/threads/mutex.hpp",
+				"include/ecl/threads/mutex_pos.hpp",
+				"include/ecl/threads/mutex_w32.hpp",
+				"include/ecl/threads/priority.hpp",
+				"include/ecl/threads/priority_common.hpp",
+				"include/ecl/threads/priority_pos.hpp",
+				"include/ecl/threads/priority_win.hpp",
+				"include/ecl/threads/thread.hpp",
+				"include/ecl/threads/thread_exceptions_pos.hpp",
+				"include/ecl/threads/thread_pos.hpp",
+				"include/ecl/threads/thread_win.hpp",
+				"include/ecl/threads/threadable.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/threads",
+		"source" : "include/ecl/threads"
+	}
+}

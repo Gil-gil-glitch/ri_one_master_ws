@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/streams/manipulators/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/streams/manipulators",
+			"paths" : 
+			[
+				"include/ecl/streams/manipulators/clear_screen.hpp",
+				"include/ecl/streams/manipulators/end_of_line.hpp",
+				"include/ecl/streams/manipulators/manipulator.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/streams/manipulators",
+		"source" : "include/ecl/streams/manipulators"
+	}
+}

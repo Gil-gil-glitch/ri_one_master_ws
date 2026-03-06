@@ -1,0 +1,47 @@
+[0.038s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_console': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_lite/ecl_console -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/ecl_console
+[0.254s] -- The C compiler identification is GNU 11.4.0
+[0.394s] -- The CXX compiler identification is GNU 11.4.0
+[0.416s] -- Detecting C compiler ABI info
+[0.605s] -- Detecting C compiler ABI info - done
+[0.646s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.646s] -- Detecting C compile features
+[0.647s] -- Detecting C compile features - done
+[0.664s] -- Detecting CXX compiler ABI info
+[1.010s] -- Detecting CXX compiler ABI info - done
+[1.062s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.064s] -- Detecting CXX compile features
+[1.068s] -- Detecting CXX compile features - done
+[1.075s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.778s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.170s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[2.193s] -- Found ecl_config: 1.2.0 (/home/ri-one/ros2_ws/src/install/ecl_config/share/ecl_config/cmake)
+[2.539s] -- Configuring done
+[2.548s] -- Generating done
+[2.566s] -- Build files have been written to: /home/ri-one/ros2_ws/src/build/ecl_console
+[2.633s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_console' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_lite/ecl_console -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/ecl_console
+[2.638s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_console': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_console -- -j4 -l4
+[2.725s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_console' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_console -- -j4 -l4
+[2.729s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_console': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_console
+[2.748s] -- Install configuration: ""
+[2.749s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/include/ecl
+[2.750s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/include/ecl/console.hpp
+[2.751s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ament_index/resource_index/package_run_dependencies/ecl_console
+[2.752s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ament_index/resource_index/parent_prefix_path/ecl_console
+[2.753s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/environment/ament_prefix_path.sh
+[2.755s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/environment/ament_prefix_path.dsv
+[2.755s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/environment/path.sh
+[2.756s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/environment/path.dsv
+[2.757s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/local_setup.bash
+[2.758s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/local_setup.sh
+[2.759s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/local_setup.zsh
+[2.759s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/local_setup.dsv
+[2.761s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/package.dsv
+[2.761s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ament_index/resource_index/packages/ecl_console
+[2.763s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/cmake/ecl_consoleExport.cmake
+[2.763s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/cmake/ament_cmake_export_targets-extras.cmake
+[2.764s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.765s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.765s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/cmake/ecl_consoleConfig.cmake
+[2.767s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/cmake/ecl_consoleConfig-version.cmake
+[2.767s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_console/share/ecl_console/package.xml
+[2.774s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_console' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_console

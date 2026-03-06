@@ -1,0 +1,9 @@
+/home/ri-one/ros2_ws/src/build/kobuki_description/CMakeFiles/uninstall.dir
+/home/ri-one/ros2_ws/src/build/kobuki_description/CMakeFiles/kobuki_description_uninstall.dir
+/home/ri-one/ros2_ws/src/build/kobuki_description/CMakeFiles/test.dir
+/home/ri-one/ros2_ws/src/build/kobuki_description/CMakeFiles/edit_cache.dir
+/home/ri-one/ros2_ws/src/build/kobuki_description/CMakeFiles/rebuild_cache.dir
+/home/ri-one/ros2_ws/src/build/kobuki_description/CMakeFiles/list_install_components.dir
+/home/ri-one/ros2_ws/src/build/kobuki_description/CMakeFiles/install.dir
+/home/ri-one/ros2_ws/src/build/kobuki_description/CMakeFiles/install/local.dir
+/home/ri-one/ros2_ws/src/build/kobuki_description/CMakeFiles/install/strip.dir

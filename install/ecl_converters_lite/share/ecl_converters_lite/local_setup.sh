@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/ecl_converters_lite/ament_cmake_environment_hooks/local_setup.sh

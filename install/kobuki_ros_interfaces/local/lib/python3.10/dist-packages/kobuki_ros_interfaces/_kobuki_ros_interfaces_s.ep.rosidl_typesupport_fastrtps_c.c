@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces/rosidl_generator_py/kobuki_ros_interfaces/_kobuki_ros_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c

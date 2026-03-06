@@ -1,0 +1,6 @@
+Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_mpl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_core/ecl_mpl -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/ecl_mpl
+Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_mpl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_core/ecl_mpl -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/ecl_mpl
+Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_mpl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_mpl -- -j4 -l4
+Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_mpl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_mpl -- -j4 -l4
+Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_mpl': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_mpl
+Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_mpl' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_mpl

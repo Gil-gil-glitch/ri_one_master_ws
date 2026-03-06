@@ -1,0 +1,10 @@
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_led/CMakeFiles/uninstall.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_led/CMakeFiles/ros2_kinect_led_uninstall.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_led/CMakeFiles/ros2_kinect_led_node.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_led/CMakeFiles/test.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_led/CMakeFiles/edit_cache.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_led/CMakeFiles/rebuild_cache.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_led/CMakeFiles/list_install_components.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_led/CMakeFiles/install.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_led/CMakeFiles/install/local.dir
+/home/ri-one/ri_one_master_ws/build/ros2_kinect_led/CMakeFiles/install/strip.dir

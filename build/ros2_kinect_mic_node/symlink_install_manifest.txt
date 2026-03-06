@@ -1,0 +1,16 @@
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/lib/ros2_kinect_mic_node/ros2_kinect_mic_node_node
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ament_index/resource_index/package_run_dependencies/ros2_kinect_mic_node
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ament_index/resource_index/parent_prefix_path/ros2_kinect_mic_node
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/environment/ament_prefix_path.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/environment/ament_prefix_path.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/environment/path.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/environment/path.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/local_setup.bash
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/local_setup.sh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/local_setup.zsh
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/local_setup.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/package.dsv
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ament_index/resource_index/packages/ros2_kinect_mic_node
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/cmake/ros2_kinect_mic_nodeConfig.cmake
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/cmake/ros2_kinect_mic_nodeConfig-version.cmake
+/home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/package.xml

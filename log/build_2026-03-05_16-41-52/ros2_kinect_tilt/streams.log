@@ -1,0 +1,65 @@
+[0.035s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/ros2_kinect_tilt -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt
+[0.326s] -- The C compiler identification is GNU 11.4.0
+[0.586s] -- The CXX compiler identification is GNU 11.4.0
+[0.604s] -- Detecting C compiler ABI info
+[0.801s] -- Detecting C compiler ABI info - done
+[0.821s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.823s] -- Detecting C compile features
+[0.824s] -- Detecting C compile features - done
+[0.832s] -- Detecting CXX compiler ABI info
+[1.055s] -- Detecting CXX compiler ABI info - done
+[1.074s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.076s] -- Detecting CXX compile features
+[1.077s] -- Detecting CXX compile features - done
+[1.095s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.498s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.662s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.913s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[2.160s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.198s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.247s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.311s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.395s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.633s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.654s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.977s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.069s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.196s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.256s] -- Looking for pthread.h
+[3.485s] -- Looking for pthread.h - found
+[3.488s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.715s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.718s] -- Found Threads: TRUE  
+[3.922s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.980s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[4.011s] -- Checking for module 'libfreenect'
+[4.060s] --   Found libfreenect, version 0
+[4.377s] -- Configuring done
+[4.415s] -- Generating done
+[4.433s] -- Build files have been written to: /home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt
+[4.460s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/ros2_kinect_tilt -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt
+[4.461s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt -- -j4 -l4
+[4.616s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_kinect_tilt_node.dir/src/ros2_kinect_tilt_node.cpp.o[0m
+[22.611s] [100%] [32m[1mLinking CXX executable ros2_kinect_tilt_node[0m
+[23.412s] [100%] Built target ros2_kinect_tilt_node
+[23.433s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt -- -j4 -l4
+[23.434s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt
+[23.451s] -- Install configuration: ""
+[23.451s] -- Execute custom install script
+[23.452s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/lib/ros2_kinect_tilt/ros2_kinect_tilt_node
+[23.469s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ament_index/resource_index/package_run_dependencies/ros2_kinect_tilt
+[23.485s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ament_index/resource_index/parent_prefix_path/ros2_kinect_tilt
+[23.502s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/environment/ament_prefix_path.sh
+[23.518s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/environment/ament_prefix_path.dsv
+[23.536s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/environment/path.sh
+[23.552s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/environment/path.dsv
+[23.569s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/local_setup.bash
+[23.586s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/local_setup.sh
+[23.602s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/local_setup.zsh
+[23.619s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/local_setup.dsv
+[23.638s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/package.dsv
+[23.655s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ament_index/resource_index/packages/ros2_kinect_tilt
+[23.671s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/cmake/ros2_kinect_tiltConfig.cmake
+[23.688s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/cmake/ros2_kinect_tiltConfig-version.cmake
+[23.705s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt/share/ros2_kinect_tilt/package.xml
+[23.725s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt

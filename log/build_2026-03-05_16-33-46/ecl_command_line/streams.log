@@ -1,0 +1,72 @@
+[0.037s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_command_line': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_command_line -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_command_line
+[0.203s] -- The C compiler identification is GNU 11.4.0
+[0.350s] -- The CXX compiler identification is GNU 11.4.0
+[0.372s] -- Detecting C compiler ABI info
+[0.601s] -- Detecting C compiler ABI info - done
+[0.638s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.639s] -- Detecting C compile features
+[0.640s] -- Detecting C compile features - done
+[0.649s] -- Detecting CXX compiler ABI info
+[0.879s] -- Detecting CXX compiler ABI info - done
+[0.912s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.912s] -- Detecting CXX compile features
+[0.913s] -- Detecting CXX compile features - done
+[0.931s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.512s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.750s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.021s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[2.299s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.478s] -- Configuring done
+[2.518s] -- Generating done
+[2.528s] -- Build files have been written to: /home/ri-one/ri_one_master_ws/build/ecl_command_line
+[2.536s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_command_line' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_command_line -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_command_line
+[2.538s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_command_line': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_command_line -- -j4 -l4
+[2.685s] [ 50%] [32mBuilding CXX object src/examples/CMakeFiles/ecl_demo_command_line.dir/command_line.cpp.o[0m
+[4.990s] [100%] [32m[1mLinking CXX executable demo_command_line[0m
+[5.366s] [100%] Built target ecl_demo_command_line
+[5.412s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_command_line' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_command_line -- -j4 -l4
+[5.413s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_command_line': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_command_line
+[5.451s] -- Install configuration: ""
+[5.452s] -- Execute custom install script
+[5.453s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/arg.hpp
+[5.483s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/arg_exception.hpp
+[5.509s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/cmd_line.hpp
+[5.537s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/cmd_line_interface.hpp
+[5.568s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/cmd_line_output.hpp
+[5.606s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/constraint.hpp
+[5.633s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/docbook_output.hpp
+[5.659s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/help_visitor.hpp
+[5.684s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/ignore_rest_visitor.hpp
+[5.709s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/multi_arg.hpp
+[5.737s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/multi_switch_arg.hpp
+[5.762s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/optional_unlabeled_tracker.hpp
+[5.787s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/std_output.hpp
+[5.812s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/switch_arg.hpp
+[5.840s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/unlabeled_multi_arg.hpp
+[5.888s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/unlabeled_value_arg.hpp
+[5.927s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/value_arg.hpp
+[5.947s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/values_constraint.hpp
+[5.971s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/version_visitor.hpp
+[5.994s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/visitor.hpp
+[6.020s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/xor_handler.hpp
+[6.042s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line.hpp
+[6.066s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/lib/ecl_command_line/demo_command_line
+[6.092s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ament_index/resource_index/package_run_dependencies/ecl_command_line
+[6.119s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ament_index/resource_index/parent_prefix_path/ecl_command_line
+[6.142s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/environment/ament_prefix_path.sh
+[6.166s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/environment/ament_prefix_path.dsv
+[6.191s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/environment/path.sh
+[6.229s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/environment/path.dsv
+[6.279s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/local_setup.bash
+[6.326s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/local_setup.sh
+[6.377s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/local_setup.zsh
+[6.416s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/local_setup.dsv
+[6.458s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/package.dsv
+[6.501s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ament_index/resource_index/packages/ecl_command_line
+[6.537s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/cmake/ament_cmake_export_targets-extras.cmake
+[6.589s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.629s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/cmake/ecl_command_lineConfig.cmake
+[6.704s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/cmake/ecl_command_lineConfig-version.cmake
+[6.756s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/package.xml
+[6.806s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/cmake/ecl_command_lineExport.cmake
+[6.817s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_command_line' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_command_line

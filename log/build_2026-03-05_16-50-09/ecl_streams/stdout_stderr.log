@@ -1,0 +1,4 @@
+gmake[1]: *** [CMakeFiles/Makefile2:415: gtest/CMakeFiles/gtest_main.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:389: gtest/CMakeFiles/gtest.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:307: src/lib/CMakeFiles/ecl_streams.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

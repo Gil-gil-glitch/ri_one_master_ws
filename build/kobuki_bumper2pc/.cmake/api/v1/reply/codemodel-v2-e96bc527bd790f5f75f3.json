@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0d0e2be7308853bcd60c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "kobuki_bumper2pc",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_bumper2pc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_bumper2pc-990cdfdd3b2575eb83fb.json",
+					"name" : "kobuki_bumper2pc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_bumper2pc_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_bumper2pc_node-048d7188980409ae2ce4.json",
+					"name" : "kobuki_bumper2pc_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "kobuki_bumper2pc_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-kobuki_bumper2pc_uninstall-55903682c8da83677695.json",
+					"name" : "kobuki_bumper2pc_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d63a75cb2a7ae542aeeb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ri-one/ri_one_master_ws/build/kobuki_bumper2pc",
+		"source" : "/home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/kobuki_ros/kobuki_bumper2pc"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

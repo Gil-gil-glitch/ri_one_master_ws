@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/ecl_mpl/ament_cmake_core/ecl_mplConfig-version.cmake

@@ -1,0 +1,69 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+-- Found ecl_type_traits: 1.2.1 (/home/ri-one/ros2_ws/src/install/ecl_type_traits/share/ecl_type_traits/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ri-one/ros2_ws/src/build/ecl_math
+[  8%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 16%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 16%] Built target gtest_main
+[ 25%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 33%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 33%] Built target gtest
+[ 41%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_constants.dir/constants.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable ecl_test_constants[0m
+[ 50%] Built target ecl_test_constants
+[ 58%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_simple.dir/simple.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable ecl_test_simple[0m
+[ 66%] Built target ecl_test_simple
+[ 75%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_norms.dir/norms.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable ecl_test_norms[0m
+[ 83%] Built target ecl_test_norms
+[ 91%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_fuzzy.dir/fuzzy.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ecl_test_fuzzy[0m
+[100%] Built target ecl_test_fuzzy
+-- Install configuration: ""
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ament_index/resource_index/package_run_dependencies/ecl_math
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ament_index/resource_index/parent_prefix_path/ecl_math
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/environment/ament_prefix_path.sh
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/environment/ament_prefix_path.dsv
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/environment/path.sh
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/environment/path.dsv
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/local_setup.bash
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/local_setup.sh
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/local_setup.zsh
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/local_setup.dsv
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/package.dsv
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ament_index/resource_index/packages/ecl_math
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/cmake/ecl_mathExport.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/cmake/ecl_mathConfig.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/cmake/ecl_mathConfig-version.cmake
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/share/ecl_math/package.xml
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/include/ecl/math.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/include/ecl/math/constants.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/include/ecl/math/fuzzy.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/include/ecl/math/norms.hpp
+-- Installing: /home/ri-one/ros2_ws/src/install/ecl_math/include/ecl/math/simple.hpp

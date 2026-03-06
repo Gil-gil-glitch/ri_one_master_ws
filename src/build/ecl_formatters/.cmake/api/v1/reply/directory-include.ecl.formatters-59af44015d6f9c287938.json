@@ -1,0 +1,47 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/formatters/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/formatters",
+			"paths" : 
+			[
+				"include/ecl/formatters/common.hpp",
+				"include/ecl/formatters/floats.hpp",
+				"include/ecl/formatters/macros.hpp",
+				"include/ecl/formatters/number.hpp",
+				"include/ecl/formatters/strings.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/formatters",
+		"source" : "include/ecl/formatters"
+	}
+}

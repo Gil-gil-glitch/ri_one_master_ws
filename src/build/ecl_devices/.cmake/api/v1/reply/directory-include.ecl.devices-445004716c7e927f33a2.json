@@ -1,0 +1,59 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/devices/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/devices",
+			"paths" : 
+			[
+				"include/ecl/devices/console.hpp",
+				"include/ecl/devices/macros.hpp",
+				"include/ecl/devices/modes.hpp",
+				"include/ecl/devices/ofile.hpp",
+				"include/ecl/devices/ofile_pos.hpp",
+				"include/ecl/devices/ofile_w32.hpp",
+				"include/ecl/devices/serial.hpp",
+				"include/ecl/devices/serial_parameters.hpp",
+				"include/ecl/devices/serial_pos.hpp",
+				"include/ecl/devices/serial_w32.hpp",
+				"include/ecl/devices/shared_file.hpp",
+				"include/ecl/devices/socket.hpp",
+				"include/ecl/devices/socket_client_pos.hpp",
+				"include/ecl/devices/socket_connection_status.hpp",
+				"include/ecl/devices/socket_server_pos.hpp",
+				"include/ecl/devices/string.hpp",
+				"include/ecl/devices/traits.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/devices",
+		"source" : "include/ecl/devices"
+	}
+}

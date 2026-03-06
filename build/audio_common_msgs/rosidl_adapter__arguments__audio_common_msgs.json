@@ -1,0 +1,8 @@
+{
+  "package_name": "audio_common_msgs",
+  "non_idl_tuples": [
+    "/home/ri-one/ri_one_master_ws/src/audio_common/audio_common_msgs:msg/AudioData.msg",
+    "/home/ri-one/ri_one_master_ws/src/audio_common/audio_common_msgs:msg/AudioDataStamped.msg",
+    "/home/ri-one/ri_one_master_ws/src/audio_common/audio_common_msgs:msg/AudioInfo.msg"
+  ]
+}

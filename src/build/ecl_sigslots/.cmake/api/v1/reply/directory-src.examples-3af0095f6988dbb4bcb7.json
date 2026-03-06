@@ -1,0 +1,76 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ecl_sigslots_add_demo"
+		],
+		"files" : 
+		[
+			"src/examples/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 3
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/ecl_sigslots",
+			"paths" : 
+			[
+				"src/examples/demo_sigslots"
+			],
+			"targetId" : "ecl_demo_sigslots::@9091d420513b4ac1bd05",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/ecl_sigslots",
+			"paths" : 
+			[
+				"src/examples/demo_sigslots_manager"
+			],
+			"targetId" : "ecl_demo_sigslots_manager::@9091d420513b4ac1bd05",
+			"targetIndex" : 1,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/examples",
+		"source" : "src/examples"
+	}
+}

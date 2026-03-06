@@ -1,0 +1,268 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"ecl_add_benchmark"
+		],
+		"files" : 
+		[
+			"src/benchmarks/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 9
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 13
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 15
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 45,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 17
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 19
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/benchmarks/ecl_bench_containers"
+			],
+			"targetId" : "ecl_bench_containers::@bc9f1f5460cdfbf7b6e6",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/benchmarks/ecl_bench_files"
+			],
+			"targetId" : "ecl_bench_files::@bc9f1f5460cdfbf7b6e6",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/benchmarks/ecl_bench_flops"
+			],
+			"targetId" : "ecl_bench_flops::@bc9f1f5460cdfbf7b6e6",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/benchmarks/ecl_bench_exceptions"
+			],
+			"targetId" : "ecl_bench_exceptions::@bc9f1f5460cdfbf7b6e6",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/benchmarks/ecl_bench_snooze"
+			],
+			"targetId" : "ecl_bench_snooze::@bc9f1f5460cdfbf7b6e6",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/benchmarks/ecl_bench_streams"
+			],
+			"targetId" : "ecl_bench_streams::@bc9f1f5460cdfbf7b6e6",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/benchmarks/ecl_bench_string_conversions"
+			],
+			"targetId" : "ecl_bench_string_conversions::@bc9f1f5460cdfbf7b6e6",
+			"targetIndex" : 9,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/benchmarks/ecl_bench_eigen3_inverse"
+			],
+			"targetId" : "ecl_bench_eigen3_inverse::@bc9f1f5460cdfbf7b6e6",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/benchmarks/ecl_bench_eigen3_decompositions"
+			],
+			"targetId" : "ecl_bench_eigen3_decompositions::@bc9f1f5460cdfbf7b6e6",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"src/benchmarks/ecl_bench_eigen3_transforms"
+			],
+			"targetId" : "ecl_bench_eigen3_transforms::@bc9f1f5460cdfbf7b6e6",
+			"targetIndex" : 3,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/benchmarks",
+		"source" : "src/benchmarks"
+	}
+}

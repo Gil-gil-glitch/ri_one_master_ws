@@ -1,0 +1,78 @@
+[0.033s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_io': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_lite/ecl_io -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/ecl_io
+[0.170s] -- The C compiler identification is GNU 11.4.0
+[0.307s] -- The CXX compiler identification is GNU 11.4.0
+[0.324s] -- Detecting C compiler ABI info
+[0.474s] -- Detecting C compiler ABI info - done
+[0.493s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.494s] -- Detecting C compile features
+[0.495s] -- Detecting C compile features - done
+[0.502s] -- Detecting CXX compiler ABI info
+[0.682s] -- Detecting CXX compiler ABI info - done
+[0.702s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.708s] -- Detecting CXX compile features
+[0.708s] -- Detecting CXX compile features - done
+[0.711s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.070s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.284s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[1.298s] -- Found ecl_config: 1.2.0 (/home/ri-one/ros2_ws/src/install/ecl_config/share/ecl_config/cmake)
+[1.304s] -- Found ecl_errors: 1.2.0 (/home/ri-one/ros2_ws/src/install/ecl_errors/share/ecl_errors/cmake)
+[1.490s] -- Configuring done
+[1.524s] -- Generating done
+[1.533s] -- Build files have been written to: /home/ri-one/ros2_ws/src/build/ecl_io
+[1.549s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_io' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_lite/ecl_io -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/ecl_io
+[1.551s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_io': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_io -- -j4 -l4
+[1.659s] [ 10%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_io.dir/poll.cpp.o[0m
+[2.067s] [ 20%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_io.dir/sockets.cpp.o[0m
+[2.513s] [ 30%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_io.dir/socketpair.cpp.o[0m
+[2.902s] [ 40%] [32m[1mLinking CXX shared library libecl_io.so[0m
+[3.130s] [ 40%] Built target ecl_io
+[3.174s] [ 50%] [32mBuilding CXX object src/examples/CMakeFiles/ecl_io_example_sockets.dir/sockets.cpp.o[0m
+[3.677s] [ 60%] [32m[1mLinking CXX executable demo_sockets[0m
+[3.856s] [ 60%] Built target ecl_io_example_sockets
+[3.896s] [ 70%] [32mBuilding CXX object src/examples/CMakeFiles/ecl_io_example_poll.dir/poll.cpp.o[0m
+[4.429s] [ 80%] [32m[1mLinking CXX executable demo_poll[0m
+[4.612s] [ 80%] Built target ecl_io_example_poll
+[4.657s] [ 90%] [32mBuilding CXX object src/examples/CMakeFiles/ecl_io_example_socketpair.dir/socketpair.cpp.o[0m
+[5.177s] [100%] [32m[1mLinking CXX executable demo_socketpair[0m
+[5.354s] [100%] Built target ecl_io_example_socketpair
+[5.380s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_io' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/ecl_io -- -j4 -l4
+[5.381s] Invoking command in '/home/ri-one/ros2_ws/src/build/ecl_io': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_io
+[5.395s] -- Install configuration: ""
+[5.396s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/environment/library_path.sh
+[5.396s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/environment/library_path.dsv
+[5.396s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ament_index/resource_index/package_run_dependencies/ecl_io
+[5.396s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ament_index/resource_index/parent_prefix_path/ecl_io
+[5.397s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/environment/ament_prefix_path.sh
+[5.397s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/environment/ament_prefix_path.dsv
+[5.397s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/environment/path.sh
+[5.398s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/environment/path.dsv
+[5.398s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/local_setup.bash
+[5.401s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/local_setup.sh
+[5.401s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/local_setup.zsh
+[5.401s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/local_setup.dsv
+[5.401s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/package.dsv
+[5.402s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ament_index/resource_index/packages/ecl_io
+[5.402s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/cmake/ecl_ioExport.cmake
+[5.402s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/cmake/ecl_ioExport-noconfig.cmake
+[5.402s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/cmake/ament_cmake_export_targets-extras.cmake
+[5.402s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.402s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/cmake/ament_cmake_export_libraries-extras.cmake
+[5.402s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.403s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/cmake/ecl_ioConfig.cmake
+[5.403s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/cmake/ecl_ioConfig-version.cmake
+[5.403s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/share/ecl_io/package.xml
+[5.403s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/include/ecl/io.hpp
+[5.404s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/include/ecl/sockets/macros.hpp
+[5.405s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/include/ecl/sockets/poll.hpp
+[5.406s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/include/ecl/sockets/socketpair.hpp
+[5.406s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/include/ecl/sockets/sockets.hpp
+[5.408s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/lib/libecl_io.so.1.2.0
+[5.409s] -- Set runtime path of "/home/ri-one/ros2_ws/src/install/ecl_io/lib/libecl_io.so.1.2.0" to ""
+[5.411s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/lib/libecl_io.so
+[5.411s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/lib/ecl_io/demo_sockets
+[5.413s] -- Set runtime path of "/home/ri-one/ros2_ws/src/install/ecl_io/lib/ecl_io/demo_sockets" to ""
+[5.415s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/lib/ecl_io/demo_socketpair
+[5.415s] -- Set runtime path of "/home/ri-one/ros2_ws/src/install/ecl_io/lib/ecl_io/demo_socketpair" to ""
+[5.416s] -- Installing: /home/ri-one/ros2_ws/src/install/ecl_io/lib/ecl_io/demo_poll
+[5.418s] -- Set runtime path of "/home/ri-one/ros2_ws/src/install/ecl_io/lib/ecl_io/demo_poll" to ""
+[5.422s] Invoked command in '/home/ri-one/ros2_ws/src/build/ecl_io' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors:/home/ri-one/ros2_ws/src/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ros2_ws/src/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ros2_ws/src/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/ecl_io

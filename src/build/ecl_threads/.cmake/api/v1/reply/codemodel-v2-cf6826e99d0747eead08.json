@@ -1,0 +1,302 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d96190d1efe74296ae0a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						7,
+						10
+					]
+				},
+				{
+					"build" : "include",
+					"childIndexes" : 
+					[
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include-7ead17b99bffc88b66bb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "include"
+				},
+				{
+					"build" : "include/ecl",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include.ecl-c1186a47a46989bebb92.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "include/ecl"
+				},
+				{
+					"build" : "include/ecl/threads",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-include.ecl.threads-30527369147a8db35d2f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "include/ecl/threads"
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						5,
+						6,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/lib",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.lib-bb71be9e03db486bcca1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/lib",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "src/test",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-src.test-3607701395add829ebf1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/test",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-a2408fe1a73b92c5e636.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/humble/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						8,
+						9
+					]
+				},
+				{
+					"build" : "src/examples",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.examples-ae2a01c2a7e7d4069342.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "src/examples",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						8
+					],
+					"name" : "ecl_threads",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						10
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 8,
+					"id" : "ecl_demo_mutex::@9091d420513b4ac1bd05",
+					"jsonFile" : "target-ecl_demo_mutex-0ae10c1e30a814c7fc5e.json",
+					"name" : "ecl_demo_mutex",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "ecl_demo_thread::@9091d420513b4ac1bd05",
+					"jsonFile" : "target-ecl_demo_thread-7737cc781de17da3e0ad.json",
+					"name" : "ecl_demo_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_mutex::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_mutex-321acb40a95ca547c316.json",
+					"name" : "ecl_test_mutex",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_priorities::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_priorities-2fa30d2d7733c145b2cb.json",
+					"name" : "ecl_test_priorities",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_threadable::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_threadable-94d3f35b97bb38fc3680.json",
+					"name" : "ecl_test_threadable",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "ecl_test_threads::@b7fcbc08bf8df37e9c1b",
+					"jsonFile" : "target-ecl_test_threads-3b670152b4a818e957f3.json",
+					"name" : "ecl_test_threads",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ecl_threads::@dc1a1c76835bc3d8b019",
+					"jsonFile" : "target-ecl_threads-274d739724d7564118e9.json",
+					"name" : "ecl_threads",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ecl_threads_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ecl_threads_uninstall-869380aae99c42c7810e.json",
+					"name" : "ecl_threads_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-b55176a3005120bbf300.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-29dc83f3a83c43a7ff29.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-2ca7274228a223d978b0.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ri-one/ros2_ws/src/build/ecl_threads",
+		"source" : "/home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_core/ecl_threads"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

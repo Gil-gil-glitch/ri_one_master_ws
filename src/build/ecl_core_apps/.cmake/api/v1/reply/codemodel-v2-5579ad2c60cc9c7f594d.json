@@ -1,0 +1,277 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6b4d19c9b732d5a826ad.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						10,
+						18
+					]
+				},
+				{
+					"build" : "src",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-b6cf2213fc5053b67c22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src"
+				},
+				{
+					"build" : "src/benchmarks",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.benchmarks-fb88b1434987df8081d2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/benchmarks",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "src/utils",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src.utils-91ad47c583f2dba26046.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/utils",
+					"targetIndexes" : 
+					[
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "ecl_core_apps",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "ecl_bench_containers::@bc9f1f5460cdfbf7b6e6",
+					"jsonFile" : "target-ecl_bench_containers-03413226151b4c7bd059.json",
+					"name" : "ecl_bench_containers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ecl_bench_eigen3_decompositions::@bc9f1f5460cdfbf7b6e6",
+					"jsonFile" : "target-ecl_bench_eigen3_decompositions-2e50925490f4c3ea695a.json",
+					"name" : "ecl_bench_eigen3_decompositions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ecl_bench_eigen3_inverse::@bc9f1f5460cdfbf7b6e6",
+					"jsonFile" : "target-ecl_bench_eigen3_inverse-f31d60ba943c95fdd3d5.json",
+					"name" : "ecl_bench_eigen3_inverse",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ecl_bench_eigen3_transforms::@bc9f1f5460cdfbf7b6e6",
+					"jsonFile" : "target-ecl_bench_eigen3_transforms-8c47780d3d7331f2b619.json",
+					"name" : "ecl_bench_eigen3_transforms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ecl_bench_exceptions::@bc9f1f5460cdfbf7b6e6",
+					"jsonFile" : "target-ecl_bench_exceptions-758bdeeb8d0ac19a1279.json",
+					"name" : "ecl_bench_exceptions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ecl_bench_files::@bc9f1f5460cdfbf7b6e6",
+					"jsonFile" : "target-ecl_bench_files-740871193d0556a36199.json",
+					"name" : "ecl_bench_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ecl_bench_flops::@bc9f1f5460cdfbf7b6e6",
+					"jsonFile" : "target-ecl_bench_flops-f21a369e2f481416faa6.json",
+					"name" : "ecl_bench_flops",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ecl_bench_snooze::@bc9f1f5460cdfbf7b6e6",
+					"jsonFile" : "target-ecl_bench_snooze-fd6edbaae109f6379884.json",
+					"name" : "ecl_bench_snooze",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ecl_bench_streams::@bc9f1f5460cdfbf7b6e6",
+					"jsonFile" : "target-ecl_bench_streams-4d7cc27a3ab73bc7d82a.json",
+					"name" : "ecl_bench_streams",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ecl_bench_string_conversions::@bc9f1f5460cdfbf7b6e6",
+					"jsonFile" : "target-ecl_bench_string_conversions-9dbc9d810dacfb3cfd9f.json",
+					"name" : "ecl_bench_string_conversions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ecl_core_apps_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ecl_core_apps_uninstall-16a11d64924070f9d5f9.json",
+					"name" : "ecl_core_apps_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ecl_hex::@f1b38b22aeb65474a6c5",
+					"jsonFile" : "target-ecl_hex-98f3ab4a92e6e2648b0c.json",
+					"name" : "ecl_hex",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ecl_process_statistics::@f1b38b22aeb65474a6c5",
+					"jsonFile" : "target-ecl_process_statistics-1110b717c2ae324f028d.json",
+					"name" : "ecl_process_statistics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ecl_quaternion2yaw::@f1b38b22aeb65474a6c5",
+					"jsonFile" : "target-ecl_quaternion2yaw-52f616f7da5956d588d1.json",
+					"name" : "ecl_quaternion2yaw",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ecl_serial::@f1b38b22aeb65474a6c5",
+					"jsonFile" : "target-ecl_serial-43d549012e3966daa7a9.json",
+					"name" : "ecl_serial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ecl_socket_client::@f1b38b22aeb65474a6c5",
+					"jsonFile" : "target-ecl_socket_client-2f21d7d7604519345111.json",
+					"name" : "ecl_socket_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ecl_socket_server::@f1b38b22aeb65474a6c5",
+					"jsonFile" : "target-ecl_socket_server-a50c2f337d9aa0e4aa22.json",
+					"name" : "ecl_socket_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ecl_yaw2quaternion::@f1b38b22aeb65474a6c5",
+					"jsonFile" : "target-ecl_yaw2quaternion-919c60846d4fb7dd91bd.json",
+					"name" : "ecl_yaw2quaternion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c918e61b7f3403d256fb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ri-one/ros2_ws/src/build/ecl_core_apps",
+		"source" : "/home/ri-one/ros2_ws/src/turtlebot2_ros2/ecl_core/ecl_core_apps"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

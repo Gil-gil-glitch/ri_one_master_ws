@@ -1,0 +1,47 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"include/ecl/devices/detail/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ecl/devices/detail",
+			"paths" : 
+			[
+				"include/ecl/devices/detail/character_buffer.hpp",
+				"include/ecl/devices/detail/error_handler.hpp",
+				"include/ecl/devices/detail/exception_handler_pos.hpp",
+				"include/ecl/devices/detail/socket_error_handler_pos.hpp",
+				"include/ecl/devices/detail/socket_exception_handler_pos.hpp"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "include/ecl/devices/detail",
+		"source" : "include/ecl/devices/detail"
+	}
+}

@@ -1,0 +1,2 @@
+source;share/ros2_kinect_depth/environment/ament_prefix_path.sh
+source;share/ros2_kinect_depth/environment/path.sh

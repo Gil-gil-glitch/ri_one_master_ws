@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ri-one/ri_one_master_ws/build/kobuki_core/src/demos/demo_data_stream" "TARGETS" "kobuki_core_demo_data_stream" "RUNTIME_DESTINATION" "lib/kobuki_core")

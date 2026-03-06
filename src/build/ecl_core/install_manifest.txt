@@ -1,0 +1,15 @@
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ament_index/resource_index/package_run_dependencies/ecl_core
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ament_index/resource_index/parent_prefix_path/ecl_core
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/environment/ament_prefix_path.sh
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/environment/ament_prefix_path.dsv
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/environment/path.sh
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/environment/path.dsv
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/local_setup.bash
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/local_setup.sh
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/local_setup.zsh
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/local_setup.dsv
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/package.dsv
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ament_index/resource_index/packages/ecl_core
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/cmake/ecl_coreConfig.cmake
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/cmake/ecl_coreConfig-version.cmake
+/home/ri-one/ros2_ws/src/install/ecl_core/share/ecl_core/package.xml
