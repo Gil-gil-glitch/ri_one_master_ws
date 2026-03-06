@@ -1,0 +1,59 @@
+[0.041s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_lite/ecl_sigslots_lite -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite
+[0.199s] -- The C compiler identification is GNU 11.4.0
+[0.412s] -- The CXX compiler identification is GNU 11.4.0
+[0.434s] -- Detecting C compiler ABI info
+[0.604s] -- Detecting C compiler ABI info - done
+[0.624s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.625s] -- Detecting C compile features
+[0.626s] -- Detecting C compile features - done
+[0.636s] -- Detecting CXX compiler ABI info
+[0.851s] -- Detecting CXX compiler ABI info - done
+[0.869s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.870s] -- Detecting CXX compile features
+[0.872s] -- Detecting CXX compile features - done
+[0.877s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.283s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.440s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.517s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[1.531s] -- Found ecl_config: 1.2.0 (/home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake)
+[1.534s] -- Found ecl_errors: 1.2.0 (/home/ri-one/ri_one_master_ws/install/ecl_errors/share/ecl_errors/cmake)
+[1.737s] -- Configuring done
+[1.773s] -- Generating done
+[1.791s] -- Build files have been written to: /home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite
+[1.814s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_lite/ecl_sigslots_lite -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite
+[1.823s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite -- -j4 -l4
+[1.949s] [ 50%] [32mBuilding CXX object src/examples/CMakeFiles/demo_sigslots_lite.dir/sigslots.cpp.o[0m
+[2.632s] [100%] [32m[1mLinking CXX executable demo_sigslots_lite[0m
+[2.839s] [100%] Built target demo_sigslots_lite
+[2.872s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite -- -j4 -l4
+[2.873s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite
+[2.890s] -- Install configuration: ""
+[2.892s] -- Execute custom install script
+[2.893s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/include/ecl/sigslots_lite/connect.hpp
+[2.915s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/include/ecl/sigslots_lite/errors.hpp
+[2.933s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/include/ecl/sigslots_lite/managers.hpp
+[2.953s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/include/ecl/sigslots_lite/signal.hpp
+[2.973s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/include/ecl/sigslots_lite/slot.hpp
+[2.994s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/include/ecl/sigslots_lite/utilities.hpp
+[3.016s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/include/ecl/sigslots_lite.hpp
+[3.038s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/lib/ecl_sigslots_lite/demo_sigslots_lite
+[3.059s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ament_index/resource_index/package_run_dependencies/ecl_sigslots_lite
+[3.080s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ament_index/resource_index/parent_prefix_path/ecl_sigslots_lite
+[3.102s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/environment/ament_prefix_path.sh
+[3.125s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/environment/ament_prefix_path.dsv
+[3.146s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/environment/path.sh
+[3.182s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/environment/path.dsv
+[3.217s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/local_setup.bash
+[3.238s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/local_setup.sh
+[3.258s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/local_setup.zsh
+[3.277s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/local_setup.dsv
+[3.297s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/package.dsv
+[3.320s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ament_index/resource_index/packages/ecl_sigslots_lite
+[3.341s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ament_cmake_export_targets-extras.cmake
+[3.362s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.381s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.401s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ecl_sigslots_liteConfig.cmake
+[3.425s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ecl_sigslots_liteConfig-version.cmake
+[3.445s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/package.xml
+[3.463s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ecl_sigslots_liteExport.cmake
+[3.472s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_sigslots_lite

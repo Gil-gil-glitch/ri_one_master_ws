@@ -709,7 +709,7 @@ CMakeFiles/kinect_ros2_node.dir/src/kinect_ros2_node.cpp.o: \
  /usr/include/opencv4/opencv2/core/core_c.h \
  /usr/include/opencv4/opencv2/core/types_c.h \
  /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge_export.h \
- /home/ri-one/ros2_ws/install/libfreenect/include/libfreenect/libfreenect.h \
+ /usr/local/include/libfreenect/libfreenect.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/calib3d.hpp \

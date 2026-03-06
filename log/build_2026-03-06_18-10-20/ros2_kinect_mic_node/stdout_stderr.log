@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target ros2_kinect_mic_node_node[0m
+[100%] Built target ros2_kinect_mic_node_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/lib/ros2_kinect_mic_node/ros2_kinect_mic_node_node
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ament_index/resource_index/package_run_dependencies/ros2_kinect_mic_node
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ament_index/resource_index/parent_prefix_path/ros2_kinect_mic_node
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/environment/ament_prefix_path.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/environment/path.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/environment/path.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/local_setup.bash
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/local_setup.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/local_setup.zsh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/local_setup.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/package.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ament_index/resource_index/packages/ros2_kinect_mic_node
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/cmake/ros2_kinect_mic_nodeConfig.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/cmake/ros2_kinect_mic_nodeConfig-version.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_mic_node/share/ros2_kinect_mic_node/package.xml

@@ -130,7 +130,7 @@ kinect_ros2_node: /opt/ros/humble/lib/x86_64-linux-gnu/libimage_transport.so
 kinect_ros2_node: /opt/ros/humble/lib/libcv_bridge.so
 kinect_ros2_node: /opt/ros/humble/lib/libclass_loader.so
 kinect_ros2_node: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
-kinect_ros2_node: /home/ri-one/ros2_ws/install/libfreenect/lib/libfreenect.so
+kinect_ros2_node: /usr/local/lib/libfreenect.so
 kinect_ros2_node: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_c.so
 kinect_ros2_node: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so
 kinect_ros2_node: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so

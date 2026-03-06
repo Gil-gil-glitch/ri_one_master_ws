@@ -1,1 +1,0 @@
-Invoking command in '/home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces -- -j4 -l4

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "realsense2_camera_msgs__py",
+		"source" : "/home/ri-one/ri_one_master_ws/build/realsense2_camera_msgs/realsense2_camera_msgs__py"
+	}
+}

@@ -1,0 +1,72 @@
+[0.066s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_exceptions': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_exceptions -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_exceptions
+[0.405s] -- The C compiler identification is GNU 11.4.0
+[0.738s] -- The CXX compiler identification is GNU 11.4.0
+[0.778s] -- Detecting C compiler ABI info
+[1.203s] -- Detecting C compiler ABI info - done
+[1.288s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.290s] -- Detecting C compile features
+[1.291s] -- Detecting C compile features - done
+[1.314s] -- Detecting CXX compiler ABI info
+[1.763s] -- Detecting CXX compiler ABI info - done
+[1.835s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.836s] -- Detecting CXX compile features
+[1.837s] -- Detecting CXX compile features - done
+[1.856s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.735s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.046s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.171s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[3.195s] -- Found ecl_config: 1.2.0 (/home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake)
+[3.206s] -- Found ecl_errors: 1.2.0 (/home/ri-one/ri_one_master_ws/install/ecl_errors/share/ecl_errors/cmake)
+[3.632s] -- Configuring done
+[3.703s] -- Generating done
+[3.733s] -- Build files have been written to: /home/ri-one/ri_one_master_ws/build/ecl_exceptions
+[3.773s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_exceptions' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_exceptions -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_exceptions
+[3.774s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_exceptions': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_exceptions -- -j4 -l4
+[3.988s] [ 16%] [32mBuilding CXX object src/lib/CMakeFiles/ecl_exceptions.dir/standard_exception.cpp.o[0m
+[5.333s] [ 33%] [32m[1mLinking CXX shared library libecl_exceptions.so[0m
+[5.649s] [ 33%] Built target ecl_exceptions
+[5.740s] [ 50%] [32mBuilding CXX object src/examples/CMakeFiles/ecl_demo_exceptions.dir/exceptions.cpp.o[0m
+[6.776s] [ 66%] [32m[1mLinking CXX executable demo_exceptions[0m
+[7.156s] [ 66%] Built target ecl_demo_exceptions
+[7.240s] [ 83%] [32mBuilding CXX object src/examples/CMakeFiles/ecl_demo_exception_tracer.dir/exception_tracer.cpp.o[0m
+[8.310s] [100%] [32m[1mLinking CXX executable demo_exception_tracer[0m
+[8.565s] [100%] Built target ecl_demo_exception_tracer
+[8.613s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_exceptions' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_exceptions -- -j4 -l4
+[8.623s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_exceptions': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_exceptions
+[8.648s] -- Install configuration: ""
+[8.648s] -- Execute custom install script
+[8.649s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/include/ecl/exceptions/data_exception.hpp
+[8.687s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/include/ecl/exceptions/exception.hpp
+[8.724s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/include/ecl/exceptions/macros.hpp
+[8.760s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/include/ecl/exceptions/posix_error_handler.hpp
+[8.795s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/include/ecl/exceptions/standard_exception.hpp
+[8.827s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/include/ecl/exceptions.hpp
+[8.846s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib/ecl_exceptions/demo_exceptions
+[8.866s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib/ecl_exceptions/demo_exception_tracer
+[8.885s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/environment/library_path.sh
+[8.907s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/environment/library_path.dsv
+[8.928s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ament_index/resource_index/package_run_dependencies/ecl_exceptions
+[8.949s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ament_index/resource_index/parent_prefix_path/ecl_exceptions
+[8.968s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/environment/ament_prefix_path.sh
+[8.987s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/environment/ament_prefix_path.dsv
+[9.009s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/environment/path.sh
+[9.047s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/environment/path.dsv
+[9.083s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/local_setup.bash
+[9.125s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/local_setup.sh
+[9.166s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/local_setup.zsh
+[9.200s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/local_setup.dsv
+[9.238s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/package.dsv
+[9.279s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ament_index/resource_index/packages/ecl_exceptions
+[9.319s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/cmake/ament_cmake_export_targets-extras.cmake
+[9.358s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.396s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/cmake/ament_cmake_export_libraries-extras.cmake
+[9.433s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.473s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/cmake/ecl_exceptionsConfig.cmake
+[9.506s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/cmake/ecl_exceptionsConfig-version.cmake
+[9.551s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/package.xml
+[9.598s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/cmake/ecl_exceptionsExport.cmake
+[9.599s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/cmake/ecl_exceptionsExport-noconfig.cmake
+[9.604s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib/libecl_exceptions.so.1.2.1
+[9.611s] -- Set runtime path of "/home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib/libecl_exceptions.so.1.2.1" to ""
+[9.612s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib/libecl_exceptions.so
+[9.629s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_exceptions' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_exceptions

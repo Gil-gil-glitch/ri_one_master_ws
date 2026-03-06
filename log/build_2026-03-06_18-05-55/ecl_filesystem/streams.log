@@ -1,0 +1,53 @@
+[0.038s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_filesystem': CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/home/ri-one/ri_one_master_ws/install/ros2_kinect_tilt:/home/ri-one/ri_one_master_ws/install/ros2_kinect_rgb:/home/ri-one/ri_one_master_ws/install/ros2_kinect_led:/home/ri-one/ri_one_master_ws/install/ros2_kinect_depth:/home/ri-one/ri_one_master_ws/install/realsense2_camera_msgs:/home/ri-one/ri_one_master_ws/install/kobuki_safety_controller:/home/ri-one/ri_one_master_ws/install/kobuki_random_walker:/home/ri-one/ri_one_master_ws/install/kobuki_keyop:/home/ri-one/ri_one_master_ws/install/kobuki_bumper2pc:/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:/home/ri-one/ri_one_master_ws/install/kobuki_description:/home/ri-one/ri_one_master_ws/install/kobuki_core:/home/ri-one/ri_one_master_ws/install/kinect_ros2:/home/ri-one/ri_one_master_ws/install/kinect2_bridge:/home/ri-one/ri_one_master_ws/install/kinect2_registration:/home/ri-one/ri_one_master_ws/install/ecl_core_apps:/home/ri-one/ri_one_master_ws/install/ecl_streams:/home/ri-one/ri_one_master_ws/install/ecl_sigslots:/home/ri-one/ri_one_master_ws/install/ecl_ipc:/home/ri-one/ri_one_master_ws/install/ecl_devices:/home/ri-one/ri_one_master_ws/install/ecl_threads:/home/ri-one/ri_one_master_ws/install/ecl_mobile_robot:/home/ri-one/ri_one_master_ws/install/ecl_geometry:/home/ri-one/ri_one_master_ws/install/ecl_containers:/home/ri-one/ri_one_master_ws/install/ecl_utilities:/home/ri-one/ri_one_master_ws/install/ecl_statistics:/home/ri-one/ri_one_master_ws/install/ecl_linear_algebra:/home/ri-one/ri_one_master_ws/install/ecl_math:/home/ri-one/ri_one_master_ws/install/ecl_formatters:/home/ri-one/ri_one_master_ws/install/ecl_converters:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_time:/home/ri-one/ri_one_master_ws/install/ecl_time_lite:/home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_io:/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_eigen:/home/ri-one/ri_one_master_ws/install/ecl_converters_lite:/home/ri-one/ri_one_master_ws/install/ecl_console:/home/ri-one/ri_one_master_ws/install/ecl_command_line:/home/ri-one/ri_one_master_ws/install/cmd_vel_mux:/home/ri-one/ri_one_master_ws/install/audio_common:/home/ri-one/ri_one_master_ws/install/audio_common_msgs:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:/home/ri-one/ri_one_master_ws/install/realsense2_camera_msgs/lib:/home/ri-one/ri_one_master_ws/install/kobuki_safety_controller/lib:/home/ri-one/ri_one_master_ws/install/kobuki_random_walker/lib:/home/ri-one/ri_one_master_ws/install/kobuki_keyop/lib:/home/ri-one/ri_one_master_ws/install/kobuki_bumper2pc/lib:/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/lib:/home/ri-one/ri_one_master_ws/install/kobuki_core/lib:/home/ri-one/ri_one_master_ws/install/kinect2_registration/lib:/home/ri-one/ri_one_master_ws/install/ecl_streams/lib:/home/ri-one/ri_one_master_ws/install/ecl_ipc/lib:/home/ri-one/ri_one_master_ws/install/ecl_devices/lib:/home/ri-one/ri_one_master_ws/install/ecl_threads/lib:/home/ri-one/ri_one_master_ws/install/ecl_mobile_robot/lib:/home/ri-one/ri_one_master_ws/install/ecl_geometry/lib:/home/ri-one/ri_one_master_ws/install/ecl_statistics/lib:/home/ri-one/ri_one_master_ws/install/ecl_linear_algebra/lib:/home/ri-one/ri_one_master_ws/install/ecl_formatters/lib:/home/ri-one/ri_one_master_ws/install/ecl_type_traits/lib:/home/ri-one/ri_one_master_ws/install/ecl_time/lib:/home/ri-one/ri_one_master_ws/install/ecl_time_lite/lib:/home/ri-one/ri_one_master_ws/install/ecl_io/lib:/home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib:/home/ri-one/ri_one_master_ws/install/cmd_vel_mux/lib:/home/ri-one/ri_one_master_ws/install/audio_common_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:/home/ri-one/ri_one_master_ws/install/kobuki_core/bin:/home/ri-one/ri_one_master_ws/install/ecl_core_apps/bin:/home/ri-one/ri_one_master_ws/install/ecl_type_traits/bin:/home/ri-one/.nvm/versions/node/v22.12.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_filesystem -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_filesystem
+[0.198s] -- The C compiler identification is GNU 11.4.0
+[0.355s] -- The CXX compiler identification is GNU 11.4.0
+[0.375s] -- Detecting C compiler ABI info
+[0.538s] -- Detecting C compiler ABI info - done
+[0.550s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.550s] -- Detecting C compile features
+[0.551s] -- Detecting C compile features - done
+[0.557s] -- Detecting CXX compiler ABI info
+[0.731s] -- Detecting CXX compiler ABI info - done
+[0.753s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.754s] -- Detecting CXX compile features
+[0.754s] -- Detecting CXX compile features - done
+[0.774s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.114s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.213s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.390s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[1.400s] -- Found ecl_config: 1.2.0 (/home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake)
+[1.402s] -- Found ecl_errors: 1.2.0 (/home/ri-one/ri_one_master_ws/install/ecl_errors/share/ecl_errors/cmake)
+[1.511s] -- Looking for _POSIX_VERSION
+[1.658s] -- Looking for _POSIX_VERSION - found
+[1.658s] -- Looking for realpath in rt
+[1.790s] -- Looking for realpath in rt - found
+[1.790s] -- Looking for clock_nanosleep in rt
+[1.928s] -- Looking for clock_nanosleep in rt - found
+[1.928s] -- Looking for clock_gettime in rt
+[2.060s] -- Looking for clock_gettime in rt - found
+[2.060s] -- Looking for pthread_mutex_timedlock in pthread
+[2.193s] -- Looking for pthread_mutex_timedlock in pthread - found
+[2.193s] -- Looking for nanosleep in pthread
+[2.327s] -- Looking for nanosleep in pthread - found
+[2.327s] -- Looking for shm_open in rt
+[2.465s] -- Looking for shm_open in rt - found
+[2.465s] -- Looking for sched_setscheduler in pthread
+[2.590s] -- Looking for sched_setscheduler in pthread - found
+[2.590s] -- Looking for sem_timedwait in pthread
+[2.714s] -- Looking for sem_timedwait in pthread - found
+[2.715s] -- Looking for sem_init in pthread
+[2.835s] -- Looking for sem_init in pthread - found
+[2.836s] -- Looking for CLOCK_MONOTONIC
+[2.959s] -- Looking for CLOCK_MONOTONIC - found
+[2.959s] -- Looking for CLOCK_PROCESS_CPUTIME_ID
+[3.084s] -- Looking for CLOCK_PROCESS_CPUTIME_ID - found
+[3.105s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.217s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[3.220s] -- Looking for pthread.h
+[3.343s] -- Looking for pthread.h - found
+[3.343s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.469s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.471s] -- Found Threads: TRUE  
+[3.493s] -- Configuring done
+[3.515s] -- Generating done
+[3.523s] -- Build files have been written to: /home/ri-one/ri_one_master_ws/build/ecl_filesystem

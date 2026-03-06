@@ -1,0 +1,73 @@
+[0.030s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/kobuki_ros/kobuki_random_walker -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/kobuki_random_walker
+[0.188s] -- The C compiler identification is GNU 11.4.0
+[0.326s] -- The CXX compiler identification is GNU 11.4.0
+[0.346s] -- Detecting C compiler ABI info
+[0.518s] -- Detecting C compiler ABI info - done
+[0.565s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.565s] -- Detecting C compile features
+[0.568s] -- Detecting C compile features - done
+[0.583s] -- Detecting CXX compiler ABI info
+[0.824s] -- Detecting CXX compiler ABI info - done
+[0.859s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.860s] -- Detecting CXX compile features
+[0.862s] -- Detecting CXX compile features - done
+[0.868s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.255s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.428s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.489s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.573s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.585s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.604s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.637s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.674s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.774s] -- Found kobuki_ros_interfaces: 1.0.0 (/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/cmake)
+[1.888s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[1.997s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.004s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.211s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.277s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.370s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.392s] -- Looking for pthread.h
+[2.566s] -- Looking for pthread.h - found
+[2.567s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.763s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.773s] -- Found Threads: TRUE  
+[2.881s] -- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)
+[3.138s] -- Configuring done
+[3.195s] -- Generating done
+[3.219s] -- Build files have been written to: /home/ri-one/ri_one_master_ws/build/kobuki_random_walker
+[3.250s] Invoked command in '/home/ri-one/ri_one_master_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/kobuki_ros/kobuki_random_walker -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/kobuki_random_walker
+[3.253s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/kobuki_random_walker -- -j4 -l4
+[3.368s] [ 25%] [32mBuilding CXX object CMakeFiles/kobuki_random_walker.dir/src/random_walker.cpp.o[0m
+[43.840s] [ 50%] [32m[1mLinking CXX shared library libkobuki_random_walker.so[0m
+[46.572s] [ 50%] Built target kobuki_random_walker
+[46.617s] [ 75%] [32mBuilding CXX object CMakeFiles/kobuki_random_walker_node.dir/rclcpp_components/node_main_kobuki_random_walker_node.cpp.o[0m
+[54.264s] [100%] [32m[1mLinking CXX executable kobuki_random_walker_node[0m
+[54.609s] [100%] Built target kobuki_random_walker_node
+[54.640s] Invoked command in '/home/ri-one/ri_one_master_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/kobuki_random_walker -- -j4 -l4
+[54.641s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/kobuki_random_walker
+[54.662s] -- Install configuration: ""
+[54.662s] -- Execute custom install script
+[54.663s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/lib/kobuki_random_walker/kobuki_random_walker_node
+[54.684s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/lib/libkobuki_random_walker.so
+[54.706s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/include/kobuki_random_walker/random_walker.hpp
+[54.727s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/launch/random_walker_app.launch
+[54.746s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/launch/safe_random_walker_app.launch
+[54.769s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/launch/standalone.launch
+[54.790s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/ament_index/resource_index/package_run_dependencies/kobuki_random_walker
+[54.810s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/ament_index/resource_index/parent_prefix_path/kobuki_random_walker
+[54.828s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/environment/ament_prefix_path.sh
+[54.847s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/environment/ament_prefix_path.dsv
+[54.871s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/environment/path.sh
+[54.891s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/environment/path.dsv
+[54.909s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/local_setup.bash
+[54.934s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/local_setup.sh
+[54.950s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/local_setup.zsh
+[54.971s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/local_setup.dsv
+[54.990s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.dsv
+[55.010s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/ament_index/resource_index/packages/kobuki_random_walker
+[55.026s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/ament_index/resource_index/rclcpp_components/kobuki_random_walker
+[55.044s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/cmake/kobuki_random_walkerConfig.cmake
+[55.062s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/cmake/kobuki_random_walkerConfig-version.cmake
+[55.084s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.xml
+[55.109s] Invoked command in '/home/ri-one/ri_one_master_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ri-one/ri_one_master_ws/install/kobuki_ros_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/kobuki_random_walker

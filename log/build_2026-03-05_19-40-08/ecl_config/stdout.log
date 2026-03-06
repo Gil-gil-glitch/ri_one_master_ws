@@ -1,4 +1,0 @@
-[ 12%] Built target ecl_detect_endian
-[ 25%] Built target gtest
-[ 37%] Built target ecl_detect_posix
-[ 50%] Built target gtest_main

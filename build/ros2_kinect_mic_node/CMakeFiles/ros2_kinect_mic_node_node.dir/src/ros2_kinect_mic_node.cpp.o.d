@@ -626,7 +626,7 @@ CMakeFiles/ros2_kinect_mic_node_node.dir/src/ros2_kinect_mic_node.cpp.o: \
  /home/ri-one/ri_one_master_ws/build/audio_common_msgs/rosidl_generator_cpp/audio_common_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /usr/local/include/libfreenect/libfreenect.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/ri-one/ros2_ws/install/libfreenect/include/libfreenect/libfreenect_audio.h \
+ /usr/local/include/libfreenect/libfreenect_audio.h \
  /usr/include/c++/11/climits \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \

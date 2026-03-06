@@ -1,0 +1,1 @@
+/home/ri-one/ri_one_master_ws/build/realsense2_ros_mqtt_bridge/launch/rs_launch.py

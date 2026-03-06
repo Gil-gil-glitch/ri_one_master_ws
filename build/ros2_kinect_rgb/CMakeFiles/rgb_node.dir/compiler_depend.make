@@ -716,7 +716,7 @@ CMakeFiles/rgb_node.dir/src/rgb_node.cpp.o: /home/ri-one/ri_one_master_ws/src/ro
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/srv/detail/set_camera_info__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/srv/detail/set_camera_info__type_support.hpp \
   /opt/ros/humble/include/camera_info_manager/camera_info_manager/visibility_control.h \
-  /home/ri-one/ros2_ws/install/libfreenect/include/libfreenect/libfreenect.h \
+  /usr/local/include/libfreenect/libfreenect.h \
   /usr/include/x86_64-linux-gnu/sys/time.h
 
 
@@ -1466,6 +1466,8 @@ CMakeFiles/rgb_node.dir/src/rgb_node.cpp.o: /home/ri-one/ri_one_master_ws/src/ro
 
 /opt/ros/humble/include/rcl/rcl/init_options.h:
 
+/usr/local/include/libfreenect/libfreenect.h:
+
 /opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
 
 /opt/ros/humble/include/tracetools/tracetools/config.h:
@@ -1483,8 +1485,6 @@ CMakeFiles/rgb_node.dir/src/rgb_node.cpp.o: /home/ri-one/ri_one_master_ws/src/ro
 /usr/include/c++/11/new:
 
 /usr/include/c++/11/bits/sstream.tcc:
-
-/home/ri-one/ros2_ws/install/libfreenect/include/libfreenect/libfreenect.h:
 
 /usr/include/c++/11/array:
 

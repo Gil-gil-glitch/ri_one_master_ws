@@ -1,0 +1,123 @@
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core[0m
+[ 41%] Built target kobuki_core
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core_demo_buttons[0m
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core_demo_chirp[0m
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core_demo_data_stream[0m
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core_demo_custom_logging[0m
+[ 47%] Built target kobuki_core_demo_buttons
+[ 52%] Built target kobuki_core_demo_data_stream
+[ 58%] Built target kobuki_core_demo_custom_logging
+[ 64%] Built target kobuki_core_demo_chirp
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core_demo_log_levels[0m
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core_demo_raw_data_stream[0m
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core_demo_simple_loop[0m
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core_demo_velocity_commands[0m
+[ 70%] Built target kobuki_core_demo_raw_data_stream
+[ 76%] Built target kobuki_core_demo_log_levels
+[ 82%] Built target kobuki_core_demo_velocity_commands
+[ 88%] Built target kobuki_core_demo_simple_loop
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core_tool_simple_keyop[0m
+[35m[1mConsolidate compiler generated dependencies of target kobuki_core_tool_version_info[0m
+[ 94%] Built target kobuki_core_tool_simple_keyop
+[100%] Built target kobuki_core_tool_version_info
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/command.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/dock_drive.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/event_manager.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/kobuki.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/logging.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/macros.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/acceleration_limiter.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/battery.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/diff_drive.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/digital_output.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/led_array.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/sound.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packet_handler/packet_finder.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packet_handler/payload_base.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packet_handler/payload_headers.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/cliff.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/controller_info.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/core_sensors.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/current.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/dock_ir.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/eeprom.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/firmware.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/gp_input.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/hardware.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/inertia.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/three_axis_gyro.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/unique_device_id.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/parameters.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/version_info.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/lib/kobuki_core/demo_buttons
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/lib/kobuki_core/demo_chirp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/lib/kobuki_core/demo_custom_logging
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/lib/kobuki_core/demo_data_stream
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/lib/kobuki_core/demo_log_levels
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/lib/kobuki_core/demo_raw_data_stream
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/lib/kobuki_core/demo_simple_loop
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/lib/kobuki_core/demo_velocity_commands
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/bin/kobuki-version-info
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/bin/kobuki-simple-keyop
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/CMakeLists.txt
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/command.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/dock_drive.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/event_manager.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/kobuki.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/logging.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/macros.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/acceleration_limiter.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/battery.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/diff_drive.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/digital_output.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/led_array.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/modules/sound.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packet_handler/packet_finder.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packet_handler/payload_base.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packet_handler/payload_headers.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/cliff.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/controller_info.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/core_sensors.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/current.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/dock_ir.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/eeprom.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/firmware.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/gp_input.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/hardware.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/inertia.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/three_axis_gyro.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/packets/unique_device_id.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/parameters.hpp
+-- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kobuki_core/include/kobuki_core/version_info.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/environment/library_path.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/environment/library_path.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/ament_index/resource_index/package_run_dependencies/kobuki_core
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/ament_index/resource_index/parent_prefix_path/kobuki_core
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/environment/ament_prefix_path.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/environment/path.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/environment/path.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/local_setup.bash
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/local_setup.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/local_setup.zsh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/local_setup.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/package.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/ament_index/resource_index/packages/kobuki_core
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreConfig.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreConfig-version.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/package.xml
+-- Installing: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreExport.cmake
+-- Installing: /home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreExport-noconfig.cmake
+-- Installing: /home/ri-one/ri_one_master_ws/install/kobuki_core/lib/libkobuki_core.so.1.4.0
+-- Set runtime path of "/home/ri-one/ri_one_master_ws/install/kobuki_core/lib/libkobuki_core.so.1.4.0" to ""
+-- Installing: /home/ri-one/ri_one_master_ws/install/kobuki_core/lib/libkobuki_core.so

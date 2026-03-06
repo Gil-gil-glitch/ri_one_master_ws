@@ -1,9 +1,0 @@
-[0.045s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces -- -j4 -l4
-[0.346s] [  0%] Built target ament_cmake_python_symlink_kobuki_ros_interfaces
-[0.346s] [ 12%] Built target kobuki_ros_interfaces__rosidl_generator_c
-[0.366s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_kobuki_ros_interfaces_egg.dir/build.make:85: CMakeFiles/ament_cmake_python_build_kobuki_ros_interfaces_egg.dir/depend] Interrupt
-[0.366s] gmake[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/kobuki_ros_interfaces__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
-[0.366s] gmake[1]: *** [CMakeFiles/Makefile2:446: CMakeFiles/ament_cmake_python_build_kobuki_ros_interfaces_egg.dir/all] Interrupt
-[0.366s] gmake[1]: *** [CMakeFiles/Makefile2:316: CMakeFiles/kobuki_ros_interfaces__rosidl_typesupport_introspection_c.dir/all] Interrupt
-[0.367s] gmake[1]: *** [CMakeFiles/Makefile2:266: CMakeFiles/kobuki_ros_interfaces__cpp.dir/all] Interrupt
-[0.367s] gmake: *** [Makefile:146: all] Interrupt

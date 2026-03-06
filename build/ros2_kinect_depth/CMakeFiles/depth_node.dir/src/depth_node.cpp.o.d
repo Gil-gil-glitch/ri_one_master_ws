@@ -650,5 +650,5 @@ CMakeFiles/depth_node.dir/src/depth_node.cpp.o: \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/srv/detail/set_camera_info__traits.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/srv/detail/set_camera_info__type_support.hpp \
  /opt/ros/humble/include/camera_info_manager/camera_info_manager/visibility_control.h \
- /home/ri-one/ros2_ws/install/libfreenect/include/libfreenect/libfreenect.h \
+ /usr/local/include/libfreenect/libfreenect.h \
  /usr/include/x86_64-linux-gnu/sys/time.h

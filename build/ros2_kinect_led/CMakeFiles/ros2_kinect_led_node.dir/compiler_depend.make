@@ -690,12 +690,10 @@ CMakeFiles/ros2_kinect_led_node.dir/src/ros2_kinect_led_node.cpp.o: /home/ri-one
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /home/ri-one/ros2_ws/install/libfreenect/include/libfreenect/libfreenect.h \
+  /usr/local/include/libfreenect/libfreenect.h \
   /usr/include/x86_64-linux-gnu/sys/time.h \
-  /home/ri-one/ros2_ws/install/libfreenect/include/libfreenect/libfreenect_sync.h
+  /usr/local/include/libfreenect/libfreenect_sync.h
 
-
-/home/ri-one/ros2_ws/install/libfreenect/include/libfreenect/libfreenect_sync.h:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
@@ -1409,6 +1407,8 @@ CMakeFiles/ros2_kinect_led_node.dir/src/ros2_kinect_led_node.cpp.o: /home/ri-one
 
 /opt/ros/humble/include/rcl/rcl/init_options.h:
 
+/usr/local/include/libfreenect/libfreenect.h:
+
 /opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
 
 /opt/ros/humble/include/tracetools/tracetools/config.h:
@@ -1426,8 +1426,6 @@ CMakeFiles/ros2_kinect_led_node.dir/src/ros2_kinect_led_node.cpp.o: /home/ri-one
 /usr/include/c++/11/new:
 
 /usr/include/c++/11/bits/sstream.tcc:
-
-/home/ri-one/ros2_ws/install/libfreenect/include/libfreenect/libfreenect.h:
 
 /usr/include/c++/11/array:
 
@@ -1812,6 +1810,8 @@ CMakeFiles/ros2_kinect_led_node.dir/src/ros2_kinect_led_node.cpp.o: /home/ri-one
 /usr/include/c++/11/clocale:
 
 /opt/ros/humble/include/rcl/rcl/event.h:
+
+/usr/local/include/libfreenect/libfreenect_sync.h:
 
 /opt/ros/humble/include/rcl/rcl/publisher.h:
 

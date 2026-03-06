@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target kobuki_ros_node[0m
+[35m[1mConsolidate compiler generated dependencies of target kobuki_ros[0m
+[ 33%] Built target kobuki_ros_node
+[100%] Built target kobuki_ros
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/lib/kobuki_node/kobuki_ros_node
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/lib/libkobuki_ros.so
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/include/kobuki_node/diagnostics.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/include/kobuki_node/kobuki_ros.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/include/kobuki_node/odometry.hpp
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/config/kobuki_node_params.yaml
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/launch/kobuki_node-composed-launch.py
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/launch/kobuki_node-launch.py
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/ament_index/resource_index/package_run_dependencies/kobuki_node
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/ament_index/resource_index/parent_prefix_path/kobuki_node
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/environment/ament_prefix_path.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/environment/path.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/environment/path.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/local_setup.bash
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/local_setup.sh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/local_setup.zsh
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/local_setup.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/package.dsv
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/ament_index/resource_index/packages/kobuki_node
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/ament_index/resource_index/rclcpp_components/kobuki_node
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/cmake/kobuki_nodeConfig.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/cmake/kobuki_nodeConfig-version.cmake
+-- Symlinking: /home/ri-one/ri_one_master_ws/install/kobuki_node/share/kobuki_node/package.xml

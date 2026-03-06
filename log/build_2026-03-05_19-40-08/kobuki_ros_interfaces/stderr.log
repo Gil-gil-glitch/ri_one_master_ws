@@ -1,6 +1,0 @@
-gmake[2]: *** [CMakeFiles/ament_cmake_python_build_kobuki_ros_interfaces_egg.dir/build.make:85: CMakeFiles/ament_cmake_python_build_kobuki_ros_interfaces_egg.dir/depend] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/kobuki_ros_interfaces__rosidl_typesupport_fastrtps_c.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:446: CMakeFiles/ament_cmake_python_build_kobuki_ros_interfaces_egg.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:316: CMakeFiles/kobuki_ros_interfaces__rosidl_typesupport_introspection_c.dir/all] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:266: CMakeFiles/kobuki_ros_interfaces__cpp.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

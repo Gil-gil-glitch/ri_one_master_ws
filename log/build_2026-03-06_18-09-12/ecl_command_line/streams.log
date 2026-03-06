@@ -1,0 +1,48 @@
+[0.108s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_command_line': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_command_line -- -j4 -l4
+[0.391s] [100%] Built target ecl_demo_command_line
+[0.510s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_command_line' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_command_line -- -j4 -l4
+[0.519s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_command_line': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_command_line
+[0.569s] -- Install configuration: ""
+[0.569s] -- Execute custom install script
+[0.569s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/arg.hpp
+[0.569s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/arg_exception.hpp
+[0.570s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/cmd_line.hpp
+[0.570s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/cmd_line_interface.hpp
+[0.576s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/cmd_line_output.hpp
+[0.576s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/constraint.hpp
+[0.577s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/docbook_output.hpp
+[0.577s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/help_visitor.hpp
+[0.577s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/ignore_rest_visitor.hpp
+[0.577s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/multi_arg.hpp
+[0.577s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/multi_switch_arg.hpp
+[0.578s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/optional_unlabeled_tracker.hpp
+[0.582s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/std_output.hpp
+[0.583s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/switch_arg.hpp
+[0.584s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/unlabeled_multi_arg.hpp
+[0.585s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/unlabeled_value_arg.hpp
+[0.585s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/value_arg.hpp
+[0.585s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/values_constraint.hpp
+[0.585s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/version_visitor.hpp
+[0.585s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/visitor.hpp
+[0.586s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line/xor_handler.hpp
+[0.591s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/include/ecl/command_line.hpp
+[0.594s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/lib/ecl_command_line/demo_command_line
+[0.594s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ament_index/resource_index/package_run_dependencies/ecl_command_line
+[0.594s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ament_index/resource_index/parent_prefix_path/ecl_command_line
+[0.595s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/environment/ament_prefix_path.sh
+[0.595s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/environment/ament_prefix_path.dsv
+[0.601s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/environment/path.sh
+[0.602s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/environment/path.dsv
+[0.602s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/local_setup.bash
+[0.603s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/local_setup.sh
+[0.603s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/local_setup.zsh
+[0.603s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/local_setup.dsv
+[0.603s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/package.dsv
+[0.647s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ament_index/resource_index/packages/ecl_command_line
+[0.647s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/cmake/ament_cmake_export_targets-extras.cmake
+[0.648s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.648s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/cmake/ecl_command_lineConfig.cmake
+[0.648s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/cmake/ecl_command_lineConfig-version.cmake
+[0.649s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/package.xml
+[0.657s] -- Up-to-date: /home/ri-one/ri_one_master_ws/install/ecl_command_line/share/ecl_command_line/cmake/ecl_command_lineExport.cmake
+[0.676s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_command_line' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_command_line

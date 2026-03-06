@@ -1,0 +1,81 @@
+[0.048s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_converters': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib:/home/ri-one/ri_one_master_ws/install/ecl_type_traits/lib:/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_type_traits/bin:/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_converters -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_converters
+[0.177s] -- The C compiler identification is GNU 11.4.0
+[0.304s] -- The CXX compiler identification is GNU 11.4.0
+[0.321s] -- Detecting C compiler ABI info
+[0.558s] -- Detecting C compiler ABI info - done
+[0.586s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.587s] -- Detecting C compile features
+[0.588s] -- Detecting C compile features - done
+[0.600s] -- Detecting CXX compiler ABI info
+[0.806s] -- Detecting CXX compiler ABI info - done
+[0.839s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.840s] -- Detecting CXX compile features
+[0.842s] -- Detecting CXX compile features - done
+[0.848s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.202s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.360s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.441s] -- Found ecl_build: 1.0.3 (/opt/ros/humble/share/ecl_build/cmake)
+[1.454s] -- Found ecl_config: 1.2.0 (/home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake)
+[1.458s] -- Found ecl_concepts: 1.2.1 (/home/ri-one/ri_one_master_ws/install/ecl_concepts/share/ecl_concepts/cmake)
+[1.475s] -- Found ecl_errors: 1.2.0 (/home/ri-one/ri_one_master_ws/install/ecl_errors/share/ecl_errors/cmake)
+[1.481s] -- Found ecl_exceptions: 1.2.1 (/home/ri-one/ri_one_master_ws/install/ecl_exceptions/share/ecl_exceptions/cmake)
+[1.645s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.695s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.702s] -- Looking for pthread.h
+[1.871s] -- Looking for pthread.h - found
+[1.871s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.061s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.066s] -- Found Threads: TRUE  
+[2.112s] -- Configuring done
+[2.175s] -- Generating done
+[2.195s] -- Build files have been written to: /home/ri-one/ri_one_master_ws/build/ecl_converters
+[2.221s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_converters' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib:/home/ri-one/ri_one_master_ws/install/ecl_type_traits/lib:/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_type_traits/bin:/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_converters -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ecl_converters
+[2.227s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_converters': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib:/home/ri-one/ri_one_master_ws/install/ecl_type_traits/lib:/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_type_traits/bin:/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_converters -- -j4 -l4
+[2.349s] [ 10%] [32mBuilding CXX object src/examples/CMakeFiles/demo_float_converters.dir/float_converters.cpp.o[0m
+[2.946s] [ 20%] [32m[1mLinking CXX executable demo_float_converters[0m
+[3.132s] [ 20%] Built target demo_float_converters
+[3.176s] [ 30%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[9.585s] [ 40%] [32m[1mLinking CXX static library libgtest.a[0m
+[9.772s] [ 40%] Built target gtest
+[9.819s] [ 50%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[11.138s] [ 60%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[11.259s] [ 60%] Built target gtest_main
+[11.298s] [ 70%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_byte_array_converters.dir/byte_array_converters.cpp.o[0m
+[13.472s] [ 80%] [32m[1mLinking CXX executable ecl_test_byte_array_converters[0m
+[13.828s] [ 80%] Built target ecl_test_byte_array_converters
+[13.869s] [ 90%] [32mBuilding CXX object src/test/CMakeFiles/ecl_test_converters.dir/converters.cpp.o[0m
+[15.700s] [100%] [32m[1mLinking CXX executable ecl_test_converters[0m
+[16.113s] [100%] Built target ecl_test_converters
+[16.146s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_converters' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib:/home/ri-one/ri_one_master_ws/install/ecl_type_traits/lib:/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_type_traits/bin:/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_converters -- -j4 -l4
+[16.146s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_converters': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib:/home/ri-one/ri_one_master_ws/install/ecl_type_traits/lib:/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_type_traits/bin:/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_converters
+[16.176s] -- Install configuration: ""
+[16.177s] -- Execute custom install script
+[16.178s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/include/ecl/converters/char.hpp
+[16.197s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/include/ecl/converters/char_strings.hpp
+[16.215s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/include/ecl/converters/converter.hpp
+[16.235s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/include/ecl/converters/from_byte_array.hpp
+[16.256s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/include/ecl/converters/integers.hpp
+[16.284s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/include/ecl/converters/string.hpp
+[16.307s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/include/ecl/converters/to_byte_array.hpp
+[16.343s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/include/ecl/converters.hpp
+[16.372s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/lib/ecl_converters/demo_float_converters
+[16.392s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ament_index/resource_index/package_run_dependencies/ecl_converters
+[16.414s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ament_index/resource_index/parent_prefix_path/ecl_converters
+[16.437s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/environment/ament_prefix_path.sh
+[16.461s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/environment/ament_prefix_path.dsv
+[16.487s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/environment/path.sh
+[16.516s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/environment/path.dsv
+[16.534s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/local_setup.bash
+[16.551s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/local_setup.sh
+[16.569s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/local_setup.zsh
+[16.593s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/local_setup.dsv
+[16.609s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/package.dsv
+[16.628s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ament_index/resource_index/packages/ecl_converters
+[16.647s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/cmake/ament_cmake_export_targets-extras.cmake
+[16.667s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.685s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.702s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/cmake/ecl_convertersConfig.cmake
+[16.719s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/cmake/ecl_convertersConfig-version.cmake
+[16.738s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/package.xml
+[16.756s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_converters/share/ecl_converters/cmake/ecl_convertersExport.cmake
+[16.763s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_converters' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions:/home/ri-one/ri_one_master_ws/install/ecl_concepts:/home/ri-one/ri_one_master_ws/install/ecl_type_traits:/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_mpl:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_exceptions/lib:/home/ri-one/ri_one_master_ws/install/ecl_type_traits/lib:/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_type_traits/bin:/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_converters

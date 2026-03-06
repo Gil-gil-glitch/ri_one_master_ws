@@ -1,0 +1,44 @@
+[0.046s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_filesystem': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_filesystem -- -j4 -l4
+[0.157s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.161s] [35m[1mConsolidate compiler generated dependencies of target ecl_filesystem[0m
+[0.168s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.202s] [ 25%] Built target gtest_main
+[0.209s] [ 50%] Built target gtest
+[0.210s] [ 75%] Built target ecl_filesystem
+[0.232s] [35m[1mConsolidate compiler generated dependencies of target ecl_test_realpath[0m
+[0.260s] [100%] Built target ecl_test_realpath
+[0.290s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ecl_filesystem' returned '0': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_filesystem -- -j4 -l4
+[0.291s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_filesystem': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ecl_filesystem
+[0.300s] -- Install configuration: ""
+[0.302s] -- Execute custom install script
+[0.302s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/include/ecl/filesystem/errors.hpp
+[0.319s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/include/ecl/filesystem/macros.hpp
+[0.347s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/include/ecl/filesystem/realpath.hpp
+[0.363s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/include/ecl/filesystem/config.hpp
+[0.380s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/include/ecl/filesystem.hpp
+[0.400s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/environment/library_path.sh
+[0.423s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/environment/library_path.dsv
+[0.442s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ament_index/resource_index/package_run_dependencies/ecl_filesystem
+[0.460s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ament_index/resource_index/parent_prefix_path/ecl_filesystem
+[0.478s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/environment/ament_prefix_path.sh
+[0.495s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/environment/ament_prefix_path.dsv
+[0.512s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/environment/path.sh
+[0.530s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/environment/path.dsv
+[0.545s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/local_setup.bash
+[0.560s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/local_setup.sh
+[0.576s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/local_setup.zsh
+[0.593s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/local_setup.dsv
+[0.612s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/package.dsv
+[0.628s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ament_index/resource_index/packages/ecl_filesystem
+[0.649s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/cmake/ament_cmake_export_targets-extras.cmake
+[0.665s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.687s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/cmake/ament_cmake_export_libraries-extras.cmake
+[0.708s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.725s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/cmake/ecl_filesystemConfig.cmake
+[0.742s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/cmake/ecl_filesystemConfig-version.cmake
+[0.756s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/package.xml
+[0.771s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/cmake/ecl_filesystemExport.cmake
+[0.772s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/share/ecl_filesystem/cmake/ecl_filesystemExport-noconfig.cmake
+[0.773s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/lib/libecl_filesystem.so.1.2.1
+[0.776s] -- Set runtime path of "/home/ri-one/ri_one_master_ws/install/ecl_filesystem/lib/libecl_filesystem.so.1.2.1" to ""
+[0.776s] -- Installing: /home/ri-one/ri_one_master_ws/install/ecl_filesystem/lib/libecl_filesystem.so
