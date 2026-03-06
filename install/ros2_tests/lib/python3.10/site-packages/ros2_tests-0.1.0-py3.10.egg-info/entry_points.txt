@@ -1,7 +1,0 @@
-[console_scripts]
-depth_viewer = ros2_tests.depth_viewer:main
-led_test = ros2_tests.led_test:main
-mic_listener = ros2_tests.mic_listener:main
-rgb_viewer = ros2_tests.rgb_viewer:main
-tilt_test = ros2_tests.tilt_test:main
-

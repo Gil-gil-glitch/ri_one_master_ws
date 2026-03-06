@@ -1,0 +1,23 @@
+[0.092s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_led': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ros2_kinect_led -- -j4 -l4
+[0.571s] [100%] Built target ros2_kinect_led_node
+[0.718s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_led' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ros2_kinect_led -- -j4 -l4
+[0.719s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_led': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ros2_kinect_led
+[0.757s] -- Install configuration: ""
+[0.761s] -- Execute custom install script
+[0.761s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/lib/ros2_kinect_led/ros2_kinect_led_node
+[0.762s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ament_index/resource_index/package_run_dependencies/ros2_kinect_led
+[0.762s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ament_index/resource_index/parent_prefix_path/ros2_kinect_led
+[0.762s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/environment/ament_prefix_path.sh
+[0.763s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/environment/ament_prefix_path.dsv
+[0.763s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/environment/path.sh
+[0.764s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/environment/path.dsv
+[0.764s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/local_setup.bash
+[0.765s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/local_setup.sh
+[0.766s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/local_setup.zsh
+[0.766s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/local_setup.dsv
+[0.768s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/package.dsv
+[0.817s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ament_index/resource_index/packages/ros2_kinect_led
+[0.818s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/cmake/ros2_kinect_ledConfig.cmake
+[0.818s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/cmake/ros2_kinect_ledConfig-version.cmake
+[0.818s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_led/share/ros2_kinect_led/package.xml
+[0.835s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_led' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ros2_kinect_led

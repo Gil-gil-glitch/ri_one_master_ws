@@ -1,0 +1,29 @@
+[0.302s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kinect2_registration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/kinect2_registration -- -j4 -l4
+[0.745s] [100%] Built target kinect2_registration
+[0.996s] Invoked command in '/home/ri-one/ri_one_master_ws/build/kinect2_registration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/kinect2_registration -- -j4 -l4
+[0.997s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kinect2_registration': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/kinect2_registration
+[1.033s] -- Install configuration: ""
+[1.034s] -- Execute custom install script
+[1.034s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/include/kinect2_registration/kinect2_console.h
+[1.041s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/include/kinect2_registration/kinect2_registration.h
+[1.041s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/library_path.sh
+[1.041s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/library_path.dsv
+[1.041s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/ament_index/resource_index/package_run_dependencies/kinect2_registration
+[1.041s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/ament_index/resource_index/parent_prefix_path/kinect2_registration
+[1.041s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/ament_prefix_path.sh
+[1.042s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/ament_prefix_path.dsv
+[1.042s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/path.sh
+[1.042s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/environment/path.dsv
+[1.042s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/local_setup.bash
+[1.043s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/local_setup.sh
+[1.043s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/local_setup.zsh
+[1.054s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/local_setup.dsv
+[1.055s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/package.dsv
+[1.057s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/ament_index/resource_index/packages/kinect2_registration
+[1.064s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.064s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/cmake/ament_cmake_export_libraries-extras.cmake
+[1.065s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/cmake/kinect2_registrationConfig.cmake
+[1.065s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/cmake/kinect2_registrationConfig-version.cmake
+[1.065s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect2_registration/share/kinect2_registration/package.xml
+[1.065s] -- Up-to-date: /home/ri-one/ri_one_master_ws/install/kinect2_registration/lib/libkinect2_registration.a
+[1.065s] Invoked command in '/home/ri-one/ri_one_master_ws/build/kinect2_registration' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/kinect2_registration

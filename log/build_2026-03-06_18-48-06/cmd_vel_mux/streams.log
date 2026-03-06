@@ -1,0 +1,30 @@
+[0.039s] Invoking command in '/home/ri-one/ri_one_master_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/cmd_vel_mux -- -j4 -l4
+[0.304s] [ 50%] Built target cmd_vel_mux
+[0.315s] [100%] Built target cmd_vel_mux_node
+[0.371s] Invoked command in '/home/ri-one/ri_one_master_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/cmd_vel_mux -- -j4 -l4
+[0.372s] Invoking command in '/home/ri-one/ri_one_master_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/cmd_vel_mux
+[0.389s] -- Install configuration: ""
+[0.390s] -- Execute custom install script
+[0.391s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/lib/cmd_vel_mux/cmd_vel_mux_node
+[0.393s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/lib/libcmd_vel_mux.so
+[0.394s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/include/cmd_vel_mux/cmd_vel_mux.hpp
+[0.395s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/config/cmd_vel_mux_params.yaml
+[0.395s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-composed-launch.py
+[0.395s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-launch.py
+[0.395s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/ament_index/resource_index/package_run_dependencies/cmd_vel_mux
+[0.395s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/ament_index/resource_index/parent_prefix_path/cmd_vel_mux
+[0.395s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.sh
+[0.396s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.dsv
+[0.396s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.sh
+[0.396s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.dsv
+[0.399s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.bash
+[0.399s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.sh
+[0.399s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.zsh
+[0.399s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.dsv
+[0.399s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv
+[0.432s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/ament_index/resource_index/packages/cmd_vel_mux
+[0.432s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/ament_index/resource_index/rclcpp_components/cmd_vel_mux
+[0.432s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig.cmake
+[0.433s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig-version.cmake
+[0.433s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.xml
+[0.448s] Invoked command in '/home/ri-one/ri_one_master_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/cmd_vel_mux

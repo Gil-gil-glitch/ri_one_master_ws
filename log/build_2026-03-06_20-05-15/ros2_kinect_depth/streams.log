@@ -1,0 +1,23 @@
+[0.856s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_depth': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ros2_kinect_depth -- -j4 -l4
+[1.027s] [100%] Built target depth_node
+[1.075s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_depth' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ros2_kinect_depth -- -j4 -l4
+[1.076s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_depth': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ros2_kinect_depth
+[1.108s] -- Install configuration: ""
+[1.109s] -- Execute custom install script
+[1.109s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/lib/ros2_kinect_depth/depth_node
+[1.109s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ament_index/resource_index/package_run_dependencies/ros2_kinect_depth
+[1.110s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ament_index/resource_index/parent_prefix_path/ros2_kinect_depth
+[1.110s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/environment/ament_prefix_path.sh
+[1.110s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/environment/ament_prefix_path.dsv
+[1.110s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/environment/path.sh
+[1.110s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/environment/path.dsv
+[1.110s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/local_setup.bash
+[1.111s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/local_setup.sh
+[1.111s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/local_setup.zsh
+[1.111s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/local_setup.dsv
+[1.120s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/package.dsv
+[1.137s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ament_index/resource_index/packages/ros2_kinect_depth
+[1.138s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/cmake/ros2_kinect_depthConfig.cmake
+[1.138s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/cmake/ros2_kinect_depthConfig-version.cmake
+[1.139s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/ros2_kinect_depth/share/ros2_kinect_depth/package.xml
+[1.143s] Invoked command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_depth' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ros2_kinect_depth

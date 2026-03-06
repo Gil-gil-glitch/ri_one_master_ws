@@ -1,0 +1,3 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/kinect2_calibration_node.dir/src/kinect2_calibration.cpp.o[0m
+[100%] [32m[1mLinking CXX executable kinect2_calibration_node[0m
+[100%] Built target kinect2_calibration_node

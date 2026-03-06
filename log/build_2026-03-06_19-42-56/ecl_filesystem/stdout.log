@@ -1,0 +1,4 @@
+[ 50%] Built target gtest_main
+[ 75%] Built target gtest
+[ 62%] Built target ecl_filesystem
+[100%] Built target ecl_test_realpath

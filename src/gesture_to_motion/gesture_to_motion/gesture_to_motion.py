@@ -1,4 +1,5 @@
 import rclpy
+import time
 from rclpy.node import Node
 from std_msgs.msg import String
 from geometry_msgs.msg import Twist
@@ -33,18 +34,32 @@ class GestureToMotion(Node):
 
         self.get_logger().info("Gesture to Motion Node Started")
 
+    def stop_robot(self):
+
+        self.current_twist.linear.x = 0.0
+        self.current_twist.angular.z = 0.0
+
+        self.get_logger().info("Robot stopped")
+
+
 
     def gesture_callback(self, msg):
+
+        self.get_logger().info(f"Gesture received: {msg.data} ")
 
         if msg.data == "open_palm":
             self.get_logger().info("Open palm detected. Moving forward.")
             self.current_twist.linear.x = 0.3
             self.current_twist.angular.z = 0.0
 
+
+            self.create_timer(1.0, self.stop_robot)
+
         elif msg.data == "fist":
             self.get_logger().info("Fist detected. Stopping.")
             self.current_twist.linear.x = 0.0
             self.current_twist.angular.z = 0.0
+
 
 
     def publish_velocity(self):

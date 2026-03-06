@@ -1,0 +1,17 @@
+[2.028s] Invoking command in '/home/ri-one/ri_one_master_ws/build/gesture_detection': PYTHONPATH=/home/ri-one/ri_one_master_ws/build/gesture_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ri-one/ri_one_master_ws/install/gesture_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ri-one/ri_one_master_ws/build/gesture_detection/build --no-deps symlink_data
+[2.715s] running develop
+[3.228s] running egg_info
+[3.229s] writing gesture_detection.egg-info/PKG-INFO
+[3.231s] writing dependency_links to gesture_detection.egg-info/dependency_links.txt
+[3.231s] writing entry points to gesture_detection.egg-info/entry_points.txt
+[3.232s] writing requirements to gesture_detection.egg-info/requires.txt
+[3.232s] writing top-level names to gesture_detection.egg-info/top_level.txt
+[3.236s] reading manifest file 'gesture_detection.egg-info/SOURCES.txt'
+[3.236s] writing manifest file 'gesture_detection.egg-info/SOURCES.txt'
+[3.236s] running build_ext
+[3.236s] Creating /home/ri-one/ri_one_master_ws/install/gesture_detection/lib/python3.10/site-packages/gesture-detection.egg-link (link to .)
+[3.236s] Installing open_palm_detector script to /home/ri-one/ri_one_master_ws/install/gesture_detection/lib/gesture_detection
+[3.238s] 
+[3.238s] Installed /home/ri-one/ri_one_master_ws/build/gesture_detection
+[3.239s] running symlink_data
+[3.359s] Invoked command in '/home/ri-one/ri_one_master_ws/build/gesture_detection' returned '0': PYTHONPATH=/home/ri-one/ri_one_master_ws/build/gesture_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ri-one/ri_one_master_ws/install/gesture_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ri-one/ri_one_master_ws/build/gesture_detection/build --no-deps symlink_data

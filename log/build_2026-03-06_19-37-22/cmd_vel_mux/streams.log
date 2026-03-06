@@ -1,0 +1,30 @@
+[0.121s] Invoking command in '/home/ri-one/ri_one_master_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/cmd_vel_mux -- -j4 -l4
+[0.644s] [ 50%] Built target cmd_vel_mux
+[0.926s] [100%] Built target cmd_vel_mux_node
+[1.045s] Invoked command in '/home/ri-one/ri_one_master_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/cmd_vel_mux -- -j4 -l4
+[1.046s] Invoking command in '/home/ri-one/ri_one_master_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/cmd_vel_mux
+[1.125s] -- Install configuration: ""
+[1.126s] -- Execute custom install script
+[1.127s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/lib/cmd_vel_mux/cmd_vel_mux_node
+[1.130s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/lib/libcmd_vel_mux.so
+[1.134s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/include/cmd_vel_mux/cmd_vel_mux.hpp
+[1.137s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/config/cmd_vel_mux_params.yaml
+[1.140s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-composed-launch.py
+[1.141s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-launch.py
+[1.141s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/ament_index/resource_index/package_run_dependencies/cmd_vel_mux
+[1.151s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/ament_index/resource_index/parent_prefix_path/cmd_vel_mux
+[1.151s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.sh
+[1.151s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.dsv
+[1.151s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.sh
+[1.151s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.dsv
+[1.152s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.bash
+[1.156s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.sh
+[1.156s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.zsh
+[1.156s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.dsv
+[1.157s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv
+[1.243s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/ament_index/resource_index/packages/cmd_vel_mux
+[1.246s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/ament_index/resource_index/rclcpp_components/cmd_vel_mux
+[1.246s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig.cmake
+[1.246s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig-version.cmake
+[1.247s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.xml
+[1.261s] Invoked command in '/home/ri-one/ri_one_master_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/cmd_vel_mux

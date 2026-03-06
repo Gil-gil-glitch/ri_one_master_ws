@@ -1,0 +1,25 @@
+[0.731s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kinect_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/ecl_filesystem:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/kinect_ros2 -- -j4 -l4
+[0.967s] [100%] Built target kinect_ros2_node
+[1.006s] Invoked command in '/home/ri-one/ri_one_master_ws/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/ecl_filesystem:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/kinect_ros2 -- -j4 -l4
+[1.007s] Invoking command in '/home/ri-one/ri_one_master_ws/build/kinect_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/ecl_filesystem:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/kinect_ros2
+[1.039s] -- Install configuration: ""
+[1.040s] -- Execute custom install script
+[1.041s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/lib/kinect_ros2/kinect_ros2_node
+[1.042s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/cfg/calibration_depth.yaml
+[1.042s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/cfg/calibration_rgb.yaml
+[1.043s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/ament_index/resource_index/package_run_dependencies/kinect_ros2
+[1.043s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/ament_index/resource_index/parent_prefix_path/kinect_ros2
+[1.044s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.sh
+[1.044s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/environment/ament_prefix_path.dsv
+[1.045s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/environment/path.sh
+[1.050s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/environment/path.dsv
+[1.050s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/local_setup.bash
+[1.051s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/local_setup.sh
+[1.051s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/local_setup.zsh
+[1.051s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/local_setup.dsv
+[1.051s] -- Symlinking: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/package.dsv
+[1.090s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/ament_index/resource_index/packages/kinect_ros2
+[1.090s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config.cmake
+[1.092s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/cmake/kinect_ros2Config-version.cmake
+[1.093s] -- Up-to-date symlink: /home/ri-one/ri_one_master_ws/install/kinect_ros2/share/kinect_ros2/package.xml
+[1.103s] Invoked command in '/home/ri-one/ri_one_master_ws/build/kinect_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ri-one/ri_one_master_ws/install/ros2_tests:/home/ri-one/ri_one_master_ws/install/realsense_vision:/home/ri-one/ri_one_master_ws/install/ecl_filesystem:/home/ri-one/ri_one_master_ws/install/realsense2_ros_mqtt_bridge:/home/ri-one/ri_one_master_ws/install/gesture_to_motion:/home/ri-one/ri_one_master_ws/install/gesture_detection:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/kinect_ros2

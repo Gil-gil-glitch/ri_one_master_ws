@@ -1,0 +1,5 @@
+[0.030s] Invoking command in '/home/ri-one/ri_one_master_ws/build/ecl_filesystem': AMENT_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors:/home/ri-one/ri_one_master_ws/install/ecl_config:/opt/ros/humble LD_LIBRARY_PATH=/home/ri-one/ri_one_master_ws/install/ecl_errors/lib:${LD_LIBRARY_PATH} PATH=/home/ri-one/ri_one_master_ws/install/ecl_config/bin:${PATH} /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ecl_filesystem -- -j4 -l4
+[0.127s] [ 25%] Built target gtest_main
+[0.131s] [ 50%] Built target ecl_filesystem
+[0.139s] [ 75%] Built target gtest
+[0.174s] [100%] Built target ecl_test_realpath
