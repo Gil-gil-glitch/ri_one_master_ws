@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_ipc/include/ecl/ipc/semaphore_pos.hpp

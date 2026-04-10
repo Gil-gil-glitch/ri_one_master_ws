@@ -1,4 +1,0 @@
-/home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreExport.cmake
-/home/ri-one/ri_one_master_ws/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreExport-noconfig.cmake
-/home/ri-one/ri_one_master_ws/install/kobuki_core/lib/libkobuki_core.so.1.4.0
-/home/ri-one/ri_one_master_ws/install/kobuki_core/lib/libkobuki_core.so

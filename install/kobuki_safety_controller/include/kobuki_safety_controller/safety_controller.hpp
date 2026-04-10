@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/kobuki_ros/kobuki_safety_controller/include/kobuki_safety_controller/safety_controller.hpp

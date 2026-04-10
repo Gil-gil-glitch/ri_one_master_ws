@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/kobuki_ros/kobuki_node/launch/kobuki_node-composed-launch.py

@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/ecl_io/ament_cmake_core/ecl_ioConfig-version.cmake

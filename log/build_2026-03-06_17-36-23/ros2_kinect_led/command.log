@@ -1,6 +1,0 @@
-Invoking command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_led': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/ros2_kinect_led -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ros2_kinect_led
-Invoked command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_led' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ri-one/ri_one_master_ws/src/ros2_kinect_led -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ri-one/ri_one_master_ws/install/ros2_kinect_led
-Invoking command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_led': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ros2_kinect_led -- -j4 -l4
-Invoked command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_led' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ri_one_master_ws/build/ros2_kinect_led -- -j4 -l4
-Invoking command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_led': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ros2_kinect_led
-Invoked command in '/home/ri-one/ri_one_master_ws/build/ros2_kinect_led' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ri_one_master_ws/build/ros2_kinect_led

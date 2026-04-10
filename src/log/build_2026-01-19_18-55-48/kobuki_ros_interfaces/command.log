@@ -1,6 +1,0 @@
-Invoking command in '/home/ri-one/ros2_ws/src/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/kobuki_ros_interfaces -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/kobuki_ros_interfaces
-Invoked command in '/home/ri-one/ros2_ws/src/build/kobuki_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ri-one/ros2_ws/src/turtlebot2_ros2/kobuki_ros_interfaces -DCMAKE_INSTALL_PREFIX=/home/ri-one/ros2_ws/src/install/kobuki_ros_interfaces
-Invoking command in '/home/ri-one/ros2_ws/src/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/kobuki_ros_interfaces -- -j4 -l4
-Invoked command in '/home/ri-one/ros2_ws/src/build/kobuki_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/kobuki_ros_interfaces -- -j4 -l4
-Invoking command in '/home/ri-one/ros2_ws/src/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/kobuki_ros_interfaces
-Invoked command in '/home/ri-one/ros2_ws/src/build/kobuki_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/kobuki_ros_interfaces

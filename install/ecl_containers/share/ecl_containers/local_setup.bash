@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/ecl_containers/ament_cmake_environment_hooks/local_setup.bash

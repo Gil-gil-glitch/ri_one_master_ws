@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/src/audio_common/audio_common_msgs/msg/AudioData.msg

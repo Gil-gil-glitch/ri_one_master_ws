@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/kobuki_safety_controller/ament_cmake_core/kobuki_safety_controllerConfig.cmake

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ri-one/ri_one_master_ws/build/ecl_formatters/src/examples/demo_formatters" "TARGETS" "ecl_demo_formatters" "RUNTIME_DESTINATION" "lib/ecl_formatters")

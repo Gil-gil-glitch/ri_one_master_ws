@@ -1,0 +1,16 @@
+# Core Math & Vision (Pinned to avoid Numpy 2.x breaking changes)
+numpy<2.0.0
+opencv-python>=4.8.0,<4.10.0
+
+# Perception Models
+ultralytics>=8.0.0
+insightface>=0.7.3
+onnxruntime>=1.15.0
+
+# Hardware & Math
+pyrealsense2>=2.54.1
+scipy>=1.10.0
+
+# Object Perception package dependencies (optional but recommended for full system)
+faiss-cpu
+openai-clip

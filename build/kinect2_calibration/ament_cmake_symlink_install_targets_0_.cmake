@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ri-one/ri_one_master_ws/build/kinect2_calibration/kinect2_calibration_node" "TARGETS" "kinect2_calibration_node" "DESTINATION" "lib/kinect2_calibration")

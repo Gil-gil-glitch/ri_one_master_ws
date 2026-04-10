@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ri-one/ri_one_master_ws/build/audio_common_msgs/rosidl_generator_py/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "audio_common_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/audio_common_msgs")

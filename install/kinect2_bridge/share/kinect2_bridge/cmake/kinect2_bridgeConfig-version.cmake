@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/kinect2_bridge/ament_cmake_core/kinect2_bridgeConfig-version.cmake

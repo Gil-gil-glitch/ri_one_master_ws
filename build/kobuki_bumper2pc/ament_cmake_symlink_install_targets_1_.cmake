@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ri-one/ri_one_master_ws/build/kobuki_bumper2pc/libkobuki_bumper2pc.so" "TARGETS" "kobuki_bumper2pc" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/ecl_linear_algebra/ament_cmake_core/ecl_linear_algebraConfig-version.cmake

@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces/rosidl_typesupport_introspection_c/kobuki_ros_interfaces/msg/detail/button_event__rosidl_typesupport_introspection_c.h

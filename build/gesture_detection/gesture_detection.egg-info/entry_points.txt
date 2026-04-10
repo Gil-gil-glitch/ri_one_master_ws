@@ -1,3 +1,0 @@
-[console_scripts]
-open_palm_detector = gesture_detection.open_palm_detector:main
-

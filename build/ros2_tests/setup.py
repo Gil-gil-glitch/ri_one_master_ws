@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/src/ros2_tests/setup.py

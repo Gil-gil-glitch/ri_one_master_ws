@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/install/ecl_sigslots_lite/share/ecl_sigslots_lite/cmake/ecl_sigslots_liteExport.cmake

@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/audio_common_msgs/ament_cmake_core/audio_common_msgsConfig.cmake

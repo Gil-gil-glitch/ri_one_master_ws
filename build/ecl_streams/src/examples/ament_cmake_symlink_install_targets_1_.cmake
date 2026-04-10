@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ri-one/ri_one_master_ws/build/ecl_streams/src/examples/demo_log_streams" "TARGETS" "ecl_time_example_log_streams" "RUNTIME_DESTINATION" "lib/ecl_streams")

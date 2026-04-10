@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/install/ecl_config/share/ecl_config/cmake/ecl_configExport.cmake

@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/realsense2_camera_msgs/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/safety_interface_config_read__rosidl_typesupport_introspection_cpp.hpp

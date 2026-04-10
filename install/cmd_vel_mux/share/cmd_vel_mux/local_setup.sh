@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/cmd_vel_mux/ament_cmake_environment_hooks/local_setup.sh

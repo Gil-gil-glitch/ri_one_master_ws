@@ -10,7 +10,9 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(audio_common_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(PkgConfig REQUIRED)
 pkg_check_modules(FREENECT REQUIRED libfreenect)
+include_directories(${FREENECT_INCLUDE_DIRS})
 
 include_directories(
   include
@@ -20,7 +22,7 @@ include_directories(
 link_directories(${FREENECT_LIBRARY_DIRS})
 add_executable(ros2_kinect_mic_node_node src/ros2_kinect_mic_node.cpp)
 ament_target_dependencies(ros2_kinect_mic_node_node rclcpp audio_common_msgs)
-target_link_libraries(ros2_kinect_mic_node_node freenect)
+target_link_libraries(ros2_kinect_mic_node_node ${FREENECT_LIBRARIES})
 
 install(TARGETS
   ros2_kinect_mic_node_node

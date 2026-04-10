@@ -1,0 +1,31 @@
+# ROS 2 Workspaces
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# AI Models / Assets
+yolov8n.pt
+*.pt
+*.gguf
+person_database.json
+
+# Exclude rogue build folders in src just in case
+src/build/
+src/install/
+src/log/

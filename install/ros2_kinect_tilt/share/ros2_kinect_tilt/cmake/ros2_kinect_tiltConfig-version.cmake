@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/ros2_kinect_tilt/ament_cmake_core/ros2_kinect_tiltConfig-version.cmake

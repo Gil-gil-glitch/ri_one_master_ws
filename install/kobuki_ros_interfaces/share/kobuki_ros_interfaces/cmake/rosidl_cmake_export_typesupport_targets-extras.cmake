@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake

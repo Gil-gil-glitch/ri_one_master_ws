@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/realsense2_rviz_plugin/ament_cmake_core/realsense2_rviz_pluginConfig-version.cmake

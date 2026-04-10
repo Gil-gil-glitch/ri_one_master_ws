@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces/ament_cmake_python/kobuki_ros_interfaces/kobuki_ros_interfaces.egg-info/SOURCES.txt

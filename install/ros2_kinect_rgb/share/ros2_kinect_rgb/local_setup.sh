@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/ros2_kinect_rgb/ament_cmake_environment_hooks/local_setup.sh

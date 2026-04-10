@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/kobuki_core/ament_cmake_core/kobuki_coreConfig.cmake

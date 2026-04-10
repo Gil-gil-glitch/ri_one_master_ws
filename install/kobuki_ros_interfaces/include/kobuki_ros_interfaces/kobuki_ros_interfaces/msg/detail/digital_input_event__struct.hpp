@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces/rosidl_generator_cpp/kobuki_ros_interfaces/msg/detail/digital_input_event__struct.hpp

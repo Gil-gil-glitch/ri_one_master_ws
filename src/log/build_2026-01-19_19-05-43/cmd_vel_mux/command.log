@@ -1,4 +1,0 @@
-Invoking command in '/home/ri-one/ros2_ws/src/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/cmd_vel_mux -- -j4 -l4
-Invoked command in '/home/ri-one/ros2_ws/src/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ri-one/ros2_ws/src/build/cmd_vel_mux -- -j4 -l4
-Invoking command in '/home/ri-one/ros2_ws/src/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/cmd_vel_mux
-Invoked command in '/home/ri-one/ros2_ws/src/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ri-one/ros2_ws/src/build/cmd_vel_mux

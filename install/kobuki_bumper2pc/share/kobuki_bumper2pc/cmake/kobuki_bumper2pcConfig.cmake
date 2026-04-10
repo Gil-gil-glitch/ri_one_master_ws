@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/kobuki_bumper2pc/ament_cmake_core/kobuki_bumper2pcConfig.cmake

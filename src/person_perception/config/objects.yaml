@@ -1,0 +1,51 @@
+categories:
+  Tableware:
+    - cup
+    - bowl
+    - plate
+  Cutlery:
+    - spoon
+    - knife
+  Containers:
+    - box
+    - bottle
+  Books:
+    - notebook
+    - DVD case
+  Bags:
+    - tote bag
+    - paper bag
+  Pourable Objects:
+    - cereal box
+    - juice carton
+  Tiny Objects:
+    - pen
+    - tea bag
+  Deformable Objects:
+    - towel
+    - cloth
+  Fragile Objects:
+    - chocolate egg
+    - eggshell
+
+# Authorized object labels in flat list for YOLO training
+labels:
+  - cup
+  - bowl
+  - plate
+  - spoon
+  - knife
+  - box
+  - bottle
+  - notebook
+  - DVD case
+  - tote bag
+  - paper bag
+  - cereal box
+  - juice carton
+  - pen
+  - tea bag
+  - towel
+  - cloth
+  - chocolate egg
+  - eggshell

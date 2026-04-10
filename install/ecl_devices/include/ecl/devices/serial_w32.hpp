@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/src/turtlebot2_ros2/ecl_core/ecl_devices/include/ecl/devices/serial_w32.hpp

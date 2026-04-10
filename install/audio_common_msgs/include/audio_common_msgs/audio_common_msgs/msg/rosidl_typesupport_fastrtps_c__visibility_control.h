@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/audio_common_msgs/rosidl_typesupport_fastrtps_c/audio_common_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

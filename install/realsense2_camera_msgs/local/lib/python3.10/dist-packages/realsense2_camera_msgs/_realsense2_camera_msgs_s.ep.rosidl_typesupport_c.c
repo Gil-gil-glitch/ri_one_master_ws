@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/realsense2_camera_msgs/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c

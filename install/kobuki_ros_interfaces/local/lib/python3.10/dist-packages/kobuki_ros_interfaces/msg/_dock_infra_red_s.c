@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/kobuki_ros_interfaces/rosidl_generator_py/kobuki_ros_interfaces/msg/_dock_infra_red_s.c

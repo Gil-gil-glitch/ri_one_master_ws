@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ri-one/ri_one_master_ws/build/ecl_errors/src/examples/demo_errors" "TARGETS" "ecl_errors_example_errors" "RUNTIME_DESTINATION" "lib/ecl_errors")

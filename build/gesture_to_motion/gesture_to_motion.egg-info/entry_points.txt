@@ -1,3 +1,0 @@
-[console_scripts]
-gesture_to_motion = gesture_to_motion.gesture_to_motion:main
-

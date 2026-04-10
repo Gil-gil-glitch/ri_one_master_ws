@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ri-one/ri_one_master_ws/build/kobuki_core/src/tools/kobuki-version-info" "TARGETS" "kobuki_core_tool_version_info" "RUNTIME_DESTINATION" "bin")

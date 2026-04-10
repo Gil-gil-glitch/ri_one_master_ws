@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ri-one/ri_one_master_ws/build/kobuki_core/src/demos/demo_velocity_commands" "TARGETS" "kobuki_core_demo_velocity_commands" "RUNTIME_DESTINATION" "lib/kobuki_core")

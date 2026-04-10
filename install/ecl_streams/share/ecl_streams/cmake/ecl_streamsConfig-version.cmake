@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/build/ecl_streams/ament_cmake_core/ecl_streamsConfig-version.cmake

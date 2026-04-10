@@ -1,1 +1,0 @@
-/home/ri-one/ri_one_master_ws/install/ecl_containers/share/ecl_containers/cmake/ecl_containersExport.cmake
