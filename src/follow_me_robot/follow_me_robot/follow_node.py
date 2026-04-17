@@ -34,23 +34,46 @@ class FollowMeNode(Node):
         self.linear_p_gain = 0.8       
         self.angular_p_gain = 0.003    
 
+    # def scan_callback(self, msg):
+    #     ranges = np.array([r if 0.1 < r < 10.0 else 10.0 for r in msg.ranges])
+    #     num_points = len(ranges)
+        
+    #     if num_points == 0:
+    #         return
+
+    #     deg_45 = int(num_points * (45.0 / 360.0))
+    #     deg_15 = int(num_points * (15.0 / 360.0))
+        
+    #     left_arc = ranges[deg_15 : deg_45]
+    #     center_arc = np.concatenate((ranges[:deg_15], ranges[-deg_15:]))
+    #     right_arc = ranges[-deg_45 : -deg_15]
+        
+    #     self.min_left = np.min(left_arc) if len(left_arc) > 0 else 10.0
+    #     self.min_center = np.min(center_arc) if len(center_arc) > 0 else 10.0
+    #     self.min_right = np.min(right_arc) if len(right_arc) > 0 else 10.0
+
     def scan_callback(self, msg):
+        # 距離データを取得。0.1m以下や10m以上は無視
         ranges = np.array([r if 0.1 < r < 10.0 else 10.0 for r in msg.ranges])
         num_points = len(ranges)
         
         if num_points == 0:
             return
 
-        deg_45 = int(num_points * (45.0 / 360.0))
-        deg_15 = int(num_points * (15.0 / 360.0))
+        # --- 【修正ポイント】左右30度ずつ（合計60度）に絞る ---
+        # 全データ点数(num_points)から30度分に相当する点数を計算
+        deg_30 = int(num_points * (30.0 / 360.0))
         
-        left_arc = ranges[deg_15 : deg_45]
-        center_arc = np.concatenate((ranges[:deg_15], ranges[-deg_15:]))
-        right_arc = ranges[-deg_45 : -deg_15]
+        # 正面（インデックスの最初と最後）のデータだけを結合して「中央」とする
+        # ranges[:deg_30] は正面から左30度、ranges[-deg_30:] は正面から右30度
+        center_arc = np.concatenate((ranges[:deg_30], ranges[-deg_30:]))
         
-        self.min_left = np.min(left_arc) if len(left_arc) > 0 else 10.0
+        # 中央の最小距離を更新
         self.min_center = np.min(center_arc) if len(center_arc) > 0 else 10.0
-        self.min_right = np.min(right_arc) if len(right_arc) > 0 else 10.0
+        
+        # PCへの誤反応を防ぐため、サイドの判定は無効化（10m固定）
+        self.min_left = 10.0
+        self.min_right = 10.0
 
     def depth_callback(self, msg):
         self.latest_depth_img = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
