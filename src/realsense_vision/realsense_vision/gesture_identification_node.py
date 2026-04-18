@@ -63,6 +63,15 @@ class GestureIdentificationNode(Node):
 
         return fingers_extended == 5
 
+    def is_pointing(self, landmarks):
+        """This code determines if a person is pointin"""
+
+        index_extended = landmarks[0].y < landmarks[6].y
+        middle_folded = landmarks[12].y > landmarks[10].y
+        ring_folded = landmarks[16].y > landmarks[14].y
+        pinky_folded = landmarks[20].y > landmarks[18].y
+
+        return index_extended and middle_folded and ring_folded and pinky_folded
 
     def image_callback(self, msg):
 
@@ -79,7 +88,16 @@ class GestureIdentificationNode(Node):
 
             for hand_landmarks in result.hand_landmarks:
 
-                if self.is_open_palm(hand_landmarks):
+                if self.is_pointing(hand_landmarks):
+
+                    self.get_logger().info("Pointing detected")
+
+                    gesture_msg = String()
+                    gesture_msg.data = "pointing"
+
+                    self.publisher_.publish(gesture_msg)    
+                
+                elif self.is_open_palm(hand_landmarks):
 
                     self.get_logger().info("Open palm detected")
 
