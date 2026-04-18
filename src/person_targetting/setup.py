@@ -23,7 +23,8 @@ setup(
         ],
     },
     entry_points={
-        'console_scripts': [
-        ],
-    },
+    'console_scripts': [
+        'person_targetting_node = person_targetting.person_targetting_node:main',
+    ],
+},
 )
