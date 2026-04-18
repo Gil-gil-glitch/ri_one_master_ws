@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
     'console_scripts': [
-        'realsense_vision_node = realsense_vision.realsense_vision_node:main',
+        'gesture_identification_node = realsense_vision.gesture_identification_node:main',
     ],
 },
 )

@@ -22,6 +22,8 @@ class FollowMeNode(Node):
         self.depth_sub = self.create_subscription(Image, '/camera/camera/aligned_depth_to_color/image_raw', self.depth_callback, qos_profile_sensor_data)
         self.color_sub = self.create_subscription(Image, '/camera/camera/color/image_raw', self.color_callback, qos_profile_sensor_data)
         self.scan_sub = self.create_subscription(LaserScan, '/scan', self.scan_callback, qos_profile_sensor_data)
+
+        self.subscription = self.create_subscription(String, "/gesture", self.gesture_callback, 10)
         
         self.latest_depth_img = None
         self.min_left = 10.0

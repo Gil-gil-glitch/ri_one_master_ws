@@ -12,10 +12,10 @@ from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 
 
-class RealSenseVisionNode(Node):
+class GestureIdentificationNode(Node):
 
     def __init__(self):
-        super().__init__('realsense_vision_node')
+        super().__init__('gesture_identification')
 
         self.subscription = self.create_subscription(
             Image,
@@ -44,7 +44,7 @@ class RealSenseVisionNode(Node):
 
         self.detector = vision.HandLandmarker.create_from_options(options)
 
-        self.get_logger().info("RealSense Vision Node Started")
+        self.get_logger().info("Gesture Identification Node Started")
 
 
     def is_open_palm(self, landmarks):
@@ -93,7 +93,7 @@ def main(args=None):
 
     rclpy.init(args=args)
 
-    node = RealSenseVisionNode()
+    node = GestureIdentificationNode()
 
     rclpy.spin(node)
 
