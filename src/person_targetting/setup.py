@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'realsense_vision'
+package_name = 'person_targetting'
 
 setup(
     name=package_name,
@@ -14,7 +14,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='ri-one',
-    maintainer_email='gilsocojp@gmail.com',
+    maintainer_email='youkongmo@gmail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={
@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
     'console_scripts': [
-        'gesture_identification_node = realsense_vision.gesture_identification_node:main',
+        'person_targetting_node = person_targetting.person_targetting_node:main',
     ],
 },
 )

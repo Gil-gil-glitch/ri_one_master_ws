@@ -11,12 +11,12 @@ def generate_launch_description():
         # base_footprint から見て laser がどこにあるかを定義します
         # 引数: x y z yaw pitch roll parent_frame child_frame
         # 下記は「ロボットの中心から前方0cm、高さ10cm」に設置されている例です
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='static_tf_pub_laser',
-            arguments=['0.0', '0.0', '0.1', '0.0', '0.0', '0.0', 'base_footprint', 'laser'],
-        ),
+        #Node(
+        ##    package='tf2_ros',
+         #   executable='static_transform_publisher',
+         #   name='static_tf_pub_laser',
+         #   arguments=['0.0', '0.0', '0.1', '0.0', '0.0', '0.0', 'base_footprint', 'laser'],
+        #),
 
         # 2. Cartographer本体の起動
         Node(

@@ -1,152 +1,176 @@
+#
+#
+#  follow_me
+#
+#  This iteration of follow_me introduces a state machine with the following phases: FOLLOW and RETURN.
+#  The state FOLLOW is where the robot is guided by the user to a bag dropoff location, whereas the 
+#  the state RETURN is where the robot goes back home to its original starting locaton. The respective
+#  signals for these states is pointing and open_palm from the /gesture topic. The CML will use 
+#  different signals for these phases, however, these can be easily changed.
+#
+
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Twist
+from rclpy.action import ActionClient
+from geometry_msgs.msg import Twist, Point, PoseStamped
 from sensor_msgs.msg import Image, LaserScan
+from nav_msgs.msg import Odometry  # Added for capturing Home Position
+from std_msgs.msg import String
 from rclpy.qos import qos_profile_sensor_data
 from cv_bridge import CvBridge
 import cv2
 import numpy as np
-from ultralytics import YOLO
+
+# Nav2 Action
+from nav2_msgs.action import NavigateToPose
 
 class FollowMeNode(Node):
     def __init__(self):
         super().__init__('follow_me_node')
         
         self.bridge = CvBridge()
-        self.get_logger().info("Loading YOLOv8 AI Model...")
-        self.model = YOLO('yolov8n-seg.pt') 
-        self.get_logger().info("AI Loaded! Waiting for sensor data...")
+        self.get_logger().info("Follow node active. Mode: IDLE")
         
+        # --- State Machine ---
+        self.mode = "IDLE" 
+        self.home_pose = None # Will store the starting location
+        
+        # --- Publishers  ----
         self.cmd_vel_pub = self.create_publisher(Twist, '/commands/velocity', 10)
+
+        # --- Subscribers ---
+        self.target_sub = self.create_subscription(Point, '/target_person', self.target_callback, 10)
+        self.gesture_sub = self.create_subscription(String, '/gesture', self.gesture_callback, 10)
         
-        self.depth_sub = self.create_subscription(Image, '/camera/camera/aligned_depth_to_color/image_raw', self.depth_callback, qos_profile_sensor_data)
         self.color_sub = self.create_subscription(Image, '/camera/camera/color/image_raw', self.color_callback, qos_profile_sensor_data)
         self.scan_sub = self.create_subscription(LaserScan, '/scan', self.scan_callback, qos_profile_sensor_data)
         
-        self.latest_depth_img = None
+        # Subscribe to odometry to capture initial home location
+        self.odom_sub = self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
+        
+        # --- Nav2 Action Client ---
+        self.nav_client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
+        
+        self.latest_target = None
         self.min_left = 10.0
         self.min_center = 10.0
         self.min_right = 10.0
         
-        self.target_distance = 0.7     # Follow distance (0/7 meter)
-        self.avoid_distance = 0.3      
-        
-        self.linear_p_gain = 0.8       
-        self.angular_p_gain = 0.003    
+        self.avoid_distance = 0.35 
 
-    # def scan_callback(self, msg):
-    #     ranges = np.array([r if 0.1 < r < 10.0 else 10.0 for r in msg.ranges])
-    #     num_points = len(ranges)
-        
-    #     if num_points == 0:
-    #         return
+    def odom_callback(self, msg):
+        # Capture the very first odometry reading as our Home Position
+        if self.home_pose is None:
+            self.home_pose = msg.pose.pose
+            self.get_logger().info(f"Home position dynamically recorded: X={self.home_pose.position.x:.2f}, Y={self.home_pose.position.y:.2f}")
 
-    #     deg_45 = int(num_points * (45.0 / 360.0))
-    #     deg_15 = int(num_points * (15.0 / 360.0))
+    def gesture_callback(self, msg):
+
+        if self.mode == "RETURN":
+            self.get_logger().info("Currently returning home. Ignoring gesture commands until return is complete.")
+            return
         
-    #     left_arc = ranges[deg_15 : deg_45]
-    #     center_arc = np.concatenate((ranges[:deg_15], ranges[-deg_15:]))
-    #     right_arc = ranges[-deg_45 : -deg_15]
+        if msg.data == "pointing" and self.mode != "FOLLOW":
+            self.get_logger().info("Gesture 'pointing' received. Switching to FOLLOW mode.")
+            self.mode = "FOLLOW"
+            
+        elif msg.data == "open_palm" and self.mode != "RETURN":
+            self.get_logger().info("Gesture 'open_palm' received. Halting robot and returning home.")
+            self.mode = "RETURN"
+            
+            # FIX: Explicitly stop the robot before handing over to Nav2!
+            stop_msg = Twist()
+            self.cmd_vel_pub.publish(stop_msg)
+            
+            self.send_return_home_goal()
+
+    def send_return_home_goal(self):
+        if not self.nav_client.wait_for_server(timeout_sec=5.0):
+            self.get_logger().error("Nav2 server not available! Cannot return home.")
+            return
+
+        if self.home_pose is None:
+            self.get_logger().error("Home position was never recorded. Cannot return.")
+            return
+
+        goal_msg = NavigateToPose.Goal()
         
-    #     self.min_left = np.min(left_arc) if len(left_arc) > 0 else 10.0
-    #     self.min_center = np.min(center_arc) if len(center_arc) > 0 else 10.0
-    #     self.min_right = np.min(right_arc) if len(right_arc) > 0 else 10.0
+        # Change 'odom' to 'map' if you are using AMCL/SLAM for the Navigation Phase
+        goal_msg.pose.header.frame_id = 'odom'
+        goal_msg.pose.header.stamp = self.get_clock().now().to_msg()
+        
+        # Use the dynamically recorded home pose
+        goal_msg.pose.pose = self.home_pose
+
+        self.get_logger().info("Sending dynamic home coordinates to Nav2...")
+        self.nav_client.send_goal_async(goal_msg)
 
     def scan_callback(self, msg):
-        # 距離データを取得。0.1m以下や10m以上は無視
-        ranges = np.array([r if 0.1 < r < 10.0 else 10.0 for r in msg.ranges])
+        # FIX: Do not treat objects closer than 0.25m as 10.0m! 
+        # Only ignore 0.0 (invalid readings) and filter out parts of the robot chassis itself (e.g. < 0.10m)
+        ranges = np.array([r if r > 0.10 and r < 10.0 else 10.0 for r in msg.ranges])
         num_points = len(ranges)
         
         if num_points == 0:
             return
 
-        # --- 【修正ポイント】左右30度ずつ（合計60度）に絞る ---
-        # 全データ点数(num_points)から30度分に相当する点数を計算
-        deg_30 = int(num_points * (30.0 / 360.0))
+        # FIX: Widened the LIDAR cones to 45 degrees to see more of the environment
+        deg_45 = int(num_points * (45.0 / 360.0))
+        deg_15 = int(num_points * (15.0 / 360.0))
         
-        # 正面（インデックスの最初と最後）のデータだけを結合して「中央」とする
-        # ranges[:deg_30] は正面から左30度、ranges[-deg_30:] は正面から右30度
-        center_arc = np.concatenate((ranges[:deg_30], ranges[-deg_30:]))
+        left_arc = ranges[deg_15 : deg_45]
+        center_arc = np.concatenate((ranges[:deg_15], ranges[-deg_15:]))
+        right_arc = ranges[-deg_45 : -deg_15]
         
-        # 中央の最小距離を更新
+        self.min_left = np.min(left_arc) if len(left_arc) > 0 else 10.0
         self.min_center = np.min(center_arc) if len(center_arc) > 0 else 10.0
-        
-        # PCへの誤反応を防ぐため、サイドの判定は無効化（10m固定）
-        self.min_left = 10.0
-        self.min_right = 10.0
+        self.min_right = np.min(right_arc) if len(right_arc) > 0 else 10.0
 
-    def depth_callback(self, msg):
-        self.latest_depth_img = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
+    def target_callback(self, msg):
+        self.latest_target = msg
 
     def color_callback(self, msg):
-        if self.latest_depth_img is None:
-            return
-
-        cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+        cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
         height, width, _ = cv_image.shape
-        center_x_screen = width // 2
+        center_x = width // 2
 
-        results = self.model(cv_image, classes=[0], verbose=False)
-        twist = Twist() 
-
-        if len(results) > 0 and results[0].masks is not None:
-            mask = results[0].masks.data[0].cpu().numpy() 
-            mask = cv2.resize(mask, (width, height))
+        if self.mode == "FOLLOW":
+            twist = Twist()
             
-            M = cv2.moments(mask)
-            if M["m00"] != 0:
-                cX = int(M["m10"] / M["m00"]) 
-                cY = int(M["m01"] / M["m00"]) 
+            if self.latest_target is not None and self.latest_target.z > 0.1:
+                cX = int(self.latest_target.x)
+                cY = int(self.latest_target.y)
+                distance_meters = self.latest_target.z
                 
-                distance_mm = self.latest_depth_img[cY, cX] 
-                distance_meters = distance_mm / 1000.0
+                error_x = center_x - cX
+                twist.angular.z = float(error_x * 0.002) 
 
-                if distance_meters > 0.1:
-                    error_x = center_x_screen - cX 
-                    twist.angular.z = float(error_x * self.angular_p_gain)
+                distance_error = distance_meters - 0.7 
+                if abs(distance_error) > 0.02: 
+                    twist.linear.x = float(distance_error * 0.5) 
+                
+                # Obstacle Avoidance
+                if self.min_center < self.avoid_distance:
+                    if twist.linear.x > 0.0:
+                        twist.linear.x = 0.0 
+                elif self.min_left < self.avoid_distance:
+                    if twist.linear.x > 0.0:
+                        twist.linear.x *= 0.5  
+                    twist.angular.z -= 0.6 
+                elif self.min_right < self.avoid_distance:
+                    if twist.linear.x > 0.0:
+                        twist.linear.x *= 0.5  
+                    twist.angular.z += 0.6 
                     
-                    distance_error = distance_meters - self.target_distance
-                    if abs(distance_error) > 0.1: 
-                        twist.linear.x = float(distance_error * self.linear_p_gain)
-                        
-                    if twist.linear.x > 0:
-                        status_text = "TRACKING"
-                        color = (0, 255, 0) # Green
+                twist.linear.x = max(min(twist.linear.x, 0.6), -0.4) 
+                twist.angular.z = max(min(twist.angular.z, 1.0), -1.0) 
+                
+                self.cmd_vel_pub.publish(twist)
 
-                        if self.min_center < self.avoid_distance:
-                            twist.linear.x = 0.0
-                            if self.min_left > self.min_right:
-                                twist.angular.z = 0.5  # Left is more open, turn left
-                            else:
-                                twist.angular.z = -0.5 # Right is more open, turn right
-                            status_text = "DODGING CENTER"
-                            color = (0, 0, 255) # Red
-                            
-                        elif self.min_left < self.avoid_distance:
-                            twist.linear.x *= 0.5  
-                            twist.angular.z -= 0.6 
-                            status_text = "DODGING LEFT"
-                            color = (0, 165, 255) # Orange
-                            
-                        elif self.min_right < self.avoid_distance:
-                            twist.linear.x *= 0.5  
-                            twist.angular.z += 0.6 
-                            status_text = "DODGING RIGHT"
-                            color = (0, 165, 255) # Orange
+        elif self.mode == "RETURN":
+            cv2.putText(cv_image, "RETURNING TO BASE", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
 
-                        # Draw the status on the screen
-                        cv2.putText(cv_image, status_text, (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 3)
-
-                    twist.linear.x = max(min(twist.linear.x, 0.4), -0.4) 
-                    twist.angular.z = max(min(twist.angular.z, 1.0), -1.0) 
-
-                    # Draw targeting dot
-                    cv2.circle(cv_image, (cX, cY), 10, (0, 255, 0), -1) 
-                    cv2.putText(cv_image, f"{distance_meters:.2f}m", (cX - 20, cY - 20), 
-                                cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
-
-        self.cmd_vel_pub.publish(twist)
-        cv2.imshow("Robot View", cv_image)
+        cv2.imshow("Follow Me Camera", cv_image)
         cv2.waitKey(1)
 
 def main(args=None):
@@ -159,4 +183,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
