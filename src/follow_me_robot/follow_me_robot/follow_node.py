@@ -16,6 +16,9 @@ class FollowMeNode(Node):
         self.mode = "IDLE"
         self.latest_target = None
 
+        # Dynamic variable to represent the center of the camera`s field of view`
+        self.camera_center_x = 320  
+
         self.min_left = 10.0
         self.min_center = 10.0
         self.min_right = 10.0
@@ -65,11 +68,13 @@ class FollowMeNode(Node):
 
         # Ensure z-axis is positive for YOLO target lock
         if self.latest_target.z > 0.1:
-            # Proportional control for angular velocity based on horizontal error
-            center_x = 320  # Assuming 640x480 image
-            error_x = self.latest_target.x - center_x
+            
+            # This error represents how far the target is from the center of the camera's view. 
+            # A positive error means the target is to the right, and a negative error means 
+            # it's to the left.
+            error_x = self.latest_target.x - self.camera_center_x
 
-            normalized_error_x = error_x / center_x  # Normalize to [-1, 1]
+            normalized_error_x = error_x / self.camera_center_x  # Normalize to [-1, 1]
 
             twist.angular.z = -normalized_error_x * 0.6
 
@@ -100,9 +105,9 @@ class FollowMeNode(Node):
 
         cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
         h, w, _ = cv_image.shape
-        center_x = w // 2
-
-        twist = Twist()
+        
+        # Updating the camera center based on the actual image width
+        self.camera_center_x = w // 2
 
         if self.latest_target and self.latest_target.z > 0.1:
             cX = int(self.latest_target.x)

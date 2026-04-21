@@ -7,82 +7,70 @@ class TaskPlannerNode(Node):
     def __init__(self):
         super().__init__('task_planner_node')
 
-        # === Subscribers (購読) ===
-        # 1. Visionノードからの検知結果を購読
-        self.sub_vision = self.create_subscription(
-            String, '/receptionist/detections', self.vision_cb, 10)
-        
-        # 2. NLPノードから確定したプロフィールを購読
-        self.sub_profile = self.create_subscription(
-            String, '/person_profile', self.profile_cb, 10)
+        # Subscribers
+        self.sub_vision = self.create_subscription(String, '/receptionist/detections', self.vision_cb, 10)
+        self.sub_profile = self.create_subscription(String, '/person_profile', self.profile_cb, 10)
+        self.sub_action_status = self.create_subscription(String, '/action_status', self.action_status_cb, 10)
 
-        # === Publishers (公開) ===
-        # 1. NLPノードへ「受付開始」の指示を送る
+        # Publishers
         self.pub_nlp_trigger = self.create_publisher(String, '/nlp_instruction', 10)
-        
-        # 2. DialogueManagerへの行動指示
         self.pub_action = self.create_publisher(String, '/task_action', 10)
 
-        # 状態管理変数
+        # 状態管理
+        self.state = "WAITING_FOR_GUEST" # WAITING_FOR_GUEST, RECEPTION, GOING_TO_HOST, RETURNING_TO_DOOR
+        self.guest_count = 0
         self.last_vision_status = "searching"
-        self.is_reception_active = False # 二重に挨拶しないためのフラグ
 
-        self.get_logger().info("Task Planner Node (Vision-NLP Bridge) started.")
+        self.get_logger().info("Advanced Task Planner Node started.")
 
     def vision_cb(self, msg):
-        """Visionノードから「人が来た」という情報を受け取った時の処理"""
-        try:
-            data = json.loads(msg.data)
-            current_status = data.get("status") # "guest_arrived" か "searching"
+        """人が来たら受付を開始する"""
+        if self.state != "WAITING_FOR_GUEST":
+            return
 
-            # 状態の変化をチェック: 探索中 -> ゲスト到着
-            if current_status == "guest_arrived" and self.last_vision_status == "searching":
-                if not self.is_reception_active:
-                    self.get_logger().info("Guest detected! Sending trigger to NLP node...")
-                    
-                    # NLPノードに受付開始を指示
-                    trigger_msg = String()
-                    trigger_msg.data = "START_GUEST_RECEPTION"
-                    self.pub_nlp_trigger.publish(trigger_msg)
-                    
-                    self.is_reception_active = True # 受付モードに移行
-
-            self.last_vision_status = current_status
-        except Exception as e:
-            self.get_logger().error(f"Error in vision_cb: {e}")
+        data = json.loads(msg.data)
+        if data.get("status") == "guest_arrived" and self.last_vision_status == "searching":
+            self.get_logger().info("Guest detected! Starting reception...")
+            self.state = "RECEPTION"
+            trigger_msg = String()
+            trigger_msg.data = "START_GUEST_RECEPTION"
+            self.pub_nlp_trigger.publish(trigger_msg)
+        
+        self.last_vision_status = data.get("status")
 
     def profile_cb(self, msg):
-        """NLPノードから名前と飲み物が確定して届いた時の処理"""
-        try:
-            profile_data = json.loads(msg.data)
-            name = profile_data.get("name")
-            drink = profile_data.get("drink")
+        """NLPで名前が確定したら移動指示を出す"""
+        profile = json.loads(msg.data)
+        self.guest_count += 1
+        self.state = "GOING_TO_HOST"
 
-            if name and drink:
-                self.get_logger().info(f"Full profile received for {name}. Telling Dialogue Manager to move.")
-                
-                # 移動指示を作成
-                instruction = {
-                    "action": "MOVE_TO_HOST",
-                    "data": {"name": name, "drink": drink}
-                }
-                msg_out = String()
-                msg_out.data = json.dumps(instruction)
-                self.pub_action.publish(msg_out)
-                
-                # 受付が完了したのでフラグを戻す（次の人のために）
-                self.is_reception_active = False 
+        # 行き先を決定 (1人目と2人目で紹介内容を変える等の拡張が可能)
+        instruction = {
+            "action": "MOVE_TO_HOST",
+            "data": {
+                "name": profile.get("name"),
+                "drink": profile.get("drink"),
+                "guest_num": self.guest_count
+            }
+        }
+        self.pub_action.publish(String(data=json.dumps(instruction)))
 
-        except Exception as e:
-            self.get_logger().error(f"Error in profile_cb: {e}")
+    def action_status_cb(self, msg):
+        """DialogueManagerから『到着した』『紹介が終わった』という報告を受ける"""
+        if msg.data == "COMPLETED_GUEST_MANAGEMENT":
+            if self.guest_count < 2:
+                self.get_logger().info("Returning to door for the next guest...")
+                self.state = "RETURNING_TO_DOOR"
+                self.pub_action.publish(String(data=json.dumps({"action": "MOVE_TO_DOOR"})))
+            else:
+                self.get_logger().info("All tasks completed!")
+                self.state = "FINISHED"
+
+        elif msg.data == "ARRIVED_AT_DOOR":
+            self.state = "WAITING_FOR_GUEST"
+            self.get_logger().info("Ready for the next guest at the door.")
 
 def main(args=None):
     rclpy.init(args=args)
-    node = TaskPlannerNode()
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        node.destroy_node()
-        rclpy.shutdown()
+    rclpy.spin(TaskPlannerNode())
+    rclpy.shutdown()
