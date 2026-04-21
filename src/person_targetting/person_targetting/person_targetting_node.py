@@ -35,9 +35,11 @@ class PersonTargettingNode(Node):
         self.depth_sub = self.create_subscription(
             Image, '/camera/camera/aligned_depth_to_color/image_raw', self.depth_callback, 10)
 
-        self.gesture_sub = self.create_subscription(
-            String, '/gesture', self.gesture_callback, 10)
+        # triggered by voice commands
 
+        self.command_sub = self.create_subscription(
+            String, '/voice_imperatives', self.command_callback, 10)
+        
         self.target_pub = self.create_publisher(Point, '/target_person', 10)
 
         # State
@@ -61,15 +63,15 @@ class PersonTargettingNode(Node):
             f"candidates={len(self.capture_candidates)}"
         )
 
-    def gesture_callback(self, msg):
-        if msg.data == "pointing":
+    def command_callback(self, msg):
+        if msg.data == "following":
             if not self.target_locked:
-                self.get_logger().info("Pointing detected → capturing target")
+                self.get_logger().info("Voice command 'follow' detected → capturing target")
                 self.capture_target = True
                 self.capture_candidates = []
             else:
                 self.get_logger().info("Already locked. Ignoring.")
-        elif msg.data == "open_palm":
+        elif msg.data == "returning":
             if self.target_locked:
                 self.get_logger().info("Releasing target lock.")
                 self.capture_target = False
@@ -78,7 +80,7 @@ class PersonTargettingNode(Node):
                 self.prev_depth = None
                 self.capture_candidates = []
             else:
-                self.get_logger().info("open_palm but no lock. Ignoring.")
+                self.get_logger().info("Returning command but no lock. Ignoring.")
 
     def depth_callback(self, msg):
         self.latest_depth = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')

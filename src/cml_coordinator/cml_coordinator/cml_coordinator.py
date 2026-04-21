@@ -12,12 +12,12 @@ class CMLCoordinator(Node):
         self.state_pub = self.create_publisher(String, '/cml_state', 10)
 
         #Subscribers
-        self.gesture_sub = self.create_subscription(String, '/voice_imperatives', self.gesture_callback, 10)
+        self.command_sub = self.create_subscription(String, '/voice_imperatives', self.command_callback, 10)
 
         self.timer = self.create_timer(1.0, self.publish_state) # Publish state at 1 Hz to keep nodes in sync
         self.get_logger().info("CML Coordinator started. State: IDLE")
 
-    def gesture_callback(self, msg):
+    def command_callback(self, msg):
         if msg.data == "following":
             self.state = "FOLLOW"
             self.get_logger().info("Switching to FOLLOW")
