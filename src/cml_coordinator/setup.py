@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'cml_coordinator = cml_coordinator.cml_coordinator:main',
+            'tts_node = cml_coordinator.tts_node:main',
         ],
     },
 )
