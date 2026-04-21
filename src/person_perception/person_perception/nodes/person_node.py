@@ -36,6 +36,22 @@ try:
 except ImportError:
     IDENTITY_AVAILABLE = False
 
+# Conditional import for CLIP attribute detection
+try:
+    from ...receptionist_system.core.clip_attributes import ClipAttributeDetector
+    CLIP_AVAILABLE = True
+except ImportError:
+    try:
+        # Fallback: Try direct import path
+        import importlib
+        clip_mod = importlib.import_module(
+            'receptionist_system.core.clip_attributes'
+        )
+        ClipAttributeDetector = clip_mod.ClipAttributeDetector
+        CLIP_AVAILABLE = True
+    except (ImportError, ModuleNotFoundError):
+        CLIP_AVAILABLE = False
+
 
 class PersonNode(Node):
     """
@@ -120,6 +136,20 @@ class PersonNode(Node):
             except Exception as e:
                 self.get_logger().warn(f'OpenCV window init failed: {e}')
                 self.show_debug = False
+        
+        # Initialize CLIP attribute detector (lazy, runs at ~1Hz)
+        self.clip_detector = None
+        self._clip_interval = 1.0  # seconds between CLIP runs
+        self._last_clip_time = 0.0
+        self._cached_clip_attrs: list = []
+        try:
+            if CLIP_AVAILABLE:
+                self.get_logger().info('Initializing CLIP attribute detector...')
+                self.clip_detector = ClipAttributeDetector()
+                self.get_logger().info('CLIP ready.')
+        except Exception as e:
+            self.get_logger().warn(f'CLIP init failed: {e}')
+            self.clip_detector = None
         
         # Timer for processing loop (30Hz)
         self.timer = self.create_timer(1.0 / publish_rate, self.process_callback)
@@ -217,6 +247,22 @@ class PersonNode(Node):
         except Exception as e:
             self.get_logger().warn(f'Attribute detection error: {e}')
         
+        # Run CLIP attribute detection (throttled to ~1Hz)
+        import time
+        now = time.time()
+        if (
+            self.clip_detector is not None
+            and (now - self._last_clip_time) >= self._clip_interval
+        ):
+            try:
+                clip_attrs = self.clip_detector.detect_attributes(
+                    color_image, tuple(person['bbox'])
+                )
+                self._cached_clip_attrs = clip_attrs
+                self._last_clip_time = now
+            except Exception as e:
+                self.get_logger().warn(f'CLIP error: {e}')
+        
         # Build combined attributes list: [gender, age, clothing, accessories]
         attributes = []
         if gender:
@@ -224,6 +270,10 @@ class PersonNode(Node):
         if age is not None:
             attributes.append(str(age))
         attributes.extend(clothing_attributes)
+        # Merge CLIP attributes (avoid duplicates)
+        for attr in self._cached_clip_attrs:
+            if attr not in attributes:
+                attributes.append(attr)
         
         # Apply State Machine Logic
         action = self._determine_action(

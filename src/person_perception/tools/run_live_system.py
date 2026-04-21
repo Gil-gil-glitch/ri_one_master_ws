@@ -12,6 +12,7 @@ import json
 import sys
 import cv2
 import numpy as np
+from typing import Optional, Dict, List, List, Tuple
 
 # Add parent path for imports
 sys.path.insert(0, str(__file__).replace('\\', '/').rsplit('/tools/', 1)[0])
@@ -20,7 +21,13 @@ import time
 
 from person_perception.core.vision import VisionProcessor
 from person_perception.core.identity import IdentityRecognizer
-from person_perception.core.clip_attributes import ClipAttributeDetector
+
+# Phase 3 integration
+try:
+    from receptionist_system.core.clip_attributes import ClipAttributeDetector
+    CLIP_AVAILABLE = True
+except ImportError:
+    CLIP_AVAILABLE = False
 
 
 class LivePerceptionSystem:
@@ -75,8 +82,16 @@ class LivePerceptionSystem:
             
         # State for CLIP throttling
         self.last_attributes = []
-        self.last_clip_time = 0
+        self.last_clip_time: float = 0.0
         self.clip_interval = 1.0  # 1Hz
+        
+        # UI cache
+        self._last_person: Optional[Dict] = None
+        self._last_identity: str = "Unknown"
+        self._last_action: str = "OBSERVE"
+        self._last_attributes: List[str] = []
+        self._last_age: Optional[int] = None
+        self._last_gender: Optional[str] = None
         
         print("=" * 60)
         print("System ready! Press 'q' to quit, 's' to save screenshot")
@@ -302,136 +317,50 @@ class LivePerceptionSystem:
 
 class VisionProcessorWebcam:
     """
-    Webcam-based Vision Processor (no RealSense dependency).
-    Uses same YOLO detection logic as the RealSense version.
+    Webcam-based Vision Processor using YOLO-World v2 (Phase 1).
     """
     
-    PERSON_CLASS_ID = 0
-    ACCESSORY_CLASS_IDS = {
-        24: 'Backpack',
-        26: 'Handbag',
-        28: 'Suitcase',
-        27: 'Tie',
-        39: 'Bottle'
-    }
-    
-    def __init__(self, model_path: str = 'yolo26n.pt', conf_threshold: float = 0.25):
-        from ultralytics import YOLO
-        self.model = YOLO(model_path)
+    def __init__(self, model_path: str = 'yolov8s-worldv2.pt', conf_threshold: float = 0.25):
+        try:
+            from ultralytics import YOLO
+            self.model = YOLO(model_path)
+            # Default prompts for competition
+            self.prompts = ["paper bag", "chair", "person"]
+            self.model.set_classes(self.prompts)
+            print(f"[YOLO-World] Loaded with prompts: {self.prompts}")
+        except ImportError:
+            print("Error: ultralytics not installed. Standalone mode will fail.")
+            self.model = None
         self.conf_threshold = conf_threshold
     
-    def detect_persons(self, image: np.ndarray) -> list:
-        """Detect all persons in image."""
+    def detect_objects(self, image: np.ndarray) -> list:
+        """Detect persons and task objects using YOLO-World."""
+        if self.model is None: return []
         results = self.model(image, conf=self.conf_threshold, verbose=False)
-        persons = []
+        detections = []
         
         for det in results[0].boxes:
-            cls = int(det.cls[0])
-            if cls != self.PERSON_CLASS_ID:
-                continue
-            
             x1, y1, x2, y2 = map(int, det.xyxy[0])
             conf = float(det.conf[0])
-            area = (x2 - x1) * (y2 - y1)
+            cls_id = int(det.cls[0])
+            class_name = self.prompts[cls_id] if cls_id < len(self.prompts) else "Unknown"
             
-            persons.append({
+            detections.append({
+                'class_name': class_name,
                 'bbox': (x1, y1, x2, y2),
                 'confidence': conf,
-                'area': area
+                'area': (x2 - x1) * (y2 - y1)
             })
         
-        return persons
-    
+        return detections
+
     def get_closest_person(self, image: np.ndarray) -> dict:
-        """Get largest (closest) person."""
-        persons = self.detect_persons(image)
+        """Get largest detected person."""
+        objects = self.detect_objects(image)
+        persons = [o for o in objects if o['class_name'] == 'person']
         if not persons:
             return None
         return max(persons, key=lambda p: p['area'])
-    
-    def detect_attributes(self, image: np.ndarray, person_box: tuple) -> list:
-        """Detect clothing and accessory attributes."""
-        attributes = []
-        
-        # Accessory detection via YOLO
-        results = self.model(image, conf=self.conf_threshold, verbose=False)
-        
-        for det in results[0].boxes:
-            cls_id = int(det.cls[0])
-            if cls_id in self.ACCESSORY_CLASS_IDS:
-                acc_box = tuple(map(int, det.xyxy[0]))
-                iou = self._compute_iou(person_box, acc_box)
-                if iou > 0.1:
-                    name = self.ACCESSORY_CLASS_IDS[cls_id]
-                    if name not in attributes:
-                        attributes.append(name)
-        
-        # Shirt color via HSV
-        x1, y1, x2, y2 = person_box
-        box_width = x2 - x1
-        box_height = y2 - y1
-        
-        torso_x1 = x1 + int(box_width * 0.25)
-        torso_x2 = x1 + int(box_width * 0.75)
-        torso_y1 = y1 + int(box_height * 0.20)
-        torso_y2 = y1 + int(box_height * 0.50)
-        
-        h, w = image.shape[:2]
-        torso_x1 = max(0, min(torso_x1, w - 1))
-        torso_x2 = max(0, min(torso_x2, w))
-        torso_y1 = max(0, min(torso_y1, h - 1))
-        torso_y2 = max(0, min(torso_y2, h))
-        
-        if torso_x2 > torso_x1 and torso_y2 > torso_y1:
-            torso_crop = image[torso_y1:torso_y2, torso_x1:torso_x2]
-            shirt_color = self._classify_shirt_color(torso_crop)
-            if shirt_color != "Unknown":
-                attributes.insert(0, f"{shirt_color}_Shirt")
-        
-        return attributes
-    
-    def _compute_iou(self, box1: tuple, box2: tuple) -> float:
-        """Compute IoU between two boxes."""
-        x1 = max(box1[0], box2[0])
-        y1 = max(box1[1], box2[1])
-        x2 = min(box1[2], box2[2])
-        y2 = min(box1[3], box2[3])
-        
-        inter_area = max(0, x2 - x1) * max(0, y2 - y1)
-        box1_area = (box1[2] - box1[0]) * (box1[3] - box1[1])
-        box2_area = (box2[2] - box2[0]) * (box2[3] - box2[1])
-        union_area = box1_area + box2_area - inter_area
-        
-        return inter_area / union_area if union_area > 0 else 0.0
-    
-    def _classify_shirt_color(self, crop: np.ndarray) -> str:
-        """Classify shirt color using HSV."""
-        if crop is None or crop.size == 0:
-            return "Unknown"
-        
-        hsv = cv2.cvtColor(crop, cv2.COLOR_BGR2HSV)
-        h_mean = np.mean(hsv[:, :, 0])
-        s_mean = np.mean(hsv[:, :, 1])
-        v_mean = np.mean(hsv[:, :, 2])
-        
-        if s_mean < 40:
-            if v_mean < 50:
-                return "Black"
-            elif v_mean > 200:
-                return "White"
-            else:
-                return "Grey"
-        
-        if h_mean < 10 or h_mean > 160:
-            return "Red"
-        elif h_mean < 35:
-            return "Red"
-        elif h_mean < 85:
-            return "Green"
-        elif h_mean < 130:
-            return "Blue"
-        else:
-            return "Red"
 
 class PipelineSimulator:
     """
@@ -483,7 +412,7 @@ class PipelineSimulator:
             print(f"  CLIP init failed ({e}). Attributes via HSV only.")
             self.use_clip = False
         
-        self.last_clip_time = 0
+        self.last_clip_time: float = 0.0
         self.last_attributes = []
         self.clip_interval = 1.0
         
@@ -500,7 +429,8 @@ class PipelineSimulator:
                 break
             
             # === Stage 1: Vision Node (person detection) ===
-            persons = self.vision.detect_persons(frame)
+            objects = self.vision.detect_objects(frame)
+            persons = [o for o in objects if o['class_name'] == 'person']
             
             # Get CLIP attributes for closest person (1Hz throttle)
             current_time = time.time()

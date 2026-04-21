@@ -25,6 +25,8 @@ setup(
     entry_points={
     'console_scripts': [
         'gesture_identification_node = realsense_vision.gesture_identification_node:main',
+        'object_detection_node = realsense_vision.object_detection_node:main',
+        'handover_node = realsense_vision.handover_node:main',
     ],
 },
 )
