@@ -3,7 +3,8 @@ import clip
 from PIL import Image
 import numpy as np
 import cv2
-from typing import List, Dict, Optional, Tuple
+import time
+from typing import List, Dict, Optional, Tuple, Any, Union
 
 class ClipAttributeDetector:
     """
@@ -26,6 +27,10 @@ class ClipAttributeDetector:
         else:
             self.device = device
             
+        # Temporal Smoothing State
+        self.history = {} # track_id -> { category -> [(timestamp, value), ...] }
+        self.locked_attributes = {} # track_id -> { category -> locked_value }
+            
         print(f"[CLIP] Loading model {model_name} on {self.device}...")
         self.model, self.preprocess = clip.load(model_name, device=self.device)
         
@@ -40,6 +45,10 @@ class ClipAttributeDetector:
             "Headwear": [
                 "a photo of a person wearing a hat",
                 "a photo of a person without a hat"
+            ],
+            "Mask": [
+                "a close-up photo of a person wearing a face mask over their mouth",
+                "a close-up photo of a person with no face mask"
             ],
             "Scarf": [
                 "a photo of a person wearing a scarf",
@@ -77,6 +86,16 @@ class ClipAttributeDetector:
                 "a close-up photo of a person wearing earrings",
                 "a close-up photo of a person wearing a necklace",
                 "a photo of a person without jewelry"
+            ],
+            "Gender": [
+                "a photo of a man",
+                "a photo of a woman"
+            ],
+            "Age": [
+                "a photo of a child",
+                "a photo of a teenager",
+                "a photo of an adult",
+                "a photo of a senior"
             ]
         }
         
@@ -95,16 +114,19 @@ class ClipAttributeDetector:
                 features /= features.norm(dim=-1, keepdim=True)
                 self.text_features[category] = (prompts, features)
 
-    def detect_attributes(self, image: np.ndarray, person_bbox: Tuple[int, int, int, int]) -> List[str]:
+    def detect_attributes(self, image: np.ndarray, person_bbox: Tuple[int, int, int, int], 
+                          landmarks: Optional[Dict[str, List[float]]] = None,
+                          include_debug: bool = False,
+                          track_id: str = "default",
+                          stable_time_sec: float = 1.0) -> Dict[str, Any]:
         """
         Detect attributes for a specific person in the image.
         
         Args:
             image: Full BGR image
             person_bbox: (x1, y1, x2, y2)
-            
-        Returns:
-            List of detected attribute strings (e.g., ["Glasses", "Red Shirt"])
+            landmarks: Optional dict of normalized landmark points (e.g. {'left_eye': [x,y], ...})
+            include_debug: Whether to return region coordinates.
         """
         # Crop person
         x1, y1, x2, y2 = person_bbox
@@ -118,7 +140,7 @@ class ClipAttributeDetector:
         y2 = min(h, y2 + margin)
         
         if x2 <= x1 or y2 <= y1:
-            return []
+            return {}
             
         person_crop = image[y1:y2, x1:x2]
         
@@ -126,66 +148,186 @@ class ClipAttributeDetector:
         rgb_image = cv2.cvtColor(person_crop, cv2.COLOR_BGR2RGB)
         pil_image = Image.fromarray(rgb_image)
         
-        # Preprocess and run CLIP
+        # Pass 1: Whole Body (Shirt, Outerwear)
         image_input = self.preprocess(pil_image).unsqueeze(0).to(self.device)
         
-        detected_attributes = []
+        # Region Mapping using Landmarks for Precision
+        # These are used for visualization and specialized CLIP passes
+        regions = {}
+        h_img, w_img = image.shape[:2]
+        
+        def to_abs(norm_pt):
+            return [int(norm_pt[0] * w_img), int(norm_pt[1] * h_img)]
+
+        # 1. Accessories/Head (Default Heuristic)
+        head_h = int((y2 - y1) * 0.35)
+        regions["Accessory Pass"] = [x1, y1, x2, min(y1+head_h, h_img)]
+
+        # 2. Refined Precision Regions (if landmarks exist)
+        if landmarks:
+            # Eyes (for Glasses)
+            if 'left_eye' in landmarks and 'right_eye' in landmarks:
+                le = to_abs(landmarks['left_eye'])
+                re = to_abs(landmarks['right_eye'])
+                eye_w = abs(re[0] - le[0]) * 1.5
+                regions["Glasses"] = [int(min(le[0], re[0]) - eye_w*0.2), int(min(le[1], re[1]) - eye_w*0.3), 
+                                      int(max(le[0], re[0]) + eye_w*0.2), int(max(le[1], re[1]) + eye_w*0.3)]
+            
+            # Ears (for Earrings)
+            if 'left_ear' in landmarks:
+                ear = to_abs(landmarks['left_ear'])
+                regions["Earrings"] = [ear[0]-20, ear[1]-20, ear[0]+20, ear[1]+20]
+
+            # Torso (for Shirt/Necklace)
+            if 'left_shoulder' in landmarks and 'right_shoulder' in landmarks:
+                ls = to_abs(landmarks['left_shoulder'])
+                rs = to_abs(landmarks['right_shoulder'])
+                sh_w = abs(rs[0] - ls[0])
+                regions["Clothing"] = [int(min(ls[0], rs[0]) - sh_w*0.2), int(min(ls[1], rs[1])), 
+                                      int(max(ls[0], rs[0]) + sh_w*0.2), int(min(ls[1], rs[1]) + sh_w*1.5)]
+
+        # specialized crops helper
+        def get_crop_input(rect):
+            cx1, cy1, cx2, cy2 = rect
+            # Ensure within image bounds
+            cx1, cy1 = max(0, cx1), max(0, cy1)
+            cx2, cy2 = min(w_img, cx2), min(h_img, cy2)
+            crop = image[cy1:cy2, cx1:cx2]
+            if crop.size == 0: return image_input # fallback
+            rgb = cv2.cvtColor(crop, cv2.COLOR_BGR2RGB)
+            return self.preprocess(Image.fromarray(rgb)).unsqueeze(0).to(self.device)
+
+        # Standard Pass (Whole Person)
+        image_input = self.preprocess(pil_image).unsqueeze(0).to(self.device)
         
         with torch.no_grad():
+            # Features extraction
             image_features = self.model.encode_image(image_input)
             image_features /= image_features.norm(dim=-1, keepdim=True)
-            
-            # Check Eyewear
-            probs = self._get_probs(image_features, "Eyewear")
-            if probs[0] > 0.8: # "wearing glasses" vs "without"
-                detected_attributes.append("Glasses")
-                
-            # Check Headwear
-            probs = self._get_probs(image_features, "Headwear")
-            if probs[0] > 0.75:
-                detected_attributes.append("Hat")
 
-            # Check Scarf
-            probs = self._get_probs(image_features, "Scarf")
-            if probs[0] > 0.75:
-                detected_attributes.append("Scarf")
-                
-            # Check Outerwear/Clothing Type
-            probs_outer = self._get_probs(image_features, "Outerwear")
-            outer_idx = np.argmax(probs_outer)
-            outer_type = self.attribute_prompts["Outerwear"][outer_idx].replace("a person wearing a ", "").capitalize()
+            # Standard Head Pass (fallback/context)
+            head_input = get_crop_input(regions["Accessory Pass"])
+            head_features = self.model.encode_image(head_input)
+            head_features /= head_features.norm(dim=-1, keepdim=True)
             
-            # Check Clothing Color
-            probs_color = self._get_probs(image_features, "ShirtColor")
+            # Precision Passes
+            glasses_input = get_crop_input(regions["Glasses"]) if "Glasses" in regions else head_input
+            earrings_input = get_crop_input(regions["Earrings"]) if "Earrings" in regions else head_input
+            clothing_input = get_crop_input(regions["Clothing"]) if "Clothing" in regions else image_input
+
+            # --- Competition Formatted Attributes ---
+            competition_fmt = {}
+
+            # 1. Gender 
+            probs = self._get_probs(image_features, "Gender")
+            competition_fmt["Gender >>"] = "Male" if probs[0] > probs[1] else "Female"
+            
+            # 2. Clothing color (Tops)
+            clothing_feat = self.model.encode_image(clothing_input)
+            clothing_feat /= clothing_feat.norm(dim=-1, keepdim=True)
+            probs_color = self._get_probs(clothing_feat, "ShirtColor")
             color_idx = np.argmax(probs_color)
             color_prompt = self.attribute_prompts["ShirtColor"][color_idx]
-            color_name = color_prompt.split("wearing a ")[1].split(" ")[0].capitalize()
-            
-            # Combine Color + Type
-            # If color confidence is decent (>0.3), prepend it.
-            # otherwise just return the type.
-            if probs_color[color_idx] > 0.35:
-                detected_attributes.append(f"{color_name} {outer_type}")
-            else:
-                detected_attributes.append(outer_type)
-            
-            # Check Hair Color
-            probs = self._get_probs(image_features, "HairColor")
+            competition_fmt["Clothing color (Tops) >>"] = color_prompt.split("wearing a ")[1].split(" ")[0].capitalize()
+
+            # 3. Hair color
+            probs = self._get_probs(head_features, "HairColor")
             best_idx = np.argmax(probs)
             hair_prompt = self.attribute_prompts["HairColor"][best_idx]
             if "bald" in hair_prompt:
-                 detected_attributes.append("Bald")
+                 competition_fmt["Hair color >>"] = "Bald"
             else:
-                hair_color = hair_prompt.split("with ")[1].split(" ")[0].capitalize()
-                detected_attributes.append(f"{hair_color} Hair")
+                 competition_fmt["Hair color >>"] = hair_prompt.split("with ")[1].split(" ")[0].capitalize()
 
-            # Check Jewelry (necklace/earrings)
-            probs = self._get_probs(image_features, "Jewelry")
-            # 0: Earrings, 1: Necklace, 2: None
-            if probs[0] > 0.3: # Earrings
-                 detected_attributes.append("Earrings")
-            if probs[1] > 0.4: # Necklace (easier to see than earrings)
-                 detected_attributes.append("Necklace")
+            # 4. Age (mapping descriptive age to rough integer ±7)
+            probs = self._get_probs(image_features, "Age")
+            best_idx = np.argmax(probs)
+            age_map = ["10", "16", "30", "60"] # Child, Teenager, Adult, Senior
+            competition_fmt["Age >>"] = f"{age_map[best_idx]} \u00b17 years old"
+
+            # 5. Wears Glasses
+            glasses_feat = self.model.encode_image(glasses_input)
+            glasses_feat /= glasses_feat.norm(dim=-1, keepdim=True)
+            probs = self._get_probs(glasses_feat, "Eyewear")
+            competition_fmt["Wears Glasses >>"] = "Yes" if probs[0] > 0.65 else "No"
+            
+            # 6. Wears Cap/Hat
+            probs = self._get_probs(head_features, "Headwear")
+            competition_fmt["Wears Cap/Hat >>"] = "Yes" if probs[0] > 0.4 else "No"
+
+            # 7. Wears Mask
+            probs = self._get_probs(head_features, "Mask")
+            competition_fmt["Wears Mask >>"] = "Yes" if probs[0] > 0.6 else "No"
+            
+            # --- Temporal Smoothing (Hysteresis) ---
+            now = time.time()
+            if track_id not in self.history:
+                self.history[track_id] = {}
+                self.locked_attributes[track_id] = {}
+                
+            for key, val in competition_fmt.items():
+                if key not in self.history[track_id]:
+                    self.history[track_id][key] = []
+                
+                # Check required continuous duration based on the attribute
+                required_duration = 1.5 if key == "Wears Glasses >>" else (stable_time_sec * 0.7)
+                
+                # Append current frame
+                self.history[track_id][key].append((now, val))
+                
+                # Safely retain the last 10 seconds of history (plenty of time to accumulate the required duration)
+                self.history[track_id][key] = [(t, v) for t, v in self.history[track_id][key] 
+                                               if now - t <= 10.0]
+                
+                # Extract only the values that fall within our required time window to check stability
+                valid_history = [(t, v) for t, v in self.history[track_id][key] if now - t <= required_duration]
+                
+                # If there are NO measurements, or just the current frame, we can't be sure it's stable over time
+                if len(valid_history) >= 2:
+                    history_vals = [v for t, v in valid_history]
+                    elapsed_window = valid_history[-1][0] - valid_history[0][0]
+                
+                    # Use a robust majority vote instead of requiring 100% agreement
+                    # Find the most common value in the recent window
+                    majority_val = max(set(history_vals), key=history_vals.count)
+                    majority_ratio = history_vals.count(majority_val) / len(history_vals)
+                    
+                    # Only lock if the dominant value makes up at least 60% of the observations
+                    # AND the observation span is long enough
+                    if majority_ratio >= 0.60 and elapsed_window >= (required_duration * 0.8):
+                        if key == "Wears Glasses >>":
+                            # PERMANENT YES LOCK: Only lock 'Yes'. Once it's 'Yes', it stays 'Yes' forever.
+                            if majority_val == "Yes":
+                                self.locked_attributes[track_id][key] = "Yes"
+                        else:
+                            # Standard smoothing logic for all other attributes (can transition back and forth)
+                            self.locked_attributes[track_id][key] = majority_val
+                    
+                # Use the locked value if it exists; otherwise use current prediction
+                competition_fmt[key] = self.locked_attributes[track_id].get(key, val)
+
+            detected_attributes = competition_fmt
+
+            if include_debug:
+                active_regions = {}
+                # Only show regions corresponding to DETECTED attributes
+                for attr in detected_attributes:
+                    if "Glasses" in attr and "Glasses" in regions:
+                        active_regions["Glasses"] = regions["Glasses"]
+                    elif "Earrings" in attr and "Earrings" in regions:
+                        active_regions["Earrings"] = regions["Earrings"]
+                    elif ("T-shirt" in attr or "Sweater" in attr) and "Clothing" in regions:
+                        active_regions["Clothing"] = regions["Clothing"]
+                    elif any(ha in attr for ha in ["Hat", "Hair"]):
+                         active_regions["Head/Hair"] = regions["Accessory Pass"]
+                
+                # Fallback: if nothing else, show the passes
+                if not active_regions:
+                     active_regions = regions
+                
+                detected_attributes["_debug"] = {
+                    "active_regions": active_regions
+                }
 
         return detected_attributes
 

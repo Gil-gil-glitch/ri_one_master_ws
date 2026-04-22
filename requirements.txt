@@ -3,3 +3,12 @@ mediapipe
 numpy
 PyYAML
 PyAudio
+ultralytics >= 8.2.0
+torch
+torchvision
+torchaudio
+ftfy
+regex
+tqdm
+clip-by-openai
+gitpython

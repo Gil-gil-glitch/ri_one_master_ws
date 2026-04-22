@@ -18,6 +18,7 @@ Tracking strategy:
 
 import json
 import time
+import glob
 import base64
 from typing import Optional, Dict, List, Tuple
 
@@ -63,6 +64,10 @@ class TrackedPerson:
         self.frames_seen = 1
         self.frames_missing = 0
         self.last_seen = time.time()
+        
+        # Temporal smoothing buffer for identity stability
+        self.similarity_history: List[float] = []
+        self.name_history: List[str] = []
     
     def update(
         self,
@@ -75,12 +80,31 @@ class TrackedPerson:
         gender: Optional[str] = None,
         attributes: Optional[List[str]] = None
     ):
-        """Update track with new detection data."""
+        """Update track with new detection data and temporal smoothing."""
         self.bbox = bbox
         if embedding is not None:
             self.embedding = embedding
-        self.name = name
-        self.similarity = similarity
+        
+        # Temporal smoothing: accumulate history
+        self.similarity_history.append(similarity)
+        self.name_history.append(name)
+        
+        # Keep only last N entries
+        MAX_HISTORY = 10
+        self.similarity_history = self.similarity_history[-MAX_HISTORY:]
+        self.name_history = self.name_history[-MAX_HISTORY:]
+        
+        # Use smoothed similarity (median for noise resistance)
+        self.similarity = float(np.median(self.similarity_history))
+        
+        # Use consensus name (most frequent in recent history)
+        if self.name_history:
+            from collections import Counter
+            name_counts = Counter(self.name_history)
+            self.name = name_counts.most_common(1)[0][0]
+        else:
+            self.name = name
+        
         self.uncertainty = uncertainty
         if age is not None:
             self.age = age
@@ -132,6 +156,16 @@ class PersonTrackerNode(Node):
         # Active tracks
         self.tracks: List[TrackedPerson] = []
         
+        # Identity Singleton map: {name -> track_id}
+        # Ensures one identity can only be assigned to one track at a time
+        self._identity_lock: Dict[str, int] = {}
+        
+        # Structural build database: {name -> proportion_vector}
+        self._structural_db: Dict[str, np.ndarray] = {}
+        
+        # Temporal smoothing window size
+        self.SMOOTHING_WINDOW = 10
+        
         # Initialize identity recognizer
         self.identity: Optional[IdentityRecognizer] = None
         if IDENTITY_AVAILABLE:
@@ -155,6 +189,9 @@ class PersonTrackerNode(Node):
                 'InsightFace not available. Face recognition disabled.',
                 level='warn'
             )
+        
+        # Load structural build data from data/faces/*_struct.npy
+        self._load_structural_data()
         
         # Current frame (needed for face extraction — set by process or externally)
         self._current_frame: Optional[np.ndarray] = None
@@ -187,6 +224,64 @@ class PersonTrackerNode(Node):
                 self.show_debug = False
         
         self._log('Person Tracker Node started!')
+    
+    def _load_structural_data(self) -> None:
+        """Load structural build vectors from data/faces/*_struct.npy."""
+        import os
+        possible_dirs = [
+            os.path.expanduser('~/ros2_ws/src/person_perception/data/faces'),
+            os.path.join(
+                os.path.dirname(os.path.abspath(__file__)),
+                '..', '..', 'data', 'faces'
+            ),
+        ]
+        for data_dir in possible_dirs:
+            if not os.path.isdir(data_dir):
+                continue
+            struct_files = glob.glob(os.path.join(data_dir, '*_struct.npy'))
+            for path in struct_files:
+                fname = os.path.basename(path)
+                name = fname.replace('_struct.npy', '').replace('_', ' ').title()
+                try:
+                    vec = np.load(path)
+                    self._structural_db[name] = vec
+                    self._log(f'Loaded structural build for: {name}')
+                except Exception:
+                    pass
+    
+    def _enforce_identity_singleton(self) -> None:
+        """
+        Enforce the Identity Singleton rule:
+        If two tracks claim the same known name, only the track with the
+        highest similarity keeps the name. The other is reset to 'Unknown'.
+        """
+        # Build a map of name -> list of (track, similarity)
+        name_claims: Dict[str, List[TrackedPerson]] = {}
+        for track in self.tracks:
+            if track.name != 'Unknown' and track.frames_missing == 0:
+                name_claims.setdefault(track.name, []).append(track)
+        
+        for name, claimants in name_claims.items():
+            if len(claimants) <= 1:
+                # Update the lock
+                if claimants:
+                    self._identity_lock[name] = claimants[0].track_id
+                continue
+            
+            # Conflict — keep the highest similarity, reset others
+            claimants.sort(key=lambda t: t.similarity, reverse=True)
+            winner = claimants[0]
+            self._identity_lock[name] = winner.track_id
+            
+            for loser in claimants[1:]:
+                self._log(
+                    f'Singleton conflict: "{name}" revoked from '
+                    f'track {loser.track_id} (sim={loser.similarity:.3f}), '
+                    f'kept on track {winner.track_id} (sim={winner.similarity:.3f})'
+                )
+                loser.name = 'Unknown'
+                loser.similarity = 0.0
+                loser.uncertainty = 1.0
     
     def _log(self, msg: str, level: str = 'info'):
         """Log via ROS 2 or print."""
@@ -295,6 +390,9 @@ class PersonTrackerNode(Node):
             t for t in self.tracks
             if t.frames_missing <= self.MAX_MISSING_FRAMES
         ]
+        
+        # Step 5.5: Enforce Identity Singleton (no duplicate names)
+        self._enforce_identity_singleton()
         
         # Step 6: Build and publish message
         msg_data = self._build_message()
