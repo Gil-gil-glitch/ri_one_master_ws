@@ -1,8 +1,6 @@
 from setuptools import find_packages, setup
-import os
-from glob import glob
 
-package_name = 'cml_coordinator'
+package_name = 'cml_pickup'
 
 setup(
     name=package_name,
@@ -12,7 +10,6 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,8 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'cml_coordinator = cml_coordinator.cml_coordinator:main',
-            'tts_node = cml_coordinator.tts_node:main',
+            'cml_pickup_node = cml_pickup.cml_pickup_node:main',
         ],
     },
 )

@@ -8,6 +8,7 @@ from cv_bridge import CvBridge
 import cv2
 import numpy as np
 
+
 class FollowMeNode(Node):
     def __init__(self):
         super().__init__('follow_me_node')
@@ -16,39 +17,67 @@ class FollowMeNode(Node):
         self.mode = "IDLE"
         self.latest_target = None
 
-        # Dynamic variable to represent the center of the camera`s field of view`
-        self.camera_center_x = 320  
+        self.camera_center_x = None  
 
+        # Obstacle avoidance
         self.min_left = 10.0
         self.min_center = 10.0
         self.min_right = 10.0
         self.avoid_distance = 0.35
 
-        #publishers
+        # Timeout safety
+        self.last_target_time = self.get_clock().now()
+        self.target_timeout = 0.5  
+
+        # === PID PARAMETERS ===
+
+        # Smoothing values
+        self.smoothed_x = None
+        self.smoothed_z = None
+        self.alpha = 0.3  # Smoothing factor for low-pass filter
+        
+        # Angular PID (turning)
+        self.kp_ang = 1.2
+        self.ki_ang = 0.0
+        self.kd_ang = 0.4
+
+        self.integral_ang = 0.0
+        self.prev_error_ang = 0.0
+
+        # Linear PID (distance)
+        self.kp_lin = 0.6
+        self.ki_lin = 0.0
+        self.kd_lin = 0.2
+
+        self.integral_lin = 0.0
+        self.prev_error_lin = 0.0
+
+        self.prev_time = self.get_clock().now()
+
+        # Publishers
         self.cmd_vel_pub = self.create_publisher(Twist, '/commands/velocity', 10)
 
-        #subscribers
+        # Subscribers
         self.state_sub = self.create_subscription(String, '/cml_state', self.state_callback, 10)
         self.target_sub = self.create_subscription(Point, '/target_person', self.target_callback, 10)
         self.scan_sub = self.create_subscription(LaserScan, '/scan', self.scan_callback, qos_profile_sensor_data)
         self.color_sub = self.create_subscription(Image, '/camera/camera/color/image_raw', self.color_callback, qos_profile_sensor_data)
 
-
-        #control loop
+        # Control loop
         self.timer = self.create_timer(0.1, self.control_loop)
 
-        self.get_logger().info("Follow Me node ready")
+        self.get_logger().info("Follow Me node with PID ready")
 
     def state_callback(self, msg):
         self.mode = msg.data
 
     def target_callback(self, msg):
         self.latest_target = msg
+        self.last_target_time = self.get_clock().now()
 
     def scan_callback(self, msg):
         ranges = np.array([r if 0.25 < r < 10.0 else 10.0 for r in msg.ranges])
         n = len(ranges)
-
         if n == 0:
             return
 
@@ -60,60 +89,116 @@ class FollowMeNode(Node):
         self.min_right = np.min(ranges[-deg_45:-deg_15])
 
     def control_loop(self):
-        # Only move if in FOLLOW mode and we have a valid target
-        if self.mode != "FOLLOW" or self.latest_target is None:
-            return
-        
         twist = Twist()
 
-        # Ensure z-axis is positive for YOLO target lock
-        if self.latest_target.z > 0.1:
-            
-            # This error represents how far the target is from the center of the camera's view. 
-            # A positive error means the target is to the right, and a negative error means 
-            # it's to the left.
-            error_x = self.latest_target.x - self.camera_center_x
-
-            normalized_error_x = error_x / self.camera_center_x  # Normalize to [-1, 1]
-
-            twist.angular.z = -normalized_error_x * 0.6
-
-            alignment_factor = max(0.0, 1.0 - abs(normalized_error_x) * 2.0)  # Reduce speed when not aligned
-
-            # Proportional control for linear velocity based on distance error
-            distance_error = self.latest_target.z - 0.7
-            twist.linear.x = distance_error * 0.4 * alignment_factor
-
-            twist.linear.x = max(min(twist.linear.x, 0.5), -0.2)  # Limit forward speed and allow slight reverse
-            twist.angular.z = max(min(twist.angular.z, 0.8), -0.8)  # Limit turning speed
-
-            # Obstacle avoidance logic
-            if self.min_center < self.avoid_distance:
-                twist.linear.x = min(twist.linear.x, 0.0)  # Stop or reverse if obstacle ahead
-            elif self.min_left < self.avoid_distance:
-                twist.linear.x *= 0.5  # Slow down when obstacle on the left
-                twist.angular.z -= 0.6  # Turn right if obstacle on the left
-            elif self.min_right < self.avoid_distance:
-                twist.linear.x *= 0.5  # Slow down when obstacle on the right
-                twist.angular.z += 0.6  # Turn left if obstacle on the right
-
-            self.cmd_vel_pub.publish(twist)
-
-    def color_callback(self, msg):
-        if self.mode != "FOLLOW":
+        if self.camera_center_x is None:
             return
 
+        if self.mode != "FOLLOW" or self.latest_target is None:
+            self.reset_pid()
+            self.cmd_vel_pub.publish(twist)
+            return
+
+        now = self.get_clock().now()
+        dt = (now - self.prev_time).nanoseconds / 1e9
+        self.prev_time = now
+
+        if dt <= 0:
+            return
+
+        # Timeout safety
+        dt_target = (now - self.last_target_time).nanoseconds / 1e9
+        if dt_target > self.target_timeout or self.latest_target.z <= 0.1:
+            self.reset_pid()
+            self.cmd_vel_pub.publish(twist)
+            return
+
+        # === 1. APPLY LOW-PASS FILTER TO SENSOR DATA ===
+        if self.smoothed_x is None:
+            self.smoothed_x = self.latest_target.x
+            self.smoothed_z = self.latest_target.z
+        else:
+            self.smoothed_x = (self.alpha * self.latest_target.x) + ((1.0 - self.alpha) * self.smoothed_x)
+            self.smoothed_z = (self.alpha * self.latest_target.z) + ((1.0 - self.alpha) * self.smoothed_z)
+
+        # === ANGULAR PID ===
+        error_x = (self.smoothed_x - self.camera_center_x) / self.camera_center_x
+
+        self.integral_ang += error_x * dt
+        derivative_ang = (error_x - self.prev_error_ang) / dt
+
+        angular = (
+            self.kp_ang * error_x +
+            self.ki_ang * self.integral_ang +
+            self.kd_ang * derivative_ang
+        )
+        self.prev_error_ang = error_x
+
+        # === LINEAR PID ===
+        # Use the smoothed Z distance instead of raw
+        error_dist = self.smoothed_z - 0.7
+
+        self.integral_lin += error_dist * dt
+        derivative_lin = (error_dist - self.prev_error_lin) / dt
+
+        linear = (
+            self.kp_lin * error_dist +
+            self.ki_lin * self.integral_lin +
+            self.kd_lin * derivative_lin
+        )
+        self.prev_error_lin = error_dist
+
+        # === 2. SOFTEN THE ALIGNMENT FACTOR ===
+        # Instead of violently killing speed when off-center, we only slightly reduce it, 
+        # and we use the smoothed error_x.
+        alignment_factor = max(0.5, 1.0 - abs(error_x)) 
+        linear *= alignment_factor
+
+        # Clamp outputs
+        twist.linear.x = max(min(linear, 0.5), -0.2)
+        twist.angular.z = max(min(-angular, 0.8), -0.8)
+
+        # === OBSTACLE AVOIDANCE ===
+        if self.min_center < self.avoid_distance:
+            twist.linear.x = min(twist.linear.x, 0.0)
+        elif self.min_left < self.avoid_distance:
+            twist.linear.x *= 0.5
+            twist.angular.z -= 0.6
+        elif self.min_right < self.avoid_distance:
+            twist.linear.x *= 0.5
+            twist.angular.z += 0.6
+
+        self.cmd_vel_pub.publish(twist)
+
+    def reset_pid(self):
+        self.integral_ang = 0.0
+        self.prev_error_ang = 0.0
+        self.integral_lin = 0.0
+        self.prev_error_lin = 0.0
+        # Reset the filter state so it doesn't drag from an old target
+        self.smoothed_x = None 
+        self.smoothed_z = None
+
+    def color_callback(self, msg):
         cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
         h, w, _ = cv_image.shape
-        
-        # Updating the camera center based on the actual image width
         self.camera_center_x = w // 2
+
+        if self.mode != "FOLLOW":
+            return
 
         if self.latest_target and self.latest_target.z > 0.1:
             cX = int(self.latest_target.x)
             cY = int(self.latest_target.y)
+
             cv2.circle(cv_image, (cX, cY), 10, (0, 255, 0), -1)
-            cv2.putText(cv_image, f"Distance: {self.latest_target.z:.2f}m", (cX - 50, cY - 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+            cv2.putText(cv_image,
+                        f"{self.latest_target.z:.2f}m",
+                        (cX, cY - 10),
+                        cv2.FONT_HERSHEY_SIMPLEX,
+                        0.5,
+                        (0, 255, 0),
+                        2)
 
         cv2.imshow("Follow", cv_image)
         cv2.waitKey(1)
@@ -126,3 +211,7 @@ def main(args=None):
     node.destroy_node()
     rclpy.shutdown()
     cv2.destroyAllWindows()
+
+
+if __name__ == '__main__':
+    main()
