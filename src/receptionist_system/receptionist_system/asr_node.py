@@ -19,7 +19,7 @@ class ASRNode(Node):
         self.declare_parameter('sample_rate', 16000)
         self.declare_parameter('chunk_size', 1024)
         # 環境音に合わせて要調整 (小さいほど感度が上がる)
-        self.declare_parameter('silence_threshold', 1500.0) 
+        self.declare_parameter('silence_threshold', 1000.0) 
         # 何秒無音が続いたら発話終了とするか
         self.declare_parameter('silence_limit', 1.2)
         self.declare_parameter('use_gpu', True)

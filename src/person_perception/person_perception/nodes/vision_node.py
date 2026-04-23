@@ -213,9 +213,9 @@ class VisionNode(Node):
                 pass
             
             persons.append({
-                'bbox': list(p['bbox']),
-                'confidence': round(p['confidence'], 4),
-                'distance_m': round(p.get('distance_m', 0), 3) if p.get('distance_m') else None,
+                'bbox': [int(x) for x in p['bbox']],
+                'confidence': round(float(p['confidence']), 4),
+                'distance_m': round(float(p.get('distance_m', 0)), 3) if p.get('distance_m') else None,
                 'attributes': attributes
             })
         
