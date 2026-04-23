@@ -1,0 +1,1 @@
+Completed the requested functionality for dynamic poses in dialogue_manager.py

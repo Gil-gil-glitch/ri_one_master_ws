@@ -14,6 +14,8 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
         (os.path.join('share', package_name, 'config'), glob('config/*.lua')),
+        # ↓↓↓ ここを追記：params フォルダ内の yaml ファイルをインストール対象にする ↓↓↓
+        (os.path.join('share', package_name, 'params'), glob(os.path.join('params', '*.yaml'))),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
