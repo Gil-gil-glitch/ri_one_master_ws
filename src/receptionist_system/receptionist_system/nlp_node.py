@@ -18,8 +18,8 @@ class NLPNode(Node):
         self.pub_tts = self.create_publisher(String, '/robot_speech', 10)
 
         # 競技ルール用データ
-        self.names = ['Adam', 'Axel', 'Chris', 'Hunter', 'Jack', 'Paris', 'Robin', 'Olivia', 'William', 'Max']
-        self.drinks = ['orange juice', 'coke', 'soda', 'coffee', 'cocoa', 'lemonade', 'coconut milk', 'green tea', 'black tea', 'wine']
+        self.names = ['Axel', 'Chris', 'Hunter', 'Jack', 'Paris', 'Robin', 'Olivia', 'William', 'Max']
+        self.drinks = ['Tropical juice', 'Coke', 'Soda', 'Coffee', 'Calpis', 'Water', 'Milk', 'Green tea', 'Wine']
 
         # ステート管理
         self.current_asking = None  # "NAME", "DRINK", or None
