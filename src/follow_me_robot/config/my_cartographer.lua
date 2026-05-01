@@ -10,7 +10,11 @@ options = {
   odom_frame = "odom",
   provide_odom_frame = false,
   publish_frame_projected_to_2d = true,
-  use_odometry = true,
+
+  -- set odometry to false was true and it worked--
+  use_odometry = false,
+  -- end-- 
+
   use_nav_sat = false,
   use_landmarks = false,
   num_laser_scans = 1,
@@ -34,5 +38,10 @@ TRAJECTORY_BUILDER_2D.min_range = 0.1
 TRAJECTORY_BUILDER_2D.max_range = 10.0
 TRAJECTORY_BUILDER_2D.use_imu_data = false
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
+
+-- added these --
+TRAJECTORY_BUILDER_2D.motion_filter.max_angle_radians = math.rad(1.0)
+TRAJECTORY_BUILDER_2D.motion_filter.max_distance_meters = 0.1
+-- end--
 
 return options

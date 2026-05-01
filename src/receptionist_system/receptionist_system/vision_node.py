@@ -60,8 +60,18 @@ class VisionNode(Node):
             self.image_callback,
             10
         )
+        self.depth_sub = self.create_subscription(
+            Image,
+            '/camera/camera/depth/image_rect_raw',
+            self.depth_callback,
+            10
+        )
+        self.latest_depth = None
 
-        self.get_logger().info('Vision Node started: Subscribing to /camera/color/image_raw')
+        self.get_logger().info('Vision Node started: Subscribing to /camera/color/image_raw and depth')
+
+    def depth_callback(self, msg):
+        self.latest_depth = self.bridge.imgmsg_to_cv2(msg, msg.encoding)
 
 
     def image_callback(self, msg):
@@ -140,6 +150,24 @@ class VisionNode(Node):
             people_out = []
             for idx, p in enumerate(people):
                 bbox = p['bbox']
+                # Calculate average depth for this person
+                dist = 999.0
+                if self.latest_depth is not None:
+                    # Clip bbox to depth image size
+                    d_h, d_w = self.latest_depth.shape[:2]
+                    x1, y1 = max(0, bbox[0]), max(0, bbox[1])
+                    x2, y2 = min(d_w, bbox[2]), min(d_h, bbox[3])
+                    if x2 > x1 and y2 > y1:
+                        # Use a central sample of the depth image instead of the whole bbox to avoid background
+                        # Taking a 20x20 area in the center of the person
+                        cx, cy = (x1+x2)//2, (y1+y2)//2
+                        sx1, sy1 = max(0, cx-10), max(0, cy-10)
+                        sx2, sy2 = min(d_w, cx+10), min(d_h, cy+10)
+                        sample = self.latest_depth[sy1:sy2, sx1:sx2]
+                        valid_depths = sample[sample > 0]
+                        if valid_depths.size > 0:
+                            dist = float(np.median(valid_depths)) / 1000.0 # to meters
+
                 # Find matching keypoints
                 lm = keypoints[idx] if idx < len(keypoints) else None
                 # CLIP attributes
@@ -156,9 +184,13 @@ class VisionNode(Node):
                 people_out.append({
                     'bbox': bbox.tolist(),
                     'conf': float(p['conf']),
+                    'dist': dist,
                     'attributes': attrs,
                     'identity': identity
                 })
+
+            # Sort by distance (closest first)
+            people_out.sort(key=lambda x: x['dist'])
 
             # 5. Guest arrival logic (legacy)
             status = "searching"

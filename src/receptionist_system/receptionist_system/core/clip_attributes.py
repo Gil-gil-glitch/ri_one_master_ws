@@ -91,6 +91,17 @@ class ClipAttributeDetector:
                 "a photo of a man",
                 "a photo of a woman"
             ],
+            "HairLength": [
+                "a photo of a person with short hair",
+                "a photo of a person with long hair"
+            ],
+            "CarryingItem": [
+                "a photo of a person carrying a bag",
+                "a photo of a person carrying a bottle",
+                "a photo of a person carrying a book or document",
+                "a photo of a person carrying a laptop",
+                "a photo of a person with empty hands"
+            ],
             "Age": [
                 "a photo of a child",
                 "a photo of a teenager",
@@ -258,6 +269,19 @@ class ClipAttributeDetector:
             # 7. Wears Mask
             probs = self._get_probs(head_features, "Mask")
             competition_fmt["Wears Mask >>"] = "Yes" if probs[0] > 0.6 else "No"
+
+            # 8. Hair Length
+            probs = self._get_probs(head_features, "HairLength")
+            competition_fmt["Hair Length >>"] = "Short" if probs[0] > probs[1] else "Long"
+
+            # 9. Carrying Item
+            probs = self._get_probs(image_features, "CarryingItem")
+            best_idx = np.argmax(probs)
+            if best_idx == 4: # empty hands
+                competition_fmt["Carrying Item >>"] = "No"
+            else:
+                item_name = self.attribute_prompts["CarryingItem"][best_idx].split("carrying a ")[1]
+                competition_fmt["Carrying Item >>"] = f"Yes ({item_name})"
             
             # --- Temporal Smoothing (Hysteresis) ---
             now = time.time()

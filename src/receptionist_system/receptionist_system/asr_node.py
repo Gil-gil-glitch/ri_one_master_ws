@@ -5,22 +5,22 @@ from rclpy.node import Node
 from std_msgs.msg import String
 from faster_whisper import WhisperModel
 
+
 class ASRNode(Node):
     def __init__(self):
         super().__init__('asr_node')
 
-        # ===== ROS2 Publisher =====
+        # ROS2 Publisher
         self.publisher_ = self.create_publisher(String, '/speech_text', 10)
 
-        # ===== Parameters =====
-        # 競技環境に合わせて 'base' や 'small' を選択（smallの方が精度が良い）
+        # Parameters
         self.declare_parameter('whisper_model', 'small')
         self.declare_parameter('language', 'en')
         self.declare_parameter('sample_rate', 16000)
         self.declare_parameter('chunk_size', 1024)
-        # 環境音に合わせて要調整 (小さいほど感度が上がる)
-        self.declare_parameter('silence_threshold', 1500.0) 
-        # 何秒無音が続いたら発話終了とするか
+        # 環境音に合わせて調整（値が小さいほど感度が高い）
+        self.declare_parameter('silence_threshold', 600.0)
+        # 無音が何秒続いたら発話終了とするか
         self.declare_parameter('silence_limit', 1.2)
         self.declare_parameter('use_gpu', True)
 
@@ -34,55 +34,66 @@ class ASRNode(Node):
 
         self.frame_duration = self.chunk / self.fs
 
-        # ===== Audio state =====
+        # Audio state
         self.buffer = []
         self.recording = False
         self.silent_time = 0.0
 
-        # ===== Load Whisper =====
+        # Load Whisper
         device = 'cuda' if self.use_gpu else 'cpu'
-        # GPUなら float16, CPUなら int8 が定石
         compute_type = 'float16' if self.use_gpu else 'int8'
+        self.get_logger().info(
+            f'Loading Whisper: model={self.whisper_model_name}, device={device}'
+        )
+        self.stt = WhisperModel(
+            self.whisper_model_name, device=device, compute_type=compute_type
+        )
 
-        self.get_logger().info(f'Loading Whisper: model={self.whisper_model_name}, device={device}')
-        self.stt = WhisperModel(self.whisper_model_name, device=device, compute_type=compute_type)
-
-        # ===== Audio Input Setup =====
+        # Audio Input Setup
         self.audio = pyaudio.PyAudio()
         self.stream = self.audio.open(
             format=pyaudio.paInt16,
             channels=1,
             rate=self.fs,
             input=True,
-            frames_per_buffer=self.chunk
+            frames_per_buffer=self.chunk,
         )
 
         self.timer = self.create_timer(self.frame_duration, self.audio_callback)
         self.get_logger().info('ASR Node Ready. Listening...')
 
-        
-
-    def is_silent(self, arr: np.ndarray) -> bool:
-        amplitude = np.mean(np.abs(arr * 32768))
-        # ↓ このログを追加して、喋った時に数値が上がるか確認
-        # self.get_logger().info(f"Current Amplitude: {amplitude:.2f}") 
-        return amplitude < self.silence_threshold
+    # ----------------------------------------------------------
+    # ★ 修正: int16 のまま RMS を計算し、float32 の二重変換バグを解消
+    # ----------------------------------------------------------
+    def is_silent(self, raw_bytes: bytes) -> bool:
+        """
+        int16 PCM バイト列を受け取り、RMS が閾値未満なら True を返す。
+        float32 に変換して再スケールする二重変換を廃止。
+        """
+        arr = np.frombuffer(raw_bytes, dtype=np.int16)
+        rms = np.sqrt(np.mean(arr.astype(np.float32) ** 2))
+        # デバッグが必要な時はコメントアウトを外す
+        # self.get_logger().info(f"RMS: {rms:.1f}")
+        return rms < self.silence_threshold
 
     def audio_callback(self):
         try:
             data = self.stream.read(self.chunk, exception_on_overflow=False)
-            frame = np.frombuffer(data, dtype=np.int16).astype(np.float32) / 32768.0
 
-            if not self.is_silent(frame):
+            if not self.is_silent(data):
                 if not self.recording:
                     self.get_logger().info('Voice detected, recording...')
                 self.recording = True
                 self.silent_time = 0.0
+                # バッファには float32 で積む（Whisper の入力形式）
+                frame = np.frombuffer(data, dtype=np.int16).astype(np.float32) / 32768.0
                 self.buffer.append(frame)
             else:
                 if self.recording:
                     self.silent_time += self.frame_duration
-                    self.buffer.append(frame) # 無音部分も少し含める
+                    # 無音部分も少し含める（自然な発話末尾を拾うため）
+                    frame = np.frombuffer(data, dtype=np.int16).astype(np.float32) / 32768.0
+                    self.buffer.append(frame)
 
                     if self.silent_time > self.silence_limit:
                         self.process_utterance()
@@ -99,26 +110,23 @@ class ASRNode(Node):
 
         try:
             audio = np.concatenate(self.buffer)
-            # 推論実行
             segments, _ = self.stt.transcribe(
                 audio,
                 language=self.language,
                 beam_size=5,
                 vad_filter=True,
-                vad_parameters=dict(min_silence_duration_ms=500)
+                vad_parameters=dict(min_silence_duration_ms=500),
             )
 
             text = ' '.join(seg.text for seg in segments).strip()
 
             if text:
-                # 競技の誤認識を防ぐため、簡単なクリーニング（ピリオド削除など）
-                text = text.replace('.', '').replace('?', '').replace(',', '')
-                msg = String()
-                msg.data = text
-                self.publisher_.publish(msg)
+                # 誤認識を減らすための軽微なクリーニング
+                text = text.replace('.', '').replace('?', '').replace(',', '').strip()
+                self.publisher_.publish(String(data=text))
                 self.get_logger().info(f'Recognized: "{text}"')
             else:
-                self.get_logger().info('Empty speech.')
+                self.get_logger().info('Empty speech detected.')
 
         except Exception as e:
             self.get_logger().error(f'Transcription error: {e}')
@@ -128,6 +136,7 @@ class ASRNode(Node):
         self.stream.close()
         self.audio.terminate()
         super().destroy_node()
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -139,6 +148,7 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

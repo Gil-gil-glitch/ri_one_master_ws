@@ -17,7 +17,7 @@ class ASRNode(Node):
         self.hw_fs = 44100
         self.target_fs = 16000
         self.chunk = 4096
-        self.silence_threshold = 800.0
+        self.silence_threshold = 700.0
         self.silence_limit = 1.5
 
         self.stream = None
@@ -36,7 +36,7 @@ class ASRNode(Node):
         try:
             self.stream = self.audio.open(
                 format=pyaudio.paInt16,
-                channels=2,
+                channels=1,
                 rate=self.hw_fs,
                 input=True,
                 input_device_index=9,
@@ -62,7 +62,7 @@ class ASRNode(Node):
         try:
             data = self.stream.read(self.chunk, exception_on_overflow=False)
             full_frame = np.frombuffer(data, dtype=np.int16).reshape(-1, 2)
-            frame = full_frame[:, 0].astype(np.float32) / 32768.0
+            frame = np.frombuffer(data, dtype=np.int16).astype(np.float32) / 32768.0
 
             rms = np.sqrt(np.mean(frame ** 2))
             self.draw_volume_bar(rms)

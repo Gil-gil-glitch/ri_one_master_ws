@@ -18,7 +18,7 @@ def generate_launch_description():
     # 2. LIDAR - Explicitly set to USB0
     sllidar_launch_dir = get_package_share_directory('sllidar_ros2')
     sllidar_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(os.path.join(sllidar_launch_dir, 'launch', 'view_sllidar_a1_launch.py')),
+        PythonLaunchDescriptionSource(os.path.join(sllidar_launch_dir, 'launch', 'sllidar_a1_launch.py')),
         launch_arguments={
             'serial_port': '/dev/ttyUSB1',
             'serial_baudrate': '115200',

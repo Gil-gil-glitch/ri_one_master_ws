@@ -1,144 +1,176 @@
 import json
+import math
 import rclpy
 import time
-import math
 from rclpy.node import Node
 from std_msgs.msg import String
+
 
 class TaskPlannerNode(Node):
     def __init__(self):
         super().__init__('task_planner_node')
 
-        # --- 現場調整が必要なパラメータ ---
-        # ホスト（Max）が立っている座標 (DialogueManagerの poses['HOST'] と合わせる)
-        self.HOST_X = 0.50
-        self.HOST_Y = 0.05
-        self.HOST_IGNORE_RADIUS = 1.0  # ホストから1m以内にいる人はゲストとみなさない
-        # ------------------------------
-
         # Subscribers
-        self.sub_vision = self.create_subscription(String, '/receptionist/detections', self.vision_cb, 10)
-        self.sub_profile = self.create_subscription(String, '/person_profile', self.profile_cb, 10)
-        self.sub_action_status = self.create_subscription(String, '/action_status', self.action_status_cb, 10)
+        self.sub_vision = self.create_subscription(
+            String, '/receptionist/detections', self.vision_cb, 10)
+        self.sub_profile = self.create_subscription(
+            String, '/person_profile', self.profile_cb, 10)
+        self.sub_action_status = self.create_subscription(
+            String, '/action_status', self.action_status_cb, 10)
 
         # Publishers
         self.pub_nlp_trigger = self.create_publisher(String, '/nlp_instruction', 10)
         self.pub_action = self.create_publisher(String, '/task_action', 10)
 
+        self.FIELD_X_MIN = -100
+        self.FIELD_X_MAX =  100.69
+        self.FIELD_Y_MIN = -100.51
+        self.FIELD_Y_MAX =  100.15
+        self.FIELD_MARGIN = 0.3
+
         # 状態管理
-        # WAITING_FOR_GUEST, APPROACHING_GUEST, RECEPTION, GOING_TO_HOST, RETURNING_TO_DOOR
-        self.state = "WAITING_FOR_GUEST" 
+        self.state = "WAITING_FOR_GUEST"
         self.guest_count = 0
         self.last_vision_status = "searching"
-        
-        # クールタイム用
-        self.last_reception_time = 0
-        self.cooldown_period = 5.0 # 紹介完了から5秒間は次を検知しない
+        self.current_bonus_data = {}
 
-        self.get_logger().info("Task Planner Node: Host is standing mode - Started.")
+        # クールダウン
+        self.last_reception_time = 0.0
+        self.cooldown_period = 5.0
+
+        self.get_logger().info("Task Planner Node started.")
+
+    def _filter_guests(self, people: list) -> list:
+        # Simple filter for the first few guests
+        valid = []
+        for p in people:
+            identity = p.get("identity") or {}
+            if isinstance(identity, dict) and identity.get("name") == "Chris":
+                continue
+            valid.append(p)
+        return valid
 
     def vision_cb(self, msg):
-        """人が来たら、ホストでないことを確認して接近を開始する"""
-        if self.state != "WAITING_FOR_GUEST":
+        data = json.loads(msg.data)
+        
+        if self.state == "BONUS_VISION_DETECTING":
+            # Just capture features of the first person we see (assuming we are facing Judge 1)
+            people = data.get("people", [])
+            if people:
+                attrs = people[0].get("attributes", {})
+                self.current_bonus_data["vision"] = attrs
+                self.get_logger().info(f"Bonus Vision Captured: {attrs}")
+                self.state = "BONUS_VISION_MOVE_TO_JUDGE2"
+                self.pub_action.publish(String(data=json.dumps({"action": "MOVE_TO_FACE_JUDGE_2"})))
             return
 
-        # クールタイムチェック（連続検知防止）
+        if self.state != "WAITING_FOR_GUEST":
+            return
         if (time.time() - self.last_reception_time) < self.cooldown_period:
             return
 
-        data = json.loads(msg.data)
-        
-        # 誰かが到着したという判定
-        if data.get("status") == "guest_arrived" and self.last_vision_status == "searching":
+        current_status = data.get("status")
+        if current_status == "guest_arrived" and self.last_vision_status == "searching":
             people = data.get("people", [])
-            if not people:
-                return
-
-            target_guest = None
-            
-            # 視界内の人たちをチェック
-            for p in people:
-                # VisionNodeが計算した map 座標系での位置を取得
-                # ※VisionNodeが座標計算していない場合は、dialogue_manager側の計算を待つ
-                pos = p.get("map_coords") 
-                
-                if pos:
-                    # ホストの立ち位置からの距離を計算
-                    dist_to_host = math.sqrt((pos['x'] - self.HOST_X)**2 + (pos['y'] - self.HOST_Y)**2)
-                    
-                    # ホストの近く（1m以内）にいる人はスキップ
-                    if dist_to_host < self.HOST_IGNORE_RADIUS:
-                        self.get_logger().info("Detected person near Host position. Ignoring as Host.")
-                        continue
-                
-                # 最初に見つかった「ホストでない人」をゲストとする
-                target_guest = p
-                break
-
-            if target_guest:
-                self.get_logger().info(f"Real Guest detected! Approaching guest {self.guest_count + 1}...")
-                bbox = target_guest.get("bbox", [])
-
+            valid_guests = self._filter_guests(people)
+            if valid_guests:
+                self.get_logger().info("Guest detected! Sending forward movement...")
                 self.state = "APPROACHING_GUEST"
-                
-                # DialogueManagerへ接近指示を出す
-                instruction = {
-                    "action": "APPROACH_GUEST",
-                    "data": {"bbox": bbox}
-                }
-                self.pub_action.publish(String(data=json.dumps(instruction)))
-        
-        self.last_vision_status = data.get("status")
+                self.pub_action.publish(String(data=json.dumps({
+                    "action": "MOVE_FORWARD_TO_GUEST",
+                    "data": {"bbox": valid_guests[0].get("bbox")}
+                })))
+
+        self.last_vision_status = current_status
 
     def profile_cb(self, msg):
-        """NLPで名前・飲み物が確定したら、ホストへの移動指示を出す"""
         profile = json.loads(msg.data)
+        
+        # Check if it's the end of bonus voice
+        if profile.get("type") == "BONUS_VOICE_DONE":
+            self.current_bonus_data["voice"] = profile
+            self.state = "BONUS_VOICE_MOVE_TO_JUDGE2"
+            self.pub_action.publish(String(data=json.dumps({"action": "MOVE_TO_FACE_JUDGE_2"})))
+            return
+
+        # Normal reception profile
         self.guest_count += 1
         self.state = "GOING_TO_HOST"
-
-        instruction = {
+        self.pub_action.publish(String(data=json.dumps({
             "action": "MOVE_TO_HOST",
             "data": {
                 "name": profile.get("name"),
                 "drink": profile.get("drink"),
-                "guest_num": self.guest_count
+                "guest_num": self.guest_count,
             }
-        }
-        self.pub_action.publish(String(data=json.dumps(instruction)))
+        })))
 
     def action_status_cb(self, msg):
-        """DialogueManagerからの完了報告を受けて状態を遷移させる"""
-        status = msg.data
+        if msg.data == "ARRIVED_AT_GUEST":
+            if self.state == "APPROACHING_GUEST":
+                self.state = "RECEPTION"
+                self.pub_nlp_trigger.publish(String(data="START_GUEST_RECEPTION"))
 
-        # 1. ゲストへの接近が完了
-        if status == "ARRIVED_AT_GUEST":
-            self.state = "RECEPTION"
-            # NLP（音声対話）を開始させる
-            trigger_msg = String()
-            trigger_msg.data = "START_GUEST_RECEPTION"
-            self.pub_nlp_trigger.publish(trigger_msg)
-
-        # 2. ホストへの案内と紹介（および指差し）がすべて完了
-        elif status == "COMPLETED_GUEST_MANAGEMENT":
-            self.last_reception_time = time.time() # クールタイムの計測開始
-            
-            if self.guest_count < 2:
-                # 1人目の後はドアに戻る
-                self.get_logger().info("Guest 1 managed. Returning to door for Guest 2...")
+        elif msg.data == "COMPLETED_GUEST_MANAGEMENT":
+            self.last_reception_time = time.time()
+            if self.guest_count == 1:
                 self.state = "RETURNING_TO_DOOR"
                 self.pub_action.publish(String(data=json.dumps({"action": "MOVE_TO_DOOR"})))
-            else:
-                # 2人目完了
-                self.get_logger().info("All guests managed. Task Finished!")
-                self.state = "FINISHED"
+            elif self.guest_count == 2:
+                self.get_logger().info("Second guest seated. Starting BONUS phase.")
+                self.state = "BONUS_START"
+                # Phase 1: Face Judge 1 for Vision
+                self.pub_action.publish(String(data=json.dumps({"action": "MOVE_TO_FACE_JUDGE_1"})))
 
-        # 3. ドア（スタート位置）に戻った
-        elif status == "ARRIVED_AT_DOOR":
+        elif msg.data == "ARRIVED_AT_DOOR":
             self.state = "WAITING_FOR_GUEST"
-            self.get_logger().info("Waiting for the next guest at the entrance.")
+
+        # --- Bonus Phase Transitions ---
+        elif msg.data == "FACING_JUDGE_1":
+            if self.state == "BONUS_START":
+                self.state = "BONUS_VISION_DETECTING"
+                # Wait for vision_cb to pick up features
+            elif self.state == "BONUS_VOICE_MOVE_TO_JUDGE1":
+                self.state = "BONUS_VOICE_ASKING"
+                self.pub_nlp_trigger.publish(String(data="START_BONUS_VOICE"))
+
+        elif msg.data == "FACING_JUDGE_2":
+            if self.state == "BONUS_VISION_MOVE_TO_JUDGE2":
+                self.state = "BONUS_SAYING_VISION"
+                attrs = self.current_bonus_data.get("vision", {})
+                shirt = attrs.get("Clothing color (Tops) >>", "unknown")
+                glasses = attrs.get("Wears Glasses >>", "no")
+                hair = attrs.get("Hair Length >>", "short")
+                carrying = attrs.get("Carrying Item >>", "no")
+                
+                text = f"The first judge is wearing a {shirt} shirt. They "
+                text += "are wearing glasses" if glasses == "Yes" else "are not wearing glasses"
+                text += f". They have {hair} hair. "
+                text += f"They are carrying {carrying}." if "Yes" in carrying else "They are not carrying anything."
+                
+                self.pub_action.publish(String(data=json.dumps({"action": "SAY_TEXT", "text": text})))
+            
+            elif self.state == "BONUS_VOICE_MOVE_TO_JUDGE2":
+                self.state = "BONUS_SAYING_VOICE"
+                voice = self.current_bonus_data.get("voice", {})
+                allergy = voice.get("allergy", "unknown")
+                nat = voice.get("nationality", "unknown")
+                text = f"The first judge {allergy} and their nationality is {nat}."
+                self.pub_action.publish(String(data=json.dumps({"action": "SAY_TEXT", "text": text})))
+
+        elif msg.data == "BONUS_TEXT_DONE":
+            if self.state == "BONUS_SAYING_VISION":
+                # Now move back to Judge 1 for voice
+                self.state = "BONUS_VOICE_MOVE_TO_JUDGE1"
+                self.pub_action.publish(String(data=json.dumps({"action": "MOVE_TO_FACE_JUDGE_1"})))
+            elif self.state == "BONUS_SAYING_VOICE":
+                self.get_logger().info("BONUS PHASE COMPLETED!")
+                self.state = "FINISHED"
 
 def main(args=None):
     rclpy.init(args=args)
-    node = TaskPlannerNode()
-    rclpy.spin(node)
+    rclpy.spin(TaskPlannerNode())
     rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

@@ -1,3 +1,12 @@
+#
+##   Home Task Gesture Identification Node
+#
+#   This node subscribes to the RealSense camera feed and publishes the to the /gesture topic when it detects a 
+#   thumbsup. The thumbsup will be used to trigger the follow_state on the home_task_coordinator node, which 
+#   will cause the robot to lock onto a particular person and follow them around for 5 seconds.  
+#
+#
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
@@ -8,9 +17,9 @@ import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 
-class GestureIdentificationNode(Node):
+class HomeTaskGestureIdentificationNode(Node):
     def __init__(self):
-        super().__init__('gesture_identification')
+        super().__init__('home_task_gesture_identification')
         self.subscription = self.create_subscription(Image, '/camera/camera/color/image_raw', self.image_callback, 10)
         self.publisher_ = self.create_publisher(String, '/gesture', 10)
         self.bridge = CvBridge()
@@ -24,34 +33,30 @@ class GestureIdentificationNode(Node):
             min_tracking_confidence=0.7
         )
         self.detector = vision.HandLandmarker.create_from_options(options)
-        self.get_logger().info("Gesture Identification Node Started (Directional)")
+        self.get_logger().info("Home Task Gesture Identification Node Started (Directional)")
 
 
-    def is_pointing(self, landmarks):
-        # Calculate distance from wrist (0) to tips to see if they are "extended"
+    def is_thumbsup(self, landmarks):
+        """Calculate distance from wrist (0) to tips to see if they are extended. Returns 
+        True if thumb is extended and all other fingers are folded."""
+    
         def dist(p1, p2):
             return np.sqrt((p1.x - p2.x)**2 + (p1.y - p2.y)**2)
 
         wrist = landmarks[0]
-        # Check if index tip is significantly further from wrist than the base joint
-        index_is_extended = dist(wrist, landmarks[8]) > dist(wrist, landmarks[6]) * 1.5
+        thumb_is_extended = dist(wrist, landmarks[4]) > dist(wrist, landmarks[2]) * 1.5
         
         # Check if other fingers are folded (tip closer to wrist than middle joint)
+        index_folded = dist(wrist, landmarks[8]) < dist(wrist, landmarks[6])
         middle_folded = dist(wrist, landmarks[12]) < dist(wrist, landmarks[10])
         ring_folded = dist(wrist, landmarks[16]) < dist(wrist, landmarks[14])
+        pinky_folded = dist(wrist, landmarks[20]) < dist(wrist, landmarks[18])
         
-        return index_is_extended and middle_folded and ring_folded
-    
-    def get_pointing_direction(self, landmarks):
-        # X-coordinates in image go 0.0 (left edge) to 1.0 (right edge)
-        # If the user's index tip (8) is further left in the image than their wrist (0), 
-        # they are pointing to the robot's left.
-        if landmarks[8].x < landmarks[0].x:
-            return "pointing_left"
-        else:
-            return "pointing_right"
+        return thumb_is_extended and index_folded and middle_folded and ring_folded and pinky_folded
+
 
     def image_callback(self, msg):
+        """Convert ROS image to OpenCV format, run hand landmark detection, and publish gesture if thumbsup is detected."""
         frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='rgb8')
         mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=np.array(frame))
         result = self.detector.detect(mp_image)
@@ -62,12 +67,11 @@ class GestureIdentificationNode(Node):
             return 
 
         for hand_landmarks in result.hand_landmarks:
-            if self.is_pointing(hand_landmarks):
-                direction = self.get_pointing_direction(hand_landmarks)
-                self.get_logger().info(f"GESTURE DETECTED: {direction}")
+            if self.is_thumbsup(hand_landmarks):
+                self.get_logger().info("GESTURE DETECTED: thumbsup")
                 
                 gesture_msg = String()
-                gesture_msg.data = direction
+                gesture_msg.data = "thumbsup"
                 self.publisher_.publish(gesture_msg)
 
 
@@ -75,7 +79,7 @@ def main(args=None):
 
     rclpy.init(args=args)
 
-    node = GestureIdentificationNode()
+    node = HomeTaskGestureIdentificationNode()
 
     rclpy.spin(node)
 
